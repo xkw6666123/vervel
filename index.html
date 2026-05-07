@@ -56,7 +56,21 @@ main{max-width:720px;margin:0 auto;padding:16px}
 .skeleton .s-line:last-child{width:25%;height:10px;margin-bottom:0}
 @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
 
-/* empty */
+/* inspiration card */
+.inspire{background:linear-gradient(135deg,#1A1F2E 0%,#161B22 100%);border:1px solid #30363D;border-radius:12px;padding:18px;margin-bottom:14px;position:relative;overflow:hidden}
+.inspire::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#58A6FF,#8B5CF6);opacity:0.6}
+.inspire .topic{font-size:14px;color:#8B949E;margin-bottom:8px;padding:4px 10px;background:rgba(88,166,255,0.1);border-radius:6px;display:inline-block}
+.inspire h3{font-size:14px;color:#F0F6FC;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+.inspire h3 .badge{font-size:10px;padding:2px 8px;border-radius:10px;font-weight:500}
+.inspire h3 .badge-w{background:#58A6FF22;color:#58A6FF}
+.inspire h3 .badge-a{background:#8B5CF622;color:#8B5CF6}
+.inspire .suggestion{font-size:13px;color:#C9D1D9;line-height:1.6;padding:6px 0 4px;font-style:italic}
+.inspire .source-tag{font-size:11px;color:#484F58;margin-top:6px;display:block}
+.inspire+.inspire::before{display:none}
+
+/* section title */
+.section-title{font-size:13px;color:#484F58;margin:0 0 12px;padding:0 4px;font-weight:500;display:flex;align-items:center;gap:8px}
+.section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#30363D,transparent)}
 .empty-state{text-align:center;padding:80px 20px;color:#484F58}
 .empty-state .icon{font-size:56px;margin-bottom:16px;opacity:0.5}
 .empty-state p{font-size:14px;margin-bottom:6px}
@@ -84,7 +98,7 @@ body{padding-bottom:70px}
 <div class="header-tabs">
 <a href="#" class="active" data-filter="all">精选</a>
 <a href="#" data-filter="hot">热点</a>
-<a href="#" data-filter="daily">日报</a>
+<a href="#" data-filter="inspire">灵感</a>
 <a href="#" data-filter="trending">趋势</a>
 </div>
 </div>
@@ -103,15 +117,16 @@ body{padding-bottom:70px}
 <div class="mobile-nav" id="mobileNav">
 <a href="#" class="active" data-filter="all"><span class="nav-icon">🔥</span>精选</a>
 <a href="#" data-filter="hot"><span class="nav-icon">📰</span>热点</a>
-<a href="#" data-filter="daily"><span class="nav-icon">📅</span>日报</a>
+<a href="#" data-filter="inspire"><span class="nav-icon">💡</span>灵感</a>
 <a href="#" data-filter="trending"><span class="nav-icon">📈</span>趋势</a>
 </div>
 
 <script>
-let data,allTags=[];
+let data,allTags,json;
 
-fetch('data.json').then(r=>r.json()).then(json=>{
-  data=json.articles;
+fetch('data.json').then(r=>r.json()).then(jsonData=>{
+  json=jsonData;
+  data=jsonData.articles;
   const tagSet=new Set();
   data.forEach(a=>a.tags.forEach(t=>tagSet.add(t)));
   allTags=['全部',...tagSet];
@@ -181,10 +196,34 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
     e.preventDefault();
     document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(x=>x.classList.remove('active'));
     a.classList.add('active');
-    renderTags('全部');
-    render(data);
+    const filter=a.dataset.filter;
+    if(filter==='inspire'){
+      renderInspire();
+    }else{
+      renderTags('全部');
+      render(data);
+    }
   };
 });
+
+function renderInspire(){
+  const el=document.getElementById('content');
+  if(!json.inspirations||!json.inspirations.length){
+    el.innerHTML='<div class="empty-state"><div class="icon">💡</div><p>创作灵感加载中...</p></div>';
+    return;
+  }
+  el.innerHTML='<div class="section-title">今日创作灵感</div>'+
+  json.inspirations.map(a=>`
+    <div class="inspire">
+      <div class="topic">📌 ${a.topic}</div>
+      <div class="source-tag">来源: ${a.source||''}</div>
+      <h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3>
+      <div class="suggestion">${a.wangba_style}</div>
+      <h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
+      <div class="suggestion">${a.aqi_style}</div>
+    </div>
+  `).join('');
+}
 </script>
 </body>
 </html>

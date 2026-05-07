@@ -113,7 +113,7 @@ function render(items){
     return;
   }
   el.innerHTML=items.map((a,i)=>`
-    <div class="card" onclick="window.open('${a.url||'#'}','_blank')">
+    <div class="card" onclick="window.location.href='${a.url||'#'}'">
       <div class="card-time"><span class="dot"></span>${a.date} ${a.time}</div>
       <div class="card-title">${a.title}</div>
       <div class="card-summary">${a.summary}</div>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>热点信息差</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0D1117;color:#E6EDF3;font-family:'Noto Sans SC',sans-serif;font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:#58A6FF;text-decoration:none}
+/* header */
+header{background:#161B22;border-bottom:1px solid #30363D;position:sticky;top:0;z-index:100}
+.header-inner{max-width:720px;margin:0 auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:18px;font-weight:700;color:#F0F6FC}
+.logo span{color:#58A6FF}
+.header-tabs{display:flex;gap:4px}
+.header-tabs a{padding:6px 12px;font-size:13px;border-radius:6px;color:#8B949E;white-space:nowrap;transition:all .2s}
+.header-tabs a.active,.header-tabs a:hover{background:#1F6FEB33;color:#58A6FF}
+/* main */
+main{max-width:720px;margin:0 auto;padding:16px}
+/* tag filter */
+.tag-bar{display:flex;gap:6px;overflow-x:auto;padding:4px 0 12px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tag-bar::-webkit-scrollbar{display:none}
+.tag-btn{padding:4px 12px;font-size:12px;border-radius:16px;border:1px solid #30363D;background:transparent;color:#8B949E;cursor:pointer;white-space:nowrap;transition:all .2s;font-family:inherit}
+.tag-btn.active,.tag-btn:hover{background:#1F6FEB33;border-color:#58A6FF;color:#58A6FF}
+/* card */
+.card{background:#161B22;border:1px solid #30363D;border-radius:8px;padding:16px;margin-bottom:12px;transition:border-color .2s}
+.card:active{border-color:#58A6FF}
+.card-time{font-size:12px;color:#8B949E;display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.card-time .dot{width:4px;height:4px;border-radius:50%;background:#58A6FF}
+.card-title{font-size:16px;font-weight:500;margin-bottom:8px;line-height:1.5;color:#F0F6FC}
+.card-summary{font-size:14px;color:#8B949E;margin-bottom:12px;line-height:1.6}
+.card-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.card-tags{display:flex;gap:4px;flex-wrap:wrap}
+.card-tag{font-size:11px;padding:2px 8px;border-radius:4px;background:#1F6FEB22;color:#58A6FF}
+.card-stats{display:flex;gap:12px;font-size:12px;color:#8B949E}
+.card-stats span{display:flex;align-items:center;gap:3px}
+.card-stats .num{color:#F0F6FC}
+/* empty */
+.empty-state{text-align:center;padding:60px 20px;color:#8B949E}
+.empty-state .icon{font-size:48px;margin-bottom:16px}
+.empty-state p{font-size:14px;margin-bottom:8px}
+/* bottom nav */
+.mobile-nav{position:fixed;bottom:0;left:0;right:0;background:#161B22;border-top:1px solid #30363D;display:flex;z-index:100;padding:8px 0;padding-bottom:calc(8px + env(safe-area-inset-bottom))}
+.mobile-nav a{flex:1;text-align:center;font-size:11px;color:#8B949E;padding:8px 0}
+.mobile-nav a.active{color:#58A6FF}
+.mobile-nav a .nav-icon{font-size:20px;display:block;margin-bottom:2px}
+body{padding-bottom:70px}
+@media(min-width:769px){.mobile-nav{display:none}body{padding-bottom:0}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="header-inner">
+<div class="logo">热点<span>信息差</span></div>
+<div class="header-tabs">
+<a href="#" class="active" data-filter="all">精选</a>
+<a href="#" data-filter="hot">热点</a>
+<a href="#" data-filter="daily">日报</a>
+<a href="#" data-filter="trending">趋势</a>
+</div>
+</div>
+</header>
+
+<main>
+<div class="tag-bar" id="tagBar"></div>
+<div id="content"></div>
+</main>
+
+<div class="mobile-nav" id="mobileNav">
+<a href="#" class="active" data-filter="all"><span class="nav-icon">🔥</span>精选</a>
+<a href="#" data-filter="hot"><span class="nav-icon">📰</span>热点</a>
+<a href="#" data-filter="daily"><span class="nav-icon">📅</span>日报</a>
+<a href="#" data-filter="trending"><span class="nav-icon">📈</span>趋势</a>
+</div>
+
+<script>
+let data,allTags=[];
+
+fetch('data.json').then(r=>r.json()).then(json=>{
+  data=json.articles;
+  const tagSet=new Set();
+  data.forEach(a=>a.tags.forEach(t=>tagSet.add(t)));
+  allTags=['全部',...tagSet];
+  renderTags('全部');
+  render(data);
+}).catch(e=>{
+  document.getElementById('content').innerHTML=
+    '<div class="empty-state"><div class="icon">📡</div><p>数据加载中...</p><p>请确保 data.json 文件存在</p></div>';
+});
+
+function renderTags(active){
+  const bar=document.getElementById('tagBar');
+  bar.innerHTML=allTags.map(t=>
+    `<button class="tag-btn${t===active?' active':''}" data-tag="${t}">${t}</button>`
+  ).join('');
+  bar.querySelectorAll('.tag-btn').forEach(btn=>{
+    btn.onclick=()=>{
+      const tag=btn.dataset.tag;
+      renderTags(tag);
+      const filtered=tag==='全部'?data:data.filter(a=>a.tags.includes(tag));
+      render(filtered);
+    };
+  });
+}
+
+function render(items){
+  const el=document.getElementById('content');
+  if(!items.length){
+    el.innerHTML='<div class="empty-state"><div class="icon">🔍</div><p>没有找到相关内容</p></div>';
+    return;
+  }
+  el.innerHTML=items.map((a,i)=>`
+    <div class="card" onclick="window.open('${a.url||'#'}','_blank')">
+      <div class="card-time"><span class="dot"></span>${a.date} ${a.time}</div>
+      <div class="card-title">${a.title}</div>
+      <div class="card-summary">${a.summary}</div>
+      <div class="card-footer">
+        <div class="card-tags">${a.tags.map(t=>`<span class="card-tag">${t}</span>`).join('')}</div>
+        <div class="card-stats">
+          <span>👍 <span class="num">${fmt(a.likes)}</span></span>
+          <span>💬 <span class="num">${fmt(a.comments)}</span></span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+function fmt(n){return n>=10000?(n/10000).toFixed(1)+'万':n.toString()}
+
+// header tab切换
+document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
+  a.onclick=e=>{
+    e.preventDefault();
+    document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(x=>x.classList.remove('active'));
+    a.classList.add('active');
+    renderTags('全部');
+    render(data);
+  };
+});
+</script>
+</body>
+</html>

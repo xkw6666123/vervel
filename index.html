@@ -195,6 +195,20 @@ header{
 .inspire .suggestion{font-size:13px;color:#C9D1D9;line-height:1.6;padding:6px 0 4px;font-style:italic}
 .inspire .source-tag{font-size:11px;color:var(--text-muted);margin-top:6px;display:block}
 
+/* blogger prediction card */
+.prediction-card{background:linear-gradient(135deg,#1A1F2E,#161C27);border:1px solid var(--border);border-radius:var(--radius-md);padding:18px 20px;margin-bottom:12px;border-left:3px solid}
+.prediction-card.chen{border-left-color:#D85A30}
+.prediction-card.heiban{border-left-color:#4A8FE4}
+.prediction-card.shadi{border-left-color:#C9A96E}
+.prediction-card .p-title{font-size:14px;font-weight:600;color:var(--text-pri);margin-bottom:6px}
+.prediction-card .p-reason{font-size:12px;color:var(--text-sec);line-height:1.6}
+.prediction-card .p-tag{font-size:10px;padding:2px 8px;border-radius:10px;display:inline-block;margin-right:4px;margin-top:8px}
+.prediction-card .p-tag.chen-tag{background:rgba(216,90,48,0.12);color:#D85A30}
+.prediction-card .p-tag.heiban-tag{background:var(--blue-dim);color:var(--blue)}
+.prediction-card .p-tag.shadi-tag{background:var(--gold-dim);color:var(--gold)}
+
+.structure-box{background:rgba(255,255,255,0.03);border-radius:8px;padding:8px;margin-top:8px}
+
 /* fav btn */
 .fav-btn{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:none;background:rgba(0,0,0,0.35);color:var(--text-muted);font-size:16px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;transition:all var(--transition);backdrop-filter:blur(4px)}
 .fav-btn:hover{background:rgba(0,0,0,0.5);transform:scale(1.1)}
@@ -514,7 +528,7 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(tab=>{
           const liked=raw.ids.map(i=>json.inspirations[i]).filter(Boolean);
           if(liked.length>0){
             inspHtml='<div class="section-title">今日有趣的灵感 ('+raw.ids.length+')</div>'+
-            liked.map(d=>'<div class="inspire"><div class="topic">📌 '+d.topic+'</div><div class="source-tag">来源: '+d.source+'</div><h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3><div class="suggestion">'+d.wangba_style+'</div><h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3><div class="suggestion">'+d.aqi_style+'</div></div>').join('');
+            liked.map(d=>'<div class="inspire"><div class="topic">📌 '+d.topic+'</div><div class="source-tag">来源: '+d.source+'</div><h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3><div class="suggestion">'+d.wangba_style+'</div><h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3><div class="suggestion">'+d.aqi_style+'</div>'+(d.chen_style?'<h3 style="margin-top:12px"><span class="badge badge-c">📺 陈先生风格</span></h3><div class="suggestion" style="color:#D85A30">'+d.chen_style+'</div>':'')+'</div>').join('');
           }
         }
       }catch(e){}
@@ -604,26 +618,26 @@ function renderInspire(){
     '开头3秒放最劲爆的新闻片段做钩子',
   ];
 
-  // 叉雞风格 (YouTube说书人/奇闻异事) 
-  const chajiTemplates = [
-    (t) => `世界上真的有这么离奇的事——${t.slice(0,10)}...`,
-    (t) => `如果不是亲眼看到，我都不信${t.slice(0,8)}`,
-    (t) => `一个${t.slice(0,6)}的离奇故事`,
-    (t) => `深入调查：${t.slice(0,12)}背后不为人知的真相`,
-    (t) => `大家好我是叉雞，今天要讲的是${t.slice(0,10)}`,
+  // 陈先生风格 (大型纪录片/热点解构)
+  const chenTemplates = [
+    (t) => `大型纪录片之${t.slice(0,12)}持续为您播出`,
+    (t) => `${t.slice(0,10)}，老板都坐不住了！`,
+    (t) => `独家解读：${t.slice(0,12)}背后的生意经`,
+    (t) => `大型纪录片${t.slice(0,10)}：全程高能`,
+    (t) => `关于${t.slice(0,10)}这波操作，我想说两句`,
   ];
-  const chajiStruct = [
-    { open: '"大家好我是叉雞。今天要讲一件非常离奇的事情……" 标志性开场，低沉叙述', body: '先交代事件背景/时间/地点 → 逐步展开核心冲突 → 插入当事人采访/新闻片段 → 分析背后原因 → 抛出信息差视角', end: '"这件事你怎么看？欢迎在评论区留言讨论。我是叉雞，我们下期再见。"' },
-    { open: '"这件事发生在XX年XX月，当时没有人想到……" 纪录片式时间线引出', body: '用时间线串联事件发展 → 每段抛出一个悬念 "但事情还没完" → 插入地图/数据可视化 → 对比不同说法', end: '"故事到这里就结束了？其实背后还有更多细节……我们下期继续挖掘。"' },
-    { open: '"你可能在网上刷到过这个新闻，但背后的故事你可能不知道。" 信息差开场', body: '从大众认知切入 → 揭示被忽略的细节 → 呈现多方视角 → 加入自己的分析和推论', end: '"这就是今天的故事。如果喜欢这期内容，别忘了点赞订阅。叉雞，下期见。"' },
-    { open: '"大家好我是叉雞。这起事件引发了全球关注，但真相到底是什么？" 悬念式提问', body: '抛出一个核心问题 → 逐层剥开事件全貌 → 引用各方来源 → 抽丝剥茧式分析 → 最后给出自己的判断', end: '"你觉得真相是什么？评论区告诉我。我是叉雞，我们下期继续深挖。"' },
-    { open: '"今天讲的这个故事，可能颠覆你的认知。" 预告式开场', body: '先抛出最震撼的事实 → 回溯事件源头 → 梳理时间线 → 分析影响 → 加入冷知识/信息差', end: '"看完这个故事，你还相信XXX吗？我是叉雞，用说书的方式带你发现世界另一面。下期见。"' },
+  const chenStruct = [
+    { open: '"大型纪录片持续为您播出……" 标志性低沉开场', body: '先讲事件核心要素 → 用"你知道吗"抛出信息差视角 → 用"离谱的是"递进爆点 → 最后给结论', end: '"关注陈先生，带你看懂热点背后的门道。下期更精彩"' },
+    { open: '"最近发生了一件让所有人都没想到的事……" 悬念开场', body: '先讲表面事实 → 然后"但是……"转折揭示另一面 → 拆解当事人/平台/资本的动机 → 穿插玩梗', end: '"这波操作你怎么看？评论区说说。动动发财的小手点个赞。"' },
+    { open: '"兄弟们，这条新闻你们肯定刷到了，但背后的东西你们可能不知道。" 信息差开场', body: '重新梳理事件时间线 → 指出被忽略的关键细节 → 分析各方利益关系 → 抛出预判', end: '"关注我，每天一个信息差。我们下期见。"' },
+    { open: '"我就直说了，这事儿没那么简单。" 开门见山', body: '先否定大众认知 → 逐一反驳常见误解 → 用数据/事实说话 → 给出自己的解读', end: '"你是怎么看的？评论区说说你的观点。点赞关注，下期继续。"' },
+    { open: '"今天要说的这件事，说出来你可能不信。" 爆料式开场', body: '抛出最刺激的片段当钩子 → 倒叙讲完整事件 → 中途埋悬念"最精彩的还在后面" → 最后给反转', end: '"这波啊，这波是……（留白）。我是陈先生，下期见。"' },
   ];
-  const chajiTips = [
-    '封面用深色调+大字标题，配标志性表情，营造纪录片质感',
-    '全程用低沉叙述节奏，语速放慢，配合BGM营造沉浸感',
-    '关键信息用字幕大字弹出，配合音效强调',
-    '每期末尾留悬念，引导观众点下一期',
+  const chenTips = [
+    '封面用大字标题+人物表情截取，偏暗色调纪录片质感',
+    '语速中等偏慢，配沉重BGM制造严肃感',
+    '关键数字用大字弹出，配合音效',
+    '每期结尾留钩子引导看下一期',
   ];
 
   const todayStr = new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
@@ -639,9 +653,9 @@ function renderInspire(){
     const aqs = aqiStruct[idx % aqiStruct.length];
     const wTip = wangbaTips[idx % wangbaTips.length];
     const aTip = aqiTips[idx % aqiTips.length];
-    const ct = chajiTemplates[idx % chajiTemplates.length];
-    const cs = chajiStruct[idx % chajiStruct.length];
-    const cTip = chajiTips[idx % chajiTips.length];
+    const ct = chenTemplates[idx % chenTemplates.length];
+    const cs = chenStruct[idx % chenStruct.length];
+    const cTip = chenTips[idx % chenTips.length];
 
     h += `<div class="inspire">
       <div class="topic">📌 ${isBlogger ? '博主内容' : '社会热点'} · ${sourceLabel}</div>
@@ -688,7 +702,7 @@ function renderInspire(){
         <div style="font-size:11px;color:var(--text-sec);margin-top:6px;padding:4px 8px;background:rgba(122,130,148,0.06);border-radius:4px">💡 ${aTip}</div>
       </div>
 
-      <h3 style="margin-top:14px"><span class="badge badge-c">📺 叉雞说书人风格 (奇闻异事/深度调查)</span></h3>
+      <h3 style="margin-top:14px"><span class="badge badge-c">📺 陈先生风格 (大型纪录片/热点解构)</span></h3>
       <div class="suggestion" style="color:#D85A30">${ct(rawTitle)}</div>
       <div class="structure-box">
         <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px">
@@ -716,6 +730,100 @@ function renderInspire(){
     </div>`;
   });
 
+  // === 博主选题预测（基于当前热点预估每位博主会做什么选题） ===
+  const topRecent = data.sort((a,b) => (b.likes||0) - (a.likes||0)).slice(0,10);
+  const bloggers = [
+    {
+      id: 'chen', name: '陈先生', style: '大型纪录片/热点解构',
+      color: '#D85A30',
+      predict: (hots) => {
+        const picks = [];
+        // 选争议性/反转性强的热点
+        const chenHot = hots.filter(h => /争议|翻车|塌房|爆料|退款|退货|涨价|暴跌|被查|违法|造假|举报/.test(h.title));
+        chenHot.slice(0,3).forEach(h => {
+          const t = h.title.replace(/\[.*?\]\s*/g, '').slice(0,16);
+          picks.push({
+            title: `大型纪录片之${t}持续为您播出`,
+            reason: `${t}——这话题争议性强、有反转空间，适合陈先生的大型纪录片式深度解构`
+          });
+        });
+        if(picks.length < 2){
+          hots.slice(0,3).forEach(h => {
+            const t = h.title.replace(/\[.*?\]\s*/g, '').slice(0,16);
+            picks.push({
+              title: `大型纪录片${t}全程高能`,
+              reason: `${t}热度高，可以拆解背后的商业/社会逻辑`
+            });
+          });
+        }
+        return picks.slice(0,3);
+      }
+    },
+    {
+      id: 'heiban', name: '信息黑板报', style: '日期锚点热点合集',
+      color: '#4A8FE4',
+      predict: (hots) => {
+        const hots3 = hots.slice(0,5);
+        const todayStr = new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
+        const picks = [
+          {
+            title: `${todayStr}社会热点信息差速览`,
+            reason: `精选${hots3.length}条今日高热度话题做合集：${hots3.map(h => h.title.replace(/\[.*?\]\s*/g, '').slice(0,10)).join('、')}`
+          }
+        ];
+        // 找2个民生类热点做单独条目
+        const msHot = hots.filter(h => /民生|教育|医疗|消费|住房|就业|交通|保险|食品/.test(h.title));
+        msHot.slice(0,2).forEach(h => {
+          const t = h.title.replace(/\[.*?\]\s*/g, '').slice(0,12);
+          picks.push({
+            title: `${todayStr}重点关注：${t}`,
+            reason: `${t}——民生话题接地气，信息黑板报会做简短点评式快讯`
+          });
+        });
+        return picks;
+      }
+    },
+    {
+      id: 'shadi', name: '沙漠一之雕(B站)', style: '热点搬运搞笑合集',
+      color: '#C9A96E',
+      predict: (hots) => {
+        const todayStr = new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
+        // 选有"梗"潜力的热点
+        const funnyHot = hots.filter(h => /奇葩|离谱|蛇|狗|猫|动物|搞笑|好笑|鬼畜|沙雕|神操作|骚操作|翻车|社死/.test(h.title));
+        const picks = [];
+        if(funnyHot.length >= 2){
+          picks.push({
+            title: `${todayStr}今日热点快报（离谱版）`,
+            reason: `今日离谱新闻合集：${funnyHot.slice(0,3).map(h => h.title.replace(/\[.*?\]\s*/g, '').slice(0,8)).join(' vs ')}，沙漠一之雕会用搞笑配音+神转折剪辑做1-2分钟合集`
+          });
+        }
+        // 补充一个常规合集
+        const others = hots.filter(h => !funnyHot.includes(h)).slice(0,3);
+        picks.push({
+          title: `${todayStr}今日热点快报`,
+          reason: `B站日更热点合集：精选${others.length+2}条热搜，配沙雕BGM+标题党封面，1分钟内过完`
+        });
+        return picks;
+      }
+    }
+  ];
+
+  h += `\n<div class="section-title" style="margin-top:28px">🎯 博主选题预测 <span style="font-size:11px;color:var(--text-muted);font-weight:400">基于当前热点预估每位博主的下期选题 · 仅供参考</span></div>`;
+  bloggers.forEach(b => {
+    const predictions = b.predict(topRecent);
+    predictions.forEach(p => {
+      h += `<div class="prediction-card ${b.id}">
+        <div class="p-title">📌 ${p.title}</div>
+        <div class="p-reason">${p.reason}</div>
+        <div>
+          <span class="p-tag ${b.id}-tag">#${b.name}</span>
+          <span class="p-tag ${b.id}-tag">#${b.style}</span>
+        </div>
+      </div>`;
+    });
+  });
+  h += `<div style="font-size:10px;color:var(--text-muted);margin-top:6px;text-align:center">博主选题基于历史风格+当前热点自动预测，实际内容以博主发布为准</div>`;
+
   // === 已有灵感库 ===
   if(json.inspirations && json.inspirations.length){
     const today=new Date().toDateString();
@@ -737,6 +845,9 @@ function renderInspire(){
         <div class="suggestion">${a.wangba_style}</div>
         <h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
         <div class="suggestion">${a.aqi_style}</div>
+        ${a.chen_style ? `
+        <h3 style="margin-top:12px"><span class="badge badge-c">📺 陈先生风格</span></h3>
+        <div class="suggestion" style="color:#D85A30">${a.chen_style}</div>` : ''}
         <button onclick="toggleInspFav(${i})" style="margin-top:10px;padding:4px 16px;border-radius:20px;border:1px solid ${isFaved?'var(--gold)':'var(--border)'};background:${isFaved?'var(--gold-dim)':'transparent'};color:${isFaved?'var(--gold)':'var(--text-sec)'};cursor:pointer;font-size:12px;font-family:inherit;transition:all .2s">${isFaved?'👍 已标记有趣':'🤔 这个有意思'}</button>
       </div>`;
     }).join('');

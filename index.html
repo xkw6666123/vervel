@@ -569,11 +569,11 @@ function renderInspire(){
     (t) => `不是 ${t.slice(0,8)}就离谱`,
   ];
   const wangbaStruct = [
-    { open: '"能理解 能理解……" 假装理解但暗讽', body: '逐条吐槽新闻事件，每句信息差视角', end: '反问观众"这你敢信？"引发互动' },
-    { open: '"不是吧兄弟们……" 震惊开场', body: '3条社会热点+1条冷知识，混搭吐槽', end: '"你们还见过更离谱的吗？评论区说说"' },
-    { open: '"说实话 我蚌埠住了" 开屏暴击', body: '选取当天最离谱的2-3条新闻逐条玩梗', end: '"关注网吧信息差，每天带你开眼界"' },
-    { open: '突然切入:"这有一个贼离谱的新闻……"', body: '先抛最劲爆的梗，再串其他话题', end: '"点赞过万下期继续爆料"' },
-    { open: '"兄弟们 来看看今天的逆天操作……"', body: '用大学生/打工人视角解读社会新闻', end: '"你还遇到过更逆天的吗？评论区见"' },
+    { open: '"能理解 能理解……这两天有个事儿挺离谱的。" 假装淡定引出话题', body: '逐条讲3个热点，每条先用一句话制造反差:"你就说离不离谱吧" → 给出信息差视角 → 用大学生日常做类比吐槽', end: '"这你敢信？反正我是信了。点赞过万下期继续爆！"' },
+    { open: '"不是吧兄弟们，这新闻你们刷到没？给我整不会了。" 震惊开场拉近距离', body: '抛出最劲爆的1条新闻详细讲 → 接2条快速过的小热点 → 每条结尾用"蚌埠住了""这波操作6"等大学生流行语', end: '"你们还见过更逆天的吗？评论区发出来让大家开开眼。"' },
+    { open: '"说实话，我刷到这条的时候整个人都麻了。" 自嘲式开场', body: '先讲最不可思议的新闻 → 讲完停顿"离谱吗？还没完" → 串第二个热点 → "第三个你们肯定没听过"制造期待', end: '"关注网吧信息差，每天带你开眼界。下期更离谱。"' },
+    { open: '"兄弟们，最近发生了件大事，你们绝对猜不到。" 悬念钩子开场', body: '先吊胃口"事情是这样的……" → 用大白话讲新闻本质 → 穿插"懂的都懂""懂的扣1"等互动', end: '"这操作给几分？评论区说说你的看法。点赞过万更新下一期。"' },
+    { open: '"刷手机刷到一个逆天新闻，不行我一定要跟你们说说。" 偶遇式开场', body: '制造"我刚好刷到"的真实感 → 用吐槽语气讲新闻 → 加入"我要是那谁我早就……"的假设吐槽 → 过渡到下一条', end: '"你们还遇到过更离谱的吗？我已经准备好瓜子准备看评论区了。"' },
   ];
   const wangbaTips = [
     '配乐用土嗨BGM，字幕加粗黄字，封面大字报风格',
@@ -620,7 +620,7 @@ function renderInspire(){
 
     h += `<div class="inspire">
       <div class="topic">📌 ${isBlogger ? '博主内容' : '社会热点'} · ${sourceLabel}</div>
-      <div class="source-tag" style="margin-bottom:6px">原始素材: ${rawTitle.slice(0,40)}</div>
+      <a href="${item.url}" target="_blank" style="color:var(--gold);text-decoration:none;display:inline-block;margin-bottom:6px;padding:4px 8px;background:var(--gold-dim);border-radius:4px;font-size:12px">🔗 ${rawTitle.slice(0,40)}</a>
       <div style="font-size:11px;color:var(--text-muted);margin:0 0 10px;padding:4px 8px;background:rgba(122,130,148,0.04);border-radius:4px">🔥 热度 ${fmt(item.likes||0)} · 💬 ${fmt(item.comments||0)}</div>
       
       <h3><span class="badge badge-w">🏪 网吧信息差风格 (大学生/玩梗视角)</span></h3>

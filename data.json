@@ -17,7 +17,18 @@
                          "time":  "23:40",
                          "date":  "2026-05-06",
                          "comments":  1022,
-                         "title":  "网吧信息差 05/06"
+                         "title":  "网吧信息差 05/06",
+                         "analysis":  {
+                                          "video_type":  "热点解构/玩梗",
+                                          "replicable_tip":  "用游戏梗+大学生日常结合制造反差，标题用\u0027难不成是真的\u0027悬念句式",
+                                          "publish_pattern":  "晚间23:40发布",
+                                          "cover_style":  "文字大字报+游戏元素拼贴",
+                                          "keywords":  [
+                                                           "8青天",
+                                                           "限时回归",
+                                                           "爷青回"
+                                                       ]
+                                      }
                      },
                      {
                          "source":  "blogger",
@@ -32,7 +43,18 @@
                          "time":  "22:58",
                          "date":  "2026-05-04",
                          "comments":  1507,
-                         "title":  "网吧信息差 05/04"
+                         "title":  "网吧信息差 05/04",
+                         "analysis":  {
+                                          "video_type":  "荒诞日常/大学生",
+                                          "replicable_tip":  "取材真实大学生活场景，用\u0027懂你意思\u0027式共鸣开场",
+                                          "publish_pattern":  "晚间22:58发布",
+                                          "cover_style":  "人物表情+大字标题叠加",
+                                          "keywords":  [
+                                                           "大学生",
+                                                           "日常",
+                                                           "离谱"
+                                                       ]
+                                      }
                      },
                      {
                          "source":  "blogger",
@@ -47,7 +69,18 @@
                          "time":  "15:07",
                          "date":  "2026-05-04",
                          "comments":  219,
-                         "title":  "阿七大型纪录片 05/04"
+                         "title":  "阿七大型纪录片 05/04",
+                         "analysis":  {
+                                          "video_type":  "热点资讯搬运",
+                                          "replicable_tip":  "日期锚点式标题+3条社会热点速览，保持日更节奏",
+                                          "publish_pattern":  "下午15:07发布",
+                                          "cover_style":  "新闻截图+红色大字标题",
+                                          "keywords":  [
+                                                           "社会热点",
+                                                           "信息差",
+                                                           "新闻速递"
+                                                       ]
+                                      }
                      },
                      {
                          "id":  100,

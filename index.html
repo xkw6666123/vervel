@@ -218,6 +218,7 @@ header{
 .ai-card h4{font-size:14px;color:var(--text-pri);margin-bottom:8px}
 .ai-card .ai-suggestion{font-size:13px;color:#C9D1D9;line-height:1.6;padding:8px 12px;background:var(--blue-dim);border-radius:var(--radius-sm);margin:6px 0}
 .ai-card .ai-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;background:var(--blue-dim);color:var(--blue);margin-right:4px}
+.structure-box{background:rgba(122,130,148,0.04);border-radius:var(--radius-sm);padding:8px 10px;margin:6px 0 4px}
 
 .section-title{font-size:13px;color:var(--text-muted);margin:0 0 12px;padding:0 4px;font-weight:500;display:flex;align-items:center;gap:8px}
 .section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
@@ -556,46 +557,113 @@ function renderInspire(){
   const hotItems = recent.sort((a,b) => (b.likes||0) - (a.likes||0)).slice(0,10);
   const shuffled = [...hotItems].sort(() => Math.random() - 0.5).slice(0,5);
 
-  // 网吧信息差 标题模板
+  // 网吧信息差 标题模板 + 结构模板
   const wangbaTemplates = [
-    (t) => `再见！${t.slice(0,8)}难不成是真的！`,
-    (t) => `${t.slice(0,6)}？懂你意思`,
-    (t) => `能理解 能理解 ${t.slice(0,8)}...`,
-    (t) => `${t.slice(0,8)}难不成是真的！`,
-    (t) => `不是 ${t.slice(0,6)}就离谱`,
+    (t) => `再见！${t.slice(0,10)}难不成是真的！`,
+    (t) => `${t.slice(0,8)}？懂你意思`,
+    (t) => `能理解 能理解 ${t.slice(0,10)}...`,
+    (t) => `${t.slice(0,10)}难不成是真的！`,
+    (t) => `不是 ${t.slice(0,8)}就离谱`,
+  ];
+  const wangbaStruct = [
+    { open: '"能理解 能理解……" 假装理解但暗讽', body: '逐条吐槽新闻事件，每句信息差视角', end: '反问观众"这你敢信？"引发互动' },
+    { open: '"不是吧兄弟们……" 震惊开场', body: '3条社会热点+1条冷知识，混搭吐槽', end: '"你们还见过更离谱的吗？评论区说说"' },
+    { open: '"说实话 我蚌埠住了" 开屏暴击', body: '选取当天最离谱的2-3条新闻逐条玩梗', end: '"关注网吧信息差，每天带你开眼界"' },
+    { open: '突然切入:"这有一个贼离谱的新闻……"', body: '先抛最劲爆的梗，再串其他话题', end: '"点赞过万下期继续爆料"' },
+    { open: '"兄弟们 来看看今天的逆天操作……"', body: '用大学生/打工人视角解读社会新闻', end: '"你还遇到过更逆天的吗？评论区见"' },
+  ];
+  const wangbaTips = [
+    '配乐用土嗨BGM，字幕加粗黄字，封面大字报风格',
+    '视频前3秒截取最离谱的新闻片段做钩子',
+    '每条新闻中间加游戏音效转场',
+    '用大学生日常场景做切入增加共鸣',
   ];
 
-  // 阿七大型纪录片 标题模板
+  // 阿七大型纪录片 标题模板 + 结构模板
   const aqiTemplates = [
     (t) => `${new Date().toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'})}日社会热点信息差`,
-    (t) => `本周TOP5热点事件：${t.slice(0,10)}...`,
-    (t) => `关于${t.slice(0,8)}的几点思考`,
-    (t) => `${t.slice(0,8)}，你怎么看？`,
-    (t) => `今日热点速览：${t.slice(0,8)}`,
+    (t) => `本周TOP5热点事件：${t.slice(0,12)}...`,
+    (t) => `关于${t.slice(0,10)}的几点思考`,
+    (t) => `${t.slice(0,10)}，你怎么看？`,
+    (t) => `今日热点速览：${t.slice(0,12)}`,
+  ];
+  const aqiStruct = [
+    { open: '"5月X日 社会热点信息差" 播报式开场', body: '3条社会热点+简单点评，每条30秒', end: '"关注我，每天带你看懂热点"' },
+    { open: '"今天这4件事 你一定要知道" 痛点切入', body: '选取民生相关度最高的新闻，逐个解读', end: '"点赞收藏 明天继续"' },
+    { open: '"最近发生了一件大事……" 悬念开场', body: '深度说透1-2个热门话题，配新闻截图', end: '"对此你怎么看？评论区聊聊"' },
+    { open: '"#今日热点速览" 日期标注', body: '5-6条简短快讯，每条一句话信息差', end: '"我是阿七 帮你用信息差看世界"' },
+    { open: '"看完这条视频 你也能跟朋友聊热点了"', body: '精选3条社会/娱乐/国际热点，逐条解读', end: '"明天同一时间 不见不散"' },
+  ];
+  const aqiTips = [
+    '封面统一红色大字+新闻截图，保持系列感',
+    '每条热点之间用转场特效+叮声音效',
+    '字幕用关键词高亮，结论用大字弹出',
+    '开头3秒放最劲爆的新闻片段做钩子',
   ];
 
   const todayStr = new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
-  let h = `<div class="section-title">🎯 今日选题推荐 <span style="font-size:11px;color:var(--text-muted);font-weight:400">基于最近热点自动生成</span></div>`;
+  let h = `<div class="section-title">🎯 今日选题推荐 <span style="font-size:11px;color:var(--text-muted);font-weight:400">基于最近${recent.length}条热点自动生成 · 刷新页面换一组</span></div>`;
 
   shuffled.forEach((item, idx) => {
-    const title = item.title.replace(/\[.*?\]\s*/g, ''); // 去掉前缀
+    const rawTitle = item.title.replace(/\[.*?\]\s*/g, '');
     const wt = wangbaTemplates[idx % wangbaTemplates.length];
     const at = aqiTemplates[idx % aqiTemplates.length];
     const isBlogger = item.source === 'blogger';
     const sourceLabel = isBlogger ? (item.blogger_name || '博主') : item.source;
+    const ws = wangbaStruct[idx % wangbaStruct.length];
+    const aqs = aqiStruct[idx % aqiStruct.length];
+    const wTip = wangbaTips[idx % wangbaTips.length];
+    const aTip = aqiTips[idx % aqiTips.length];
 
     h += `<div class="inspire">
       <div class="topic">📌 ${isBlogger ? '博主内容' : '社会热点'} · ${sourceLabel}</div>
-      <div class="source-tag" style="margin-bottom:8px">原内容: ${title.slice(0,35)}</div>
-      <h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3>
-      <div class="suggestion">${wt(title)}</div>
-      <div style="font-size:12px;color:var(--text-sec);margin:4px 0 8px;padding:6px 10px;background:rgba(122,130,148,0.06);border-radius:6px;border-left:2px solid var(--gold)">
-        💬 开场:"能理解 能理解……" → 吐槽切入 → 信息差总结 → 互动提问
+      <div class="source-tag" style="margin-bottom:6px">原始素材: ${rawTitle.slice(0,40)}</div>
+      <div style="font-size:11px;color:var(--text-muted);margin:0 0 10px;padding:4px 8px;background:rgba(122,130,148,0.04);border-radius:4px">🔥 热度 ${fmt(item.likes||0)} · 💬 ${fmt(item.comments||0)}</div>
+      
+      <h3><span class="badge badge-w">🏪 网吧信息差风格 (大学生/玩梗视角)</span></h3>
+      <div class="suggestion">${wt(rawTitle)}</div>
+      <div class="structure-box">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px">
+          <div style="background:rgba(201,169,110,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">🎬 开篇</div>
+            <div style="font-size:11px;color:var(--gold);margin-top:2px">${ws.open}</div>
+          </div>
+          <div style="background:rgba(201,169,110,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">📖 正文</div>
+            <div style="font-size:11px;color:var(--gold);margin-top:2px">${ws.body}</div>
+          </div>
+          <div style="background:rgba(201,169,110,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">🔚 结尾</div>
+            <div style="font-size:11px;color:var(--gold);margin-top:2px">${ws.end}</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text-sec);margin-top:6px;padding:4px 8px;background:rgba(122,130,148,0.06);border-radius:4px">💡 ${wTip}</div>
       </div>
-      <h3><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
-      <div class="suggestion">${at(title)}</div>
-      <div style="font-size:12px;color:var(--text-sec);margin:4px 0 0;padding:6px 10px;background:rgba(122,130,148,0.06);border-radius:6px;border-left:2px solid var(--blue)">
-        💬 日期锚点开场 → 3条热点速览 → 信息差视角解读 → 引导关注
+
+      <h3 style="margin-top:14px"><span class="badge badge-a">🎬 阿七大型纪录片风格 (热点速览/信息差)</span></h3>
+      <div class="suggestion">${at(rawTitle)}</div>
+      <div class="structure-box">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px">
+          <div style="background:rgba(74,143,228,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">🎬 开篇</div>
+            <div style="font-size:11px;color:var(--blue);margin-top:2px">${aqs.open}</div>
+          </div>
+          <div style="background:rgba(74,143,228,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">📖 正文</div>
+            <div style="font-size:11px;color:var(--blue);margin-top:2px">${aqs.body}</div>
+          </div>
+          <div style="background:rgba(74,143,228,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">🔚 结尾</div>
+            <div style="font-size:11px;color:var(--blue);margin-top:2px">${aqs.end}</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text-sec);margin-top:6px;padding:4px 8px;background:rgba(122,130,148,0.06);border-radius:4px">💡 ${aTip}</div>
+      </div>
+      
+      <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">
+        <span style="font-size:10px;padding:2px 10px;border-radius:10px;background:var(--blue-dim);color:var(--blue)">#信息差</span>
+        <span style="font-size:10px;padding:2px 10px;border-radius:10px;background:var(--blue-dim);color:var(--blue)">#热点选题</span>
+        <span style="font-size:10px;padding:2px 10px;border-radius:10px;background:var(--blue-dim);color:var(--blue)">#${isBlogger?'博主拆解':'社会热点'}</span>
       </div>
     </div>`;
   });
@@ -610,7 +678,7 @@ function renderInspire(){
       else localStorage.setItem('inspire_favs',JSON.stringify({date:today,ids:[]}));
     }catch(e){inspFavs=[]}
 
-    h += `<div class="section-title" style="margin-top:24px">📚 灵感库 <span style="font-size:11px;color:var(--text-muted);font-weight:400">标记有趣优先推荐</span></div>`;
+    h += `<div class="section-title" style="margin-top:24px">📚 灵感库 <span style="font-size:11px;color:var(--text-muted);font-weight:400">标记有趣优先推荐 · 共${json.inspirations.length}条</span></div>`;
     h += json.inspirations.map((a,i)=>{
       const isFaved=inspFavs.includes(i);
       return `

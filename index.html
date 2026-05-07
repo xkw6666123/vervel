@@ -68,6 +68,12 @@ main{max-width:720px;margin:0 auto;padding:16px}
 .inspire .source-tag{font-size:11px;color:#484F58;margin-top:6px;display:block}
 .inspire+.inspire::before{display:none}
 
+/* fav icon */
+.fav-btn{position:absolute;top:14px;right:14px;width:32px;height:32px;border-radius:50%;border:none;background:rgba(0,0,0,0.3);color:#484F58;font-size:16px;cursor:pointer;z-index:2;display:flex;align-items:center;justify-content:center;transition:all .2s;backdrop-filter:blur(4px)}
+.fav-btn:hover{background:rgba(0,0,0,0.5);transform:scale(1.1)}
+.fav-btn.active{color:#F0C040;text-shadow:0 0 8px rgba(240,192,64,0.4)}
+.card{position:relative}
+
 /* section title */
 .section-title{font-size:13px;color:#484F58;margin:0 0 12px;padding:0 4px;font-weight:500;display:flex;align-items:center;gap:8px}
 .section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#30363D,transparent)}
@@ -99,7 +105,7 @@ body{padding-bottom:70px}
 <a href="#" class="active" data-filter="all">精选</a>
 <a href="#" data-filter="hot">热点</a>
 <a href="#" data-filter="inspire">灵感</a>
-<a href="#" data-filter="trending">趋势</a>
+<a href="#" data-filter="fav">收藏</a>
 </div>
 </div>
 </header>
@@ -118,7 +124,7 @@ body{padding-bottom:70px}
 <a href="#" class="active" data-filter="all"><span class="nav-icon">🔥</span>精选</a>
 <a href="#" data-filter="hot"><span class="nav-icon">📰</span>热点</a>
 <a href="#" data-filter="inspire"><span class="nav-icon">💡</span>灵感</a>
-<a href="#" data-filter="trending"><span class="nav-icon">📈</span>趋势</a>
+<a href="#" data-filter="fav"><span class="nav-icon">⭐</span>收藏</a>
 </div>
 
 <script>
@@ -170,6 +176,8 @@ function render(items){
     return;
   }
   el.innerHTML=items.map((a,i)=>`
+    <div style="position:relative">
+    <button class="fav-btn ${isFav(a.id)?'active':''}" onclick="event.preventDefault();event.stopPropagation();toggleFav(${a.id})">${isFav(a.id)?'⭐':'☆'}</button>
     <a href="${a.url||'#'}" target="_blank" class="card" style="display:block;color:inherit">
       <div class="card-time">
         <span class="dot"></span>${a.date} ${a.time}
@@ -185,8 +193,14 @@ function render(items){
         </div>
       </div>
     </a>
+    </div>
   `).join('');
 }
+
+// fav functions
+function getFavs(){try{return JSON.parse(localStorage.getItem('favs')||'[]')}catch{return[]}}
+function isFav(id){return getFavs().includes(id)}
+function toggleFav(id){let f=getFavs();let i=f.indexOf(id);if(i>-1){f.splice(i,1)}else{f.push(id)};localStorage.setItem('favs',JSON.stringify(f));render(data)}
 
 function fmt(n){return n>=10000?(n/10000).toFixed(1)+'万':n.toString()}
 
@@ -198,6 +212,11 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
     const filter=a.dataset.filter;
     if(filter==='inspire'){
       renderInspire();
+    }else if(filter==='fav'){
+      const f=getFavs();
+      const favItems=data.filter(a=>f.includes(a.id));
+      renderTags('全部');
+      render(favItems.length?favItems:[]);
     }else{
       renderTags('全部');
       render(data);

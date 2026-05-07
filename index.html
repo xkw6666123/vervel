@@ -491,12 +491,14 @@ function getRecommended(){
 function fmt(n){return n>=10000?(n/10000).toFixed(1)+'万':n.toString()}
 
 // tab switching
-document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
-  a.onclick=e=>{
+document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(tab=>{
+  tab.onclick=e=>{
     e.preventDefault();
+    if(!data||!json)return;
     document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(x=>x.classList.remove('active'));
-    a.classList.add('active');
-    const filter=a.dataset.filter;
+    tab.classList.add('active');
+    const filter=tab.dataset.filter;
+    try{
     if(filter==='inspire'){
       renderInspire();
     }else if(filter==='analysis'){
@@ -504,7 +506,7 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
     }else if(filter==='fav'){
       const el=document.getElementById('content');
       const f=getFavs();
-      const favItems=data.filter(a=>f.includes(a.id));
+      const favItems=data.filter(d=>f.includes(d.id));
       let inspHtml='';
       try{
         const raw=JSON.parse(localStorage.getItem('inspire_favs')||'{}');
@@ -512,7 +514,7 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
           const liked=raw.ids.map(i=>json.inspirations[i]).filter(Boolean);
           if(liked.length>0){
             inspHtml='<div class="section-title">今日有趣的灵感 ('+raw.ids.length+')</div>'+
-            liked.map(a=>'<div class="inspire"><div class="topic">📌 '+a.topic+'</div><div class="source-tag">来源: '+a.source+'</div><h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3><div class="suggestion">'+a.wangba_style+'</div><h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3><div class="suggestion">'+a.aqi_style+'</div></div>').join('');
+            liked.map(d=>'<div class="inspire"><div class="topic">📌 '+d.topic+'</div><div class="source-tag">来源: '+d.source+'</div><h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3><div class="suggestion">'+d.wangba_style+'</div><h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3><div class="suggestion">'+d.aqi_style+'</div></div>').join('');
           }
         }
       }catch(e){}
@@ -522,22 +524,23 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
       }else{
         renderTags('全部');
         el.innerHTML=inspHtml+'<div class="section-title" style="margin-top:'+(inspHtml?'16px':'0')+'">收藏文章</div>';
-        el.innerHTML+=favItems.map((a,i)=>renderCard(a)).join('');
+        el.innerHTML+=favItems.map(d=>renderCard(d)).join('');
       }
       const rec=getRecommended();
       const likeCount=getLikes().length;
       if(rec.length>0){
         el.innerHTML+='<div class="section-title" style="margin-top:16px">🔥 猜你喜欢（基于'+(likeCount>0?'你喜欢的视频':'收藏内容')+'）</div>';
-        el.innerHTML+=rec.map(a=>renderCard(a)).join('');
+        el.innerHTML+=rec.map(d=>renderCard(d)).join('');
       }
     }else if(filter==='hot'){
       renderTags('全部');
-      const hotItems=data.filter(a=>a.source!=='blogger');
+      const hotItems=data.filter(d=>d.source!=='blogger');
       render(hotItems);
     }else if(filter==='all'||!filter){
       renderTags('全部');
       render(data);
     }
+    }catch(err){document.getElementById('content').innerHTML='<div class="empty-state"><div class="icon">⚠️</div><p>加载出错</p><p style="font-size:12px">'+err.message+'</p></div>';}
   };
 });
 

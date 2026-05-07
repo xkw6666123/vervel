@@ -331,10 +331,10 @@ function renderAnalysis(){
   if(!vids.length){el.innerHTML='<div class="empty-state"><div class="icon">🔬</div><p>暂无视频数据</p></div>';return}
   let h='<div class="section-title">爆款视频拆解分析</div>';
   vids.forEach(v=>{
-    const a=json.viral_analysis&&json.viral_analysis[v.id];
+    const a=json.viral_analysis&&json.viral_analysis[String(v.id)];
     h+='<div class="analysis-card"><h3>🔍 '+v.title+'</h3><div class="analysis-grid">'
     if(a){h+='<div class="analysis-item"><div class="label">关键词</div><div class="value">'+a.keywords.join(' · ')+'</div></div><div class="analysis-item"><div class="label">视频类型</div><div class="value">'+a.video_type+'</div></div><div class="analysis-item"><div class="label">封面风格</div><div class="value">'+a.cover_style+'</div></div><div class="analysis-item"><div class="label">发布规律</div><div class="value">'+a.publish_pattern+'</div></div><div class="analysis-item" style="grid-column:span 2"><div class="label">热门标签</div><div class="tag-list">'+(v.tags||[]).map(t=>'<span>#'+t+'</span>').join('')+'</div></div>'}
-    else{h+='<div class="analysis-item" style="grid-column:span 2"><div class="label">基础数据</div><div class="value">点赞 '+fmt(v.likes)+' · 评论 '+fmt(v.comments)+'</div></div>'}
+    else{h+='<div class="analysis-item" style="grid-column:span 2"><div class="label">视频信息</div><div class="value">点赞 '+fmt(v.likes)+' · 评论 '+fmt(v.comments)+'</div></div><div class="analysis-item" style="grid-column:span 2"><div class="label">相似选题建议</div><div class="value">可参考此视频风格创作类似内容，加入自己的特色</div></div>'}
     if(a){h+='<div class="analysis-tip">💡 可复制建议：'+a.replicable_tip+'</div>'}
     h+='<div style="margin-top:8px;font-size:11px;color:#484F58">📅 '+v.date+' '+v.time+' · '+v.source+'</div></div>'
   })

@@ -175,8 +175,10 @@ function render(items){
     el.innerHTML='<div class="empty-state"><div class="icon">🔍</div><p>没有找到相关内容</p></div>';
     return;
   }
-  el.innerHTML=items.map((a,i)=>`
-    <div style="position:relative">
+  el.innerHTML=items.map(a=>renderCard(a)).join('');
+}
+function renderCard(a){
+  return `<div style="position:relative">
     <button class="fav-btn ${isFav(a.id)?'active':''}" onclick="event.preventDefault();event.stopPropagation();toggleFav(${a.id})">${isFav(a.id)?'⭐':'☆'}</button>
     <a href="${a.url||'#'}" target="_blank" class="card" style="display:block;color:inherit">
       <div class="card-time">
@@ -194,7 +196,7 @@ function render(items){
       </div>
     </a>
     </div>
-  `).join('');
+  `;
 }
 
 // fav functions
@@ -213,10 +215,29 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
     if(filter==='inspire'){
       renderInspire();
     }else if(filter==='fav'){
+      const el=document.getElementById('content');
       const f=getFavs();
       const favItems=data.filter(a=>f.includes(a.id));
-      renderTags('全部');
-      render(favItems.length?favItems:[]);
+      // 获取今日灵感收藏
+      let inspHtml='';
+      try{
+        const raw=JSON.parse(localStorage.getItem('inspire_favs')||'{}');
+        if(raw.date===new Date().toDateString()&&raw.ids.length>0&&json.inspirations){
+          const liked=raw.ids.map(i=>json.inspirations[i]).filter(Boolean);
+          if(liked.length>0){
+            inspHtml='<div class="section-title">今日有趣的灵感 ('+raw.ids.length+')</div>'+
+            liked.map(a=>'<div class="inspire"><div class="topic">📌 '+a.topic+'</div><div class="source-tag">来源: '+a.source+'</div><h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3><div class="suggestion">'+a.wangba_style+'</div><h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3><div class="suggestion">'+a.aqi_style+'</div></div>').join('');
+          }
+        }
+      }catch(e){}
+      const total=f.length+((JSON.parse(localStorage.getItem('inspire_favs')||'{}').ids||[]).length||0);
+      if(total===0){
+        el.innerHTML='<div class="empty-state"><div class="icon">⭐</div><p>还没有收藏内容</p><p style="font-size:12px">在灵感页标记"这个有意思"，或在文章点⭐收藏</p></div>';
+      }else{
+        renderTags('全部');
+        el.innerHTML=inspHtml+'<div class="section-title" style="margin-top:'+(inspHtml?'16px':'0')+'">收藏文章</div>';
+        el.innerHTML+=favItems.map((a,i)=>renderCard(a)).join('');
+      }
     }else{
       renderTags('全部');
       render(data);
@@ -230,17 +251,42 @@ function renderInspire(){
     el.innerHTML='<div class="empty-state"><div class="icon">💡</div><p>创作灵感加载中...</p></div>';
     return;
   }
-  el.innerHTML='<div class="section-title">今日创作灵感</div>'+
-  json.inspirations.map(a=>`
-    <div class="inspire">
+  // 每日自动清空灵感收藏
+  const today=new Date().toDateString();
+  let inspFavs=[];
+  try{
+    const raw=JSON.parse(localStorage.getItem('inspire_favs')||'{}');
+    if(raw.date===today) inspFavs=raw.ids||[];
+    else localStorage.setItem('inspire_favs',JSON.stringify({date:today,ids:[]}));
+  }catch(e){inspFavs=[]}
+
+  el.innerHTML='<div class="section-title">今日创作灵感 <span style="font-size:11px;color:#484F58;font-weight:400">点击有趣优先推荐</span></div>'+
+  json.inspirations.map((a,i)=>{
+    const isFaved=inspFavs.includes(i);
+    return `
+    <div class="inspire" style="${isFaved?'border-color:#F0C040':''}">
       <div class="topic">📌 ${a.topic}</div>
       <div class="source-tag">来源: ${a.source||''}</div>
       <h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3>
       <div class="suggestion">${a.wangba_style}</div>
       <h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
       <div class="suggestion">${a.aqi_style}</div>
-    </div>
-  `).join('');
+      <button onclick="toggleInspFav(${i})" style="margin-top:10px;padding:4px 14px;border-radius:20px;border:1px solid ${isFaved?'#F0C040':'#30363D'};background:${isFaved?'#F0C04022':'transparent'};color:${isFaved?'#F0C040':'#8B949E'};cursor:pointer;font-size:12px;font-family:inherit">${isFaved?'👍 已标记有趣':'🤔 这个有意思'}</button>
+    </div>`}).join('');
+}
+
+// 灵感有趣标记（每日自动清空）
+function toggleInspFav(idx){
+  const today=new Date().toDateString();
+  let raw;
+  try{raw=JSON.parse(localStorage.getItem('inspire_favs')||'{}')}catch(e){raw={}}
+  if(raw.date!==today){raw={date:today,ids:[]}}
+  const ids=raw.ids||[];
+  const i=ids.indexOf(idx);
+  if(i>-1){ids.splice(i,1)}else{ids.push(idx)}
+  raw.ids=ids;
+  localStorage.setItem('inspire_favs',JSON.stringify(raw));
+  renderInspire();
 }
 </script>
 </body>

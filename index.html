@@ -170,7 +170,7 @@ function render(items){
     return;
   }
   el.innerHTML=items.map((a,i)=>`
-    <div class="card" onclick="window.location.href='${a.url||'#'}'">
+    <a href="${a.url||'#'}" target="_blank" class="card" style="display:block;color:inherit">
       <div class="card-time">
         <span class="dot"></span>${a.date} ${a.time}
         <span class="source">${a.source||''}</span>
@@ -184,13 +184,12 @@ function render(items){
           <span>💬 <span class="num">${fmt(a.comments)}</span></span>
         </div>
       </div>
-    </div>
+    </a>
   `).join('');
 }
 
 function fmt(n){return n>=10000?(n/10000).toFixed(1)+'万':n.toString()}
 
-// header tab
 document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
   a.onclick=e=>{
     e.preventDefault();

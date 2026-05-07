@@ -198,8 +198,11 @@ function render(items){
   el.innerHTML=items.map(a=>renderCard(a)).join('');
 }
 function renderCard(a){
+  const liked=getLikes().includes(a.id);
+  const isBlogger=a.source==='blogger';
   return `<div style="position:relative">
     <button class="fav-btn ${isFav(a.id)?'active':''}" onclick="event.preventDefault();event.stopPropagation();toggleFav(${a.id})">${isFav(a.id)?'⭐':'☆'}</button>
+    ${isBlogger?`<button class="fav-btn" style="right:40px;${liked?'background:#F0404022;color:#F04040':'color:#484F58'}" onclick="event.preventDefault();event.stopPropagation();toggleLike(${a.id},${JSON.stringify(a.tags||[]).replace(/'/g,"\\'")})">${liked?'❤️':'🤍'}</button>`:''}
     <a href="${a.url||'#'}" target="_blank" class="card" style="display:block;color:inherit">
       <div class="card-time">
         <span class="dot"></span>${a.date} ${a.time}
@@ -223,6 +226,23 @@ function renderCard(a){
 function getFavs(){try{return JSON.parse(localStorage.getItem('favs')||'[]')}catch{return[]}}
 function isFav(id){return getFavs().includes(id)}
 function toggleFav(id){let f=getFavs();let i=f.indexOf(id);if(i>-1){f.splice(i,1)}else{f.push(id)};localStorage.setItem('favs',JSON.stringify(f));render(data)}
+
+// 喜欢功能
+function getLikes(){try{return JSON.parse(localStorage.getItem('likes')||'[]')}catch{return[]}}
+function getLikeTags(){try{return JSON.parse(localStorage.getItem('likeTags')||'[]')}catch{return[]}}
+function toggleLike(id,tags){
+  let ids=getLikes();let ts=getLikeTags();let i=ids.indexOf(id)
+  if(i>-1){ids.splice(i,1);ts=[]}else{ids.push(id);ts=tags||[]}
+  localStorage.setItem('likes',JSON.stringify(ids))
+  localStorage.setItem('likeTags',JSON.stringify(ts))
+  render(data)
+}
+// 根据喜欢的标签推荐热点
+function getRecommended(){
+  const likeTags=getLikeTags()
+  if(!likeTags.length||!data)return[]
+  return data.filter(a=>a.source!=='blogger'&&a.tags.some(t=>likeTags.includes(t))).slice(0,5)
+}
 
 function fmt(n){return n>=10000?(n/10000).toFixed(1)+'万':n.toString()}
 
@@ -254,11 +274,18 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
       }catch(e){}
       const total=f.length+((JSON.parse(localStorage.getItem('inspire_favs')||'{}').ids||[]).length||0);
       if(total===0){
-        el.innerHTML='<div class="empty-state"><div class="icon">⭐</div><p>还没有收藏内容</p><p style="font-size:12px">在灵感页标记"这个有意思"，或在文章点⭐收藏</p></div>';
+        el.innerHTML='<div class="empty-state"><div class="icon">⭐</div><p>还没有收藏内容</p><p style="font-size:12px">在文章点⭐收藏或在视频点❤️喜欢，会推荐相关热点</p></div>';
       }else{
         renderTags('全部');
         el.innerHTML=inspHtml+'<div class="section-title" style="margin-top:'+(inspHtml?'16px':'0')+'">收藏文章</div>';
         el.innerHTML+=favItems.map((a,i)=>renderCard(a)).join('');
+      }
+      // 推荐：根据喜欢的视频推荐热点
+      const rec=getRecommended();
+      const likeCount=getLikes().length;
+      if(rec.length>0){
+        el.innerHTML+='<div class="section-title" style="margin-top:16px">🔥 猜你喜欢（基于'+(likeCount>0?'你喜欢的视频':'收藏内容')+'）</div>';
+        el.innerHTML+=rec.map(a=>renderCard(a)).join('');
       }
     }else{
       renderTags('全部');

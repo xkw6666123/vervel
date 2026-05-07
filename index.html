@@ -327,21 +327,91 @@ function renderInspire(){
 // 爆款视频拆解
 function renderAnalysis(){
   const el=document.getElementById('content');
-  const vids=data.filter(a=>a.source==='blogger');
+  const vids=data.filter(a=>a.analysis);
   if(!vids.length){el.innerHTML='<div class="empty-state"><div class="icon">🔬</div><p>暂无视频数据</p></div>';return}
-  let h='<div class="section-title">爆款视频拆解分析</div>';
+
+  // --- 多维度统计 ---
+  const typeCount={},hourCount={},allKeywords=[];
+  vids.forEach(v=>{
+    const a=v.analysis; if(!a)return;
+    if(a.video_type)typeCount[a.video_type]=(typeCount[a.video_type]||0)+1;
+    if(v.time){const h=parseInt(v.time.split(':')[0]);if(h>=0&&h<=23)hourCount[h]=(hourCount[h]||0)+1}
+    if(a.keywords)allKeywords.push(...a.keywords);
+  });
+  const kwFreq={};allKeywords.forEach(k=>{kwFreq[k]=(kwFreq[k]||0)+1});
+  const topKw=Object.entries(kwFreq).sort((a,b)=>b[1]-a[1]).slice(0,8);
+
+  let h='<div class="section-title" style="margin-top:8px">📊 拆解数据总览</div>';
+
+  // 类型占比
+  h+='<div class="analysis-card"><h3>📂 视频类型分布</h3><div style="display:flex;gap:8px;flex-wrap:wrap">';
+  Object.entries(typeCount).forEach(([t,c])=>{
+    const pct=Math.round(c/vids.length*100);
+    h+=`<div style="background:rgba(88,166,255,0.08);border:1px solid #58A6FF33;border-radius:8px;padding:10px 16px;flex:1;min-width:120px;text-align:center"><div style="font-size:22px;font-weight:700;color:#58A6FF">${pct}%</div><div style="font-size:11px;color:#8B949E;margin-top:4px">${t}</div></div>`;
+  });
+  h+='</div></div>';
+
+  // 发布时间热力图
+  if(Object.keys(hourCount).length>0){
+    h+='<div class="analysis-card"><h3>⏰ 发布时间分布</h3><div style="display:flex;gap:4px;flex-wrap:wrap">';
+    const maxC=Math.max(...Object.values(hourCount));
+    for(let i=0;i<24;i++){
+      const c=hourCount[i]||0;
+      const intensity=maxC>0?c/maxC:0;
+      const bg=`rgba(88,166,255,${0.08+intensity*0.5})`;
+      const bd=intensity>0?'1px solid rgba(88,166,255,0.3)':'1px solid transparent';
+      h+=`<div style="background:${bg};border:${bd};border-radius:6px;padding:8px 4px;text-align:center;flex:1;min-width:32px"><div style="font-size:11px;font-weight:600;color:${c>0?'#F0F6FC':'#484F58'}">${i}:00</div><div style="font-size:9px;color:#8B949E">${c>0?c+'条':''}</div></div>`;
+    }
+    h+='</div></div>';
+  }
+
+  // 高频关键词
+  if(topKw.length>0){
+    h+='<div class="analysis-card"><h3>🏷️ 高频关键词</h3><div style="display:flex;gap:4px;flex-wrap:wrap">';
+    const maxKW=topKw[0][1];
+    topKw.forEach(([kw,count])=>{
+      const size=Math.round(12+count/maxKW*6);
+      h+=`<span style="font-size:${size}px;padding:4px 12px;border-radius:20px;background:#58A6FF22;color:#58A6FF;display:inline-block;margin:3px;font-weight:${count===maxKW?700:400}">${kw} <span style="font-size:10px;opacity:0.6">×${count}</span></span>`;
+    });
+    h+='</div></div>';
+  }
+
+  // --- 单个视频拆解 ---
+  h+='<div class="section-title" style="margin-top:20px">🔍 逐个视频拆解</div>';
   vids.forEach(v=>{
     const a=v.analysis;
-    h+='<div class="analysis-card"><h3>🔍 '+v.title+'</h3><div class="analysis-grid">'
-    if(a){h+='<div class="analysis-item"><div class="label">关键词</div><div class="value">'+a.keywords.join(' · ')+'</div></div><div class="analysis-item"><div class="label">视频类型</div><div class="value">'+a.video_type+'</div></div><div class="analysis-item"><div class="label">封面风格</div><div class="value">'+a.cover_style+'</div></div><div class="analysis-item"><div class="label">发布规律</div><div class="value">'+a.publish_pattern+'</div></div><div class="analysis-item" style="grid-column:span 2"><div class="label">热门标签</div><div class="tag-list">'+(v.tags||[]).map(t=>'<span>#'+t+'</span>').join('')+'</div></div>'}
-    else{h+='<div class="analysis-item" style="grid-column:span 2"><div class="label">视频信息</div><div class="value">点赞 '+fmt(v.likes)+' · 评论 '+fmt(v.comments)+'</div></div><div class="analysis-item" style="grid-column:span 2"><div class="label">相似选题建议</div><div class="value">可参考此视频风格创作类似内容，加入自己的特色</div></div>'}
-    if(a){h+='<div class="analysis-tip">💡 可复制建议：'+a.replicable_tip+'</div>'}
-    h+='<div style="margin-top:8px;font-size:11px;color:#484F58">📅 '+v.date+' '+v.time+' · '+v.source+'</div></div>'
-  })
-  h+='<div class="section-title" style="margin-top:20px">🤖 AI 生成创作建议</div>'
-  h+='<div class="ai-card"><div class="topic">🎯 网吧信息差风格</div><div class="ai-suggestion">悬念标题：将今日热点用"难不成是真的"句式改写<br>共鸣选题：把社会新闻代入大学生视角<br>玩梗推荐：结合网络热词包装普通话题</div></div>'
-  h+='<div class="ai-card"><div class="topic">🎬 阿七大型纪录片风格</div><div class="ai-suggestion">日期标题："5月7日社会热点信息差"<br>合集整理：本周TOP5热点事件汇总<br>主题深挖：选一个热门话题做深度拆解</div></div>'
-  el.innerHTML=h
+    const blogger=v.blogger_name||'博主';
+    const isWangba=blogger==='网吧信息差';
+    h+=`<div class="analysis-card"><div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">`;
+    h+=`<span style="font-size:10px;padding:3px 10px;border-radius:10px;background:${isWangba?'#58A6FF22':'#8B5CF622'};color:${isWangba?'#58A6FF':'#8B5CF6'};font-weight:500">${isWangba?'🏪':'🎬'} ${blogger}</span>`;
+    h+=`<span style="font-size:11px;color:#484F58">${v.date} ${v.time}</span>`;
+    h+=`<span style="margin-left:auto;font-size:11px;color:#484F58">👍 ${fmt(v.likes)} · 💬 ${fmt(v.comments)}</span>`;
+    h+=`</div><h3 style="font-size:16px;margin-bottom:6px">${v.title}</h3>`;
+    if(v.content_intro){
+      h+=`<div style="font-size:13px;color:#C9D1D9;line-height:1.7;padding:10px 14px;background:rgba(48,54,61,0.3);border-radius:8px;margin:6px 0 14px;border-left:3px solid ${isWangba?'#58A6FF':'#8B5CF6'}">📝 ${v.content_intro}</div>`;
+    }
+    if(a){
+      h+='<div class="analysis-grid">';
+      h+=`<div class="analysis-item"><div class="label">关键词</div><div class="value">${a.keywords.join(' · ')}</div></div>`;
+      h+=`<div class="analysis-item"><div class="label">视频类型</div><div class="value">${a.video_type}</div></div>`;
+      h+=`<div class="analysis-item"><div class="label">封面风格</div><div class="value">${a.cover_style}</div></div>`;
+      h+=`<div class="analysis-item"><div class="label">发布规律</div><div class="value">${a.publish_pattern}</div></div>`;
+      if(v.tags&&v.tags.length){
+        h+=`<div class="analysis-item" style="grid-column:span 2"><div class="label">热门标签</div><div class="tag-list">${v.tags.map(t=>'<span>#'+t+'</span>').join('')}</div></div>`;
+      }
+      h+='</div>';
+      h+=`<div class="analysis-tip">💡 可复制建议：${a.replicable_tip}</div>`;
+    }
+    h+='</div>';
+  });
+
+  // AI 建议
+  h+='<div class="section-title" style="margin-top:20px">🤖 AI 创作建议</div>';
+  h+='<div class="ai-card"><div class="topic">🎯 网吧信息差风格</div>';
+  h+='<div class="ai-suggestion">悬念标题：将今日热点用"难不成是真的"句式改写<br>共鸣选题：把社会新闻代入大学生视角<br>玩梗推荐：结合网络热词包装普通话题</div></div>';
+  h+='<div class="ai-card"><div class="topic">🎬 阿七大型纪录片风格</div>';
+  h+='<div class="ai-suggestion">日期标题："5月7日社会热点信息差"<br>合集整理：本周TOP5热点事件汇总<br>主题深挖：选一个热门话题做深度拆解</div></div>';
+  el.innerHTML=h;
 }
 
 // 灵感有趣标记（每日自动清空）

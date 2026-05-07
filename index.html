@@ -604,6 +604,28 @@ function renderInspire(){
     '开头3秒放最劲爆的新闻片段做钩子',
   ];
 
+  // 叉雞风格 (YouTube说书人/奇闻异事) 
+  const chajiTemplates = [
+    (t) => `世界上真的有这么离奇的事——${t.slice(0,10)}...`,
+    (t) => `如果不是亲眼看到，我都不信${t.slice(0,8)}`,
+    (t) => `一个${t.slice(0,6)}的离奇故事`,
+    (t) => `深入调查：${t.slice(0,12)}背后不为人知的真相`,
+    (t) => `大家好我是叉雞，今天要讲的是${t.slice(0,10)}`,
+  ];
+  const chajiStruct = [
+    { open: '"大家好我是叉雞。今天要讲一件非常离奇的事情……" 标志性开场，低沉叙述', body: '先交代事件背景/时间/地点 → 逐步展开核心冲突 → 插入当事人采访/新闻片段 → 分析背后原因 → 抛出信息差视角', end: '"这件事你怎么看？欢迎在评论区留言讨论。我是叉雞，我们下期再见。"' },
+    { open: '"这件事发生在XX年XX月，当时没有人想到……" 纪录片式时间线引出', body: '用时间线串联事件发展 → 每段抛出一个悬念 "但事情还没完" → 插入地图/数据可视化 → 对比不同说法', end: '"故事到这里就结束了？其实背后还有更多细节……我们下期继续挖掘。"' },
+    { open: '"你可能在网上刷到过这个新闻，但背后的故事你可能不知道。" 信息差开场', body: '从大众认知切入 → 揭示被忽略的细节 → 呈现多方视角 → 加入自己的分析和推论', end: '"这就是今天的故事。如果喜欢这期内容，别忘了点赞订阅。叉雞，下期见。"' },
+    { open: '"大家好我是叉雞。这起事件引发了全球关注，但真相到底是什么？" 悬念式提问', body: '抛出一个核心问题 → 逐层剥开事件全貌 → 引用各方来源 → 抽丝剥茧式分析 → 最后给出自己的判断', end: '"你觉得真相是什么？评论区告诉我。我是叉雞，我们下期继续深挖。"' },
+    { open: '"今天讲的这个故事，可能颠覆你的认知。" 预告式开场', body: '先抛出最震撼的事实 → 回溯事件源头 → 梳理时间线 → 分析影响 → 加入冷知识/信息差', end: '"看完这个故事，你还相信XXX吗？我是叉雞，用说书的方式带你发现世界另一面。下期见。"' },
+  ];
+  const chajiTips = [
+    '封面用深色调+大字标题，配标志性表情，营造纪录片质感',
+    '全程用低沉叙述节奏，语速放慢，配合BGM营造沉浸感',
+    '关键信息用字幕大字弹出，配合音效强调',
+    '每期末尾留悬念，引导观众点下一期',
+  ];
+
   const todayStr = new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
   let h = `<div class="section-title">🎯 今日选题推荐 <span style="font-size:11px;color:var(--text-muted);font-weight:400">基于最近${recent.length}条热点自动生成 · 刷新页面换一组</span></div>`;
 
@@ -617,6 +639,9 @@ function renderInspire(){
     const aqs = aqiStruct[idx % aqiStruct.length];
     const wTip = wangbaTips[idx % wangbaTips.length];
     const aTip = aqiTips[idx % aqiTips.length];
+    const ct = chajiTemplates[idx % chajiTemplates.length];
+    const cs = chajiStruct[idx % chajiStruct.length];
+    const cTip = chajiTips[idx % chajiTips.length];
 
     h += `<div class="inspire">
       <div class="topic">📌 ${isBlogger ? '博主内容' : '社会热点'} · ${sourceLabel}</div>
@@ -661,6 +686,26 @@ function renderInspire(){
           </div>
         </div>
         <div style="font-size:11px;color:var(--text-sec);margin-top:6px;padding:4px 8px;background:rgba(122,130,148,0.06);border-radius:4px">💡 ${aTip}</div>
+      </div>
+
+      <h3 style="margin-top:14px"><span class="badge badge-c">📺 叉雞说书人风格 (奇闻异事/深度调查)</span></h3>
+      <div class="suggestion" style="color:#D85A30">${ct(rawTitle)}</div>
+      <div class="structure-box">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-top:8px">
+          <div style="background:rgba(216,90,48,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">🎬 开篇</div>
+            <div style="font-size:11px;color:#D85A30;margin-top:2px">${cs.open}</div>
+          </div>
+          <div style="background:rgba(216,90,48,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">📖 正文</div>
+            <div style="font-size:11px;color:#D85A30;margin-top:2px">${cs.body}</div>
+          </div>
+          <div style="background:rgba(216,90,48,0.08);border-radius:6px;padding:6px 8px;text-align:center">
+            <div style="font-size:10px;color:var(--text-muted)">🔚 结尾</div>
+            <div style="font-size:11px;color:#D85A30;margin-top:2px">${cs.end}</div>
+          </div>
+        </div>
+        <div style="font-size:11px;color:var(--text-sec);margin-top:6px;padding:4px 8px;background:rgba(122,130,148,0.06);border-radius:4px">💡 ${cTip}</div>
       </div>
       
       <div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:8px">

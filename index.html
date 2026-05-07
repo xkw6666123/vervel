@@ -542,31 +542,91 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
 
 function renderInspire(){
   const el=document.getElementById('content');
-  if(!json.inspirations||!json.inspirations.length){
-    el.innerHTML='<div class="empty-state"><div class="icon">💡</div><p>创作灵感加载中...</p></div>';
-    return;
-  }
-  const today=new Date().toDateString();
-  let inspFavs=[];
-  try{
-    const raw=JSON.parse(localStorage.getItem('inspire_favs')||'{}');
-    if(raw.date===today) inspFavs=raw.ids||[];
-    else localStorage.setItem('inspire_favs',JSON.stringify({date:today,ids:[]}));
-  }catch(e){inspFavs=[]}
 
-  el.innerHTML='<div class="section-title">今日创作灵感 <span style="font-size:11px;color:var(--text-muted);font-weight:400">点击有趣优先推荐</span></div>'+
-  json.inspirations.map((a,i)=>{
-    const isFaved=inspFavs.includes(i);
-    return `
-    <div class="inspire" style="${isFaved?'border-color:var(--gold)':''}">
-      <div class="topic">📌 ${a.topic}</div>
-      <div class="source-tag">来源: ${a.source||''}</div>
+  // === 动态选题推荐（基于近期热点头条+博主内容） ===
+  const cutoff = new Date();
+  cutoff.setDate(cutoff.getDate() - 3);
+  const recent = data.filter(a => {
+    if(!a.date) return true;
+    const d = new Date(a.date);
+    return d >= cutoff;
+  });
+
+  // 选热度最高的前10条，打乱取5条
+  const hotItems = recent.sort((a,b) => (b.likes||0) - (a.likes||0)).slice(0,10);
+  const shuffled = [...hotItems].sort(() => Math.random() - 0.5).slice(0,5);
+
+  // 网吧信息差 标题模板
+  const wangbaTemplates = [
+    (t) => `再见！${t.slice(0,8)}难不成是真的！`,
+    (t) => `${t.slice(0,6)}？懂你意思`,
+    (t) => `能理解 能理解 ${t.slice(0,8)}...`,
+    (t) => `${t.slice(0,8)}难不成是真的！`,
+    (t) => `不是 ${t.slice(0,6)}就离谱`,
+  ];
+
+  // 阿七大型纪录片 标题模板
+  const aqiTemplates = [
+    (t) => `${new Date().toLocaleDateString('zh-CN',{month:'numeric',day:'numeric'})}日社会热点信息差`,
+    (t) => `本周TOP5热点事件：${t.slice(0,10)}...`,
+    (t) => `关于${t.slice(0,8)}的几点思考`,
+    (t) => `${t.slice(0,8)}，你怎么看？`,
+    (t) => `今日热点速览：${t.slice(0,8)}`,
+  ];
+
+  const todayStr = new Date().toLocaleDateString('zh-CN', {month:'numeric', day:'numeric'});
+  let h = `<div class="section-title">🎯 今日选题推荐 <span style="font-size:11px;color:var(--text-muted);font-weight:400">基于最近热点自动生成</span></div>`;
+
+  shuffled.forEach((item, idx) => {
+    const title = item.title.replace(/\[.*?\]\s*/g, ''); // 去掉前缀
+    const wt = wangbaTemplates[idx % wangbaTemplates.length];
+    const at = aqiTemplates[idx % aqiTemplates.length];
+    const isBlogger = item.source === 'blogger';
+    const sourceLabel = isBlogger ? (item.blogger_name || '博主') : item.source;
+
+    h += `<div class="inspire">
+      <div class="topic">📌 ${isBlogger ? '博主内容' : '社会热点'} · ${sourceLabel}</div>
+      <div class="source-tag" style="margin-bottom:8px">原内容: ${title.slice(0,35)}</div>
       <h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3>
-      <div class="suggestion">${a.wangba_style}</div>
-      <h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
-      <div class="suggestion">${a.aqi_style}</div>
-      <button onclick="toggleInspFav(${i})" style="margin-top:10px;padding:4px 16px;border-radius:20px;border:1px solid ${isFaved?'var(--gold)':'var(--border)'};background:${isFaved?'var(--gold-dim)':'transparent'};color:${isFaved?'var(--gold)':'var(--text-sec)'};cursor:pointer;font-size:12px;font-family:inherit;transition:all .2s">${isFaved?'👍 已标记有趣':'🤔 这个有意思'}</button>
-    </div>`}).join('');
+      <div class="suggestion">${wt(title)}</div>
+      <div style="font-size:12px;color:var(--text-sec);margin:4px 0 8px;padding:6px 10px;background:rgba(122,130,148,0.06);border-radius:6px;border-left:2px solid var(--gold)">
+        💬 开场:"能理解 能理解……" → 吐槽切入 → 信息差总结 → 互动提问
+      </div>
+      <h3><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
+      <div class="suggestion">${at(title)}</div>
+      <div style="font-size:12px;color:var(--text-sec);margin:4px 0 0;padding:6px 10px;background:rgba(122,130,148,0.06);border-radius:6px;border-left:2px solid var(--blue)">
+        💬 日期锚点开场 → 3条热点速览 → 信息差视角解读 → 引导关注
+      </div>
+    </div>`;
+  });
+
+  // === 已有灵感库 ===
+  if(json.inspirations && json.inspirations.length){
+    const today=new Date().toDateString();
+    let inspFavs=[];
+    try{
+      const raw=JSON.parse(localStorage.getItem('inspire_favs')||'{}');
+      if(raw.date===today) inspFavs=raw.ids||[];
+      else localStorage.setItem('inspire_favs',JSON.stringify({date:today,ids:[]}));
+    }catch(e){inspFavs=[]}
+
+    h += `<div class="section-title" style="margin-top:24px">📚 灵感库 <span style="font-size:11px;color:var(--text-muted);font-weight:400">标记有趣优先推荐</span></div>`;
+    h += json.inspirations.map((a,i)=>{
+      const isFaved=inspFavs.includes(i);
+      return `
+      <div class="inspire" style="${isFaved?'border-color:var(--gold)':''}">
+        <div class="topic">📌 ${a.topic}</div>
+        <div class="source-tag">来源: ${a.source||''}</div>
+        <h3><span class="badge badge-w">🏪 网吧信息差风格</span></h3>
+        <div class="suggestion">${a.wangba_style}</div>
+        <h3 style="margin-top:12px"><span class="badge badge-a">🎬 阿七大型纪录片风格</span></h3>
+        <div class="suggestion">${a.aqi_style}</div>
+        <button onclick="toggleInspFav(${i})" style="margin-top:10px;padding:4px 16px;border-radius:20px;border:1px solid ${isFaved?'var(--gold)':'var(--border)'};background:${isFaved?'var(--gold-dim)':'transparent'};color:${isFaved?'var(--gold)':'var(--text-sec)'};cursor:pointer;font-size:12px;font-family:inherit;transition:all .2s">${isFaved?'👍 已标记有趣':'🤔 这个有意思'}</button>
+      </div>`;
+    }).join('');
+  }
+
+  el.innerHTML = h;
 }
 
 // 爆款视频拆解

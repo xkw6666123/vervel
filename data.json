@@ -5,6 +5,313 @@
              },
     "articles":  [
                      {
+                         "id":  100,
+                         "title":  "美伊局势暂趋缓和，芯片股力挺标普纳指新高，原油下挫，盘后AMD大涨",
+                         "summary":  "【华尔街见闻】美伊局势暂趋缓和，芯片股力挺标普纳指新高，原油下挫，盘后AMD大涨",
+                         "source":  "华尔街见闻",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://wallstreetcn.com/articles/3771589",
+                         "likes":  399040,
+                         "comments":  21805
+                     },
+                     {
+                         "id":  101,
+                         "title":  "美伊和谈预期升温，欧美股市大涨，标普纳指再新高，中概股指跑赢大盘，原油重挫，黄金大涨",
+                         "summary":  "【华尔街见闻】美伊和谈预期升温，欧美股市大涨，标普纳指再新高，中概股指跑赢大盘，原油重挫，黄金大涨",
+                         "source":  "华尔街见闻",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://wallstreetcn.com/articles/3771614",
+                         "likes":  10113,
+                         "comments":  31953
+                     },
+                     {
+                         "id":  102,
+                         "title":  "安徽省委常委、合肥市委书记费高云任上被查",
+                         "summary":  "【澎湃新闻】安徽省委常委、合肥市委书记费高云任上被查",
+                         "source":  "澎湃新闻",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.thepaper.cn/newsDetail_forward_33101885",
+                         "likes":  47622,
+                         "comments":  7981
+                     },
+                     {
+                         "id":  103,
+                         "title":  "JDG战胜TES LPL第二赛段",
+                         "summary":  "【bilibili 热搜】JDG战胜TES LPL第二赛段",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=TES+JDG",
+                         "likes":  399900,
+                         "comments":  16341
+                     },
+                     {
+                         "id":  104,
+                         "title":  "伊朗战争丨特朗普突然叫停“自由计划”内幕披露",
+                         "summary":  "【凤凰网】伊朗战争丨特朗普突然叫停“自由计划”内幕披露",
+                         "source":  "凤凰网",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://news.ifeng.com/loc/timeline/event/8r727OWpK5W?ifengsp=1\u0026immersion=true\u0026isFull=0",
+                         "likes":  78293,
+                         "comments":  31665
+                     },
+                     {
+                         "id":  105,
+                         "title":  "中方回应英方制裁中国实体",
+                         "summary":  "【抖音】中方回应英方制裁中国实体",
+                         "source":  "抖音",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2489669",
+                         "likes":  165276,
+                         "comments":  18064
+                     },
+                     {
+                         "id":  106,
+                         "title":  "同济大学通报教师论文造假事件处置，院长免职降级，一作解聘，如何看待这一处理结果？",
+                         "summary":  "【知乎】同济大学通报教师论文造假事件处置，院长免职降级，一作解聘，如何看待这一处理结果？",
+                         "source":  "知乎",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2035469802697961813",
+                         "likes":  480533,
+                         "comments":  44467
+                     },
+                     {
+                         "id":  107,
+                         "title":  "俄罗斯：呼吁各国及时从基辅撤离人员",
+                         "summary":  "【今日头条】俄罗斯：呼吁各国及时从基辅撤离人员",
+                         "source":  "今日头条",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7636607770091520050/",
+                         "likes":  436536,
+                         "comments":  40703
+                     },
+                     {
+                         "id":  108,
+                         "title":  "硬刚国际足联 中国这次在争什么",
+                         "summary":  "【百度热搜】硬刚国际足联 中国这次在争什么",
+                         "source":  "百度热搜",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E7%A1%AC%E5%88%9A%E5%9B%BD%E9%99%85%E8%B6%B3%E8%81%94+%E4%B8%AD%E5%9B%BD%E8%BF%99%E6%AC%A1%E5%9C%A8%E4%BA%89%E4%BB%80%E4%B9%88",
+                         "likes":  168403,
+                         "comments":  27272
+                     },
+                     {
+                         "id":  109,
+                         "title":  "【早报】油价大幅跳水！特朗普：美伊“很有可能”达成协议；以军在停火期间突袭贝鲁特",
+                         "summary":  "【财联社热门】【早报】油价大幅跳水！特朗普：美伊“很有可能”达成协议；以军在停火期间突袭贝鲁特",
+                         "source":  "财联社热门",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议",
+                                      "爆款"
+                                  ],
+                         "url":  "https://www.cls.cn/detail/2364367",
+                         "likes":  142798,
+                         "comments":  32731
+                     },
+                     {
+                         "id":  110,
+                         "title":  "国际足联可能已经慌了",
+                         "summary":  "【微博】国际足联可能已经慌了",
+                         "source":  "微博",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E5%9B%BD%E9%99%85%E8%B6%B3%E8%81%94%E5%8F%AF%E8%83%BD%E5%B7%B2%E7%BB%8F%E6%85%8C%E4%BA%86%23",
+                         "likes":  260673,
+                         "comments":  28777
+                     },
+                     {
+                         "id":  111,
+                         "title":  "巴黎连续两年闯入欧冠决赛",
+                         "summary":  "【抖音】巴黎连续两年闯入欧冠决赛",
+                         "source":  "抖音",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2490703",
+                         "likes":  366450,
+                         "comments":  6787
+                     },
+                     {
+                         "id":  112,
+                         "title":  "南非一商人穿越洪水时被冲走死亡，救援人员在鳄鱼体内找到疑似他的遗骸及六双鞋，鳄鱼真的会经常攻击人类吗？",
+                         "summary":  "【知乎】南非一商人穿越洪水时被冲走死亡，救援人员在鳄鱼体内找到疑似他的遗骸及六双鞋，鳄鱼真的会经常攻击人类吗？",
+                         "source":  "知乎",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2035310528185070784",
+                         "likes":  91291,
+                         "comments":  39223
+                     },
+                     {
+                         "id":  113,
+                         "title":  "国际足联回应中国区天价世界杯版权",
+                         "summary":  "【今日头条】国际足联回应中国区天价世界杯版权",
+                         "source":  "今日头条",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7636918096451780614/",
+                         "likes":  259095,
+                         "comments":  22456
+                     },
+                     {
+                         "id":  114,
+                         "title":  "市监局称4只皮皮虾1035元价格合规",
+                         "summary":  "【百度热搜】市监局称4只皮皮虾1035元价格合规",
+                         "source":  "百度热搜",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%B8%82%E7%9B%91%E5%B1%80%E7%A7%B04%E5%8F%AA%E7%9A%AE%E7%9A%AE%E8%99%BE1035%E5%85%83%E4%BB%B7%E6%A0%BC%E5%90%88%E8%A7%84",
+                         "likes":  72737,
+                         "comments":  43405
+                     },
+                     {
+                         "id":  115,
+                         "title":  "赛后复盘巴黎晋级欧冠决赛",
+                         "summary":  "【bilibili 热搜】赛后复盘巴黎晋级欧冠决赛",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E8%B5%9B%E5%90%8E%E5%A4%8D%E7%9B%98%E5%B7%B4%E9%BB%8E%E6%99%8B%E7%BA%A7%E6%AC%A7%E5%86%A0%E5%86%B3%E8%B5%9B",
+                         "likes":  185755,
+                         "comments":  45099
+                     },
+                     {
+                         "id":  116,
+                         "title":  "肘赢复活赛!尘白重新开服",
+                         "summary":  "【贴吧】肘赢复活赛!尘白重新开服",
+                         "source":  "贴吧",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E8%82%98%E8%B5%A2%E5%A4%8D%E6%B4%BB%E8%B5%9B%21%E5%B0%98%E7%99%BD%E9%87%8D%E6%96%B0%E5%BC%80%E6%9C%8D\u0026topic_id=28354068",
+                         "likes":  466586,
+                         "comments":  44125
+                     },
+                     {
+                         "id":  117,
+                         "title":  "淘宝免单",
+                         "summary":  "【微博】淘宝免单",
+                         "source":  "微博",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E6%B7%98%E5%AE%9D%E5%85%8D%E5%8D%95",
+                         "likes":  344123,
+                         "comments":  1131
+                     },
+                     {
+                         "id":  118,
+                         "title":  "如何看待「耿同学讲故事」再举报中山大学副院长邝栋明论文造假？",
+                         "summary":  "【知乎】如何看待「耿同学讲故事」再举报中山大学副院长邝栋明论文造假？",
+                         "source":  "知乎",
+                         "date":  "2026-05-07",
+                         "time":  "02:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2035524771035792318",
+                         "likes":  313321,
+                         "comments":  46873
+                     },
+                     {
+                         "id":  119,
+                         "title":  "中国航天招志愿者最新消息：能玩手机",
+                         "summary":  "【百度热搜】中国航天招志愿者最新消息：能玩手机",
+                         "source":  "百度热搜",
+                         "date":  "2026-05-07",
+                         "time":  "04:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E8%88%AA%E5%A4%A9%E6%8B%9B%E5%BF%97%E6%84%BF%E8%80%85%E6%9C%80%E6%96%B0%E6%B6%88%E6%81%AF%EF%BC%9A%E8%83%BD%E7%8E%A9%E6%89%8B%E6%9C%BA",
+                         "likes":  394369,
+                         "comments":  15015
+                     },
+                     {
                          "id":  120,
                          "title":  "[网吧信息差] 8青天限时回归！",
                          "summary":  "用游戏梗+大学生日常制造反差，讽刺8青天强行回归的荒诞感",
@@ -157,691 +464,114 @@
                          "summary":  "4xl女顾客五一前购买24件新衣，节后全部退还老板崩溃！#高能#搞笑#集美#女装#女装退货",
                          "likes":  1,
                          "date":  "2026-05-07"
-                     },
-                     {
-                         "source":  "人民日报",
-                         "summary":  "[人民日报] 必须抓好基层治理现代化这项工作",
-                         "id":  200,
-                         "url":  "https://www.baidu.com/s?wd=%e5%bf%85%e9%a1%bb%e6%8a%93%e5%a5%bd%e5%9f%ba%e5%b1%82%e6%b2%bb%e7%90%86%e7%8e%b0%e4%bb%a3%e5%8c%96%e8%bf%99%e9%a1%b9%e5%b7%a5%e4%bd%9c",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  442746,
-                         "time":  "16:20",
-                         "date":  "2026-05-07",
-                         "comments":  31625,
-                         "title":  "必须抓好基层治理现代化这项工作"
-                     },
-                     {
-                         "source":  "央视新闻",
-                         "summary":  "[央视新闻] 魏凤和、李尚福均被判死缓",
-                         "id":  201,
-                         "url":  "https://www.baidu.com/s?wd=%e9%ad%8f%e5%87%a4%e5%92%8c%e3%80%81%e6%9d%8e%e5%b0%9a%e7%a6%8f%e5%9d%87%e8%a2%ab%e5%88%a4%e6%ad%bb%e7%bc%93",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款",
-                                      "争议"
-                                  ],
-                         "likes":  597195,
-                         "time":  "18:27",
-                         "date":  "2026-05-07",
-                         "comments":  49766,
-                         "title":  "魏凤和、李尚福均被判死缓"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 高考因为他才开始有了选择题",
-                         "id":  202,
-                         "url":  "https://www.baidu.com/s?wd=%e9%ab%98%e8%80%83%e5%9b%a0%e4%b8%ba%e4%bb%96%e6%89%8d%e5%bc%80%e5%a7%8b%e6%9c%89%e4%ba%86%e9%80%89%e6%8b%a9%e9%a2%98",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  508468,
-                         "time":  "20:34",
-                         "date":  "2026-05-07",
-                         "comments":  72638,
-                         "title":  "高考因为他才开始有了选择题"
-                     },
-                     {
-                         "source":  "央视新闻",
-                         "summary":  "[央视新闻] 商务部：中方拒绝接受 并坚决反对",
-                         "id":  203,
-                         "url":  "https://www.baidu.com/s?wd=%e5%95%86%e5%8a%a1%e9%83%a8%ef%bc%9a%e4%b8%ad%e6%96%b9%e6%8b%92%e7%bb%9d%e6%8e%a5%e5%8f%97+%e5%b9%b6%e5%9d%9a%e5%86%b3%e5%8f%8d%e5%af%b9",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  568778,
-                         "time":  "22:41",
-                         "date":  "2026-05-07",
-                         "comments":  94796,
-                         "title":  "商务部：中方拒绝接受 并坚决反对"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 房子没盖完钢筋发芽了 当事人发声",
-                         "id":  204,
-                         "url":  "https://www.baidu.com/s?wd=%e6%88%bf%e5%ad%90%e6%b2%a1%e7%9b%96%e5%ae%8c%e9%92%a2%e7%ad%8b%e5%8f%91%e8%8a%bd%e4%ba%86+%e5%bd%93%e4%ba%8b%e4%ba%ba%e5%8f%91%e5%a3%b0",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议",
-                                      "爆款"
-                                  ],
-                         "likes":  141104,
-                         "time":  "00:48",
-                         "date":  "2026-05-07",
-                         "comments":  23517,
-                         "title":  "房子没盖完钢筋发芽了 当事人发声"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 抗癌神药大降价？曾卖百万元一针",
-                         "id":  205,
-                         "url":  "https://www.baidu.com/s?wd=%e6%8a%97%e7%99%8c%e7%a5%9e%e8%8d%af%e5%a4%a7%e9%99%8d%e4%bb%b7%ef%bc%9f%e6%9b%be%e5%8d%96%e7%99%be%e4%b8%87%e5%85%83%e4%b8%80%e9%92%88",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  240585,
-                         "time":  "02:55",
-                         "date":  "2026-05-07",
-                         "comments":  17185,
-                         "title":  "抗癌神药大降价？曾卖百万元一针"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 邮轮暴发汉坦病毒疫情 张文宏发声",
-                         "id":  206,
-                         "url":  "https://www.baidu.com/s?wd=%e9%82%ae%e8%bd%ae%e6%9a%b4%e5%8f%91%e6%b1%89%e5%9d%a6%e7%97%85%e6%af%92%e7%96%ab%e6%83%85+%e5%bc%a0%e6%96%87%e5%ae%8f%e5%8f%91%e5%a3%b0",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  49468,
-                         "time":  "04:02",
-                         "date":  "2026-05-07",
-                         "comments":  7067,
-                         "title":  "邮轮暴发汉坦病毒疫情 张文宏发声"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 世界杯中国赞助商已投入超5亿美元",
-                         "id":  207,
-                         "url":  "https://www.baidu.com/s?wd=%e4%b8%96%e7%95%8c%e6%9d%af%e4%b8%ad%e5%9b%bd%e8%b5%9e%e5%8a%a9%e5%95%86%e5%b7%b2%e6%8a%95%e5%85%a5%e8%b6%855%e4%ba%bf%e7%be%8e%e5%85%83",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  584562,
-                         "time":  "06:09",
-                         "date":  "2026-05-07",
-                         "comments":  53142,
-                         "title":  "世界杯中国赞助商已投入超5亿美元"
-                     },
-                     {
-                         "source":  "央视新闻",
-                         "summary":  "[央视新闻] 伊朗总统和最高领袖举行会面",
-                         "id":  208,
-                         "url":  "https://www.baidu.com/s?wd=%e4%bc%8a%e6%9c%97%e6%80%bb%e7%bb%9f%e5%92%8c%e6%9c%80%e9%ab%98%e9%a2%86%e8%a2%96%e4%b8%be%e8%a1%8c%e4%bc%9a%e9%9d%a2",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  317520,
-                         "time":  "08:16",
-                         "date":  "2026-05-07",
-                         "comments":  31752,
-                         "title":  "伊朗总统和最高领袖举行会面"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 驴友在川西4600米营地帐篷里去世",
-                         "id":  209,
-                         "url":  "https://www.baidu.com/s?wd=%e9%a9%b4%e5%8f%8b%e5%9c%a8%e5%b7%9d%e8%a5%bf4600%e7%b1%b3%e8%90%a5%e5%9c%b0%e5%b8%90%e7%af%b7%e9%87%8c%e5%8e%bb%e4%b8%96",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  517123,
-                         "time":  "10:23",
-                         "date":  "2026-05-07",
-                         "comments":  51712,
-                         "title":  "驴友在川西4600米营地帐篷里去世"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 无限流短剧《Enemy》爆火",
-                         "id":  210,
-                         "url":  "https://www.baidu.com/s?wd=%e6%97%a0%e9%99%90%e6%b5%81%e7%9f%ad%e5%89%a7%e3%80%8aEnemy%e3%80%8b%e7%88%86%e7%81%ab",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议",
-                                      "娱乐"
-                                  ],
-                         "likes":  127121,
-                         "time":  "12:30",
-                         "date":  "2026-05-07",
-                         "comments":  25424,
-                         "title":  "无限流短剧《Enemy》爆火"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 对中国开出天价 该教教FIFA算账了",
-                         "id":  211,
-                         "url":  "https://www.baidu.com/s?wd=%e5%af%b9%e4%b8%ad%e5%9b%bd%e5%bc%80%e5%87%ba%e5%a4%a9%e4%bb%b7+%e8%af%a5%e6%95%99%e6%95%99FIFA%e7%ae%97%e8%b4%a6%e4%ba%86",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  456299,
-                         "time":  "14:37",
-                         "date":  "2026-05-07",
-                         "comments":  41482,
-                         "title":  "对中国开出天价 该教教FIFA算账了"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 深圳多地蛇出没",
-                         "id":  212,
-                         "url":  "https://www.baidu.com/s?wd=%e6%b7%b1%e5%9c%b3%e5%a4%9a%e5%9c%b0%e8%9b%87%e5%87%ba%e6%b2%a1",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  421871,
-                         "time":  "16:44",
-                         "date":  "2026-05-07",
-                         "comments":  105468,
-                         "title":  "深圳多地蛇出没"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 眼镜王蛇在包子铺偷吃鸡蛋被抓",
-                         "id":  213,
-                         "url":  "https://www.baidu.com/s?wd=%e7%9c%bc%e9%95%9c%e7%8e%8b%e8%9b%87%e5%9c%a8%e5%8c%85%e5%ad%90%e9%93%ba%e5%81%b7%e5%90%83%e9%b8%a1%e8%9b%8b%e8%a2%ab%e6%8a%93",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议"
-                                  ],
-                         "likes":  142111,
-                         "time":  "18:51",
-                         "date":  "2026-05-07",
-                         "comments":  20302,
-                         "title":  "眼镜王蛇在包子铺偷吃鸡蛋被抓"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 浪高近500米 史上第二大海啸获确认",
-                         "id":  214,
-                         "url":  "https://www.baidu.com/s?wd=%e6%b5%aa%e9%ab%98%e8%bf%91500%e7%b1%b3+%e5%8f%b2%e4%b8%8a%e7%ac%ac%e4%ba%8c%e5%a4%a7%e6%b5%b7%e5%95%b8%e8%8e%b7%e7%a1%ae%e8%ae%a4",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  323943,
-                         "time":  "20:58",
-                         "date":  "2026-05-07",
-                         "comments":  80986,
-                         "title":  "浪高近500米 史上第二大海啸获确认"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 被银行员工转走的1800万已全部返还",
-                         "id":  215,
-                         "url":  "https://www.baidu.com/s?wd=%e8%a2%ab%e9%93%b6%e8%a1%8c%e5%91%98%e5%b7%a5%e8%bd%ac%e8%b5%b0%e7%9a%841800%e4%b8%87%e5%b7%b2%e5%85%a8%e9%83%a8%e8%bf%94%e8%bf%98",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  435434,
-                         "time":  "22:05",
-                         "date":  "2026-05-07",
-                         "comments":  108858,
-                         "title":  "被银行员工转走的1800万已全部返还"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 巴西宣布对中国公民免签",
-                         "id":  216,
-                         "url":  "https://www.baidu.com/s?wd=%e5%b7%b4%e8%a5%bf%e5%ae%a3%e5%b8%83%e5%af%b9%e4%b8%ad%e5%9b%bd%e5%85%ac%e6%b0%91%e5%85%8d%e7%ad%be",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  224429,
-                         "time":  "00:12",
-                         "date":  "2026-05-07",
-                         "comments":  16031,
-                         "title":  "巴西宣布对中国公民免签"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 榴莲自由更近了",
-                         "id":  217,
-                         "url":  "https://www.baidu.com/s?wd=%e6%a6%b4%e8%8e%b2%e8%87%aa%e7%94%b1%e6%9b%b4%e8%bf%91%e4%ba%86",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议"
-                                  ],
-                         "likes":  120657,
-                         "time":  "02:19",
-                         "date":  "2026-05-07",
-                         "comments":  10969,
-                         "title":  "榴莲自由更近了"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 王菲时隔23年再度为电视剧献声",
-                         "id":  218,
-                         "url":  "https://www.baidu.com/s?wd=%e7%8e%8b%e8%8f%b2%e6%97%b6%e9%9a%9423%e5%b9%b4%e5%86%8d%e5%ba%a6%e4%b8%ba%e7%94%b5%e8%a7%86%e5%89%a7%e7%8c%ae%e5%a3%b0",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议",
-                                      "娱乐"
-                                  ],
-                         "likes":  508531,
-                         "time":  "04:26",
-                         "date":  "2026-05-07",
-                         "comments":  63566,
-                         "title":  "王菲时隔23年再度为电视剧献声"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 女子婚检误查高危HPV致婚事告吹",
-                         "id":  219,
-                         "url":  "https://www.baidu.com/s?wd=%e5%a5%b3%e5%ad%90%e5%a9%9a%e6%a3%80%e8%af%af%e6%9f%a5%e9%ab%98%e5%8d%b1HPV%e8%87%b4%e5%a9%9a%e4%ba%8b%e5%91%8a%e5%90%b9",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  144819,
-                         "time":  "06:33",
-                         "date":  "2026-05-07",
-                         "comments":  28964,
-                         "title":  "女子婚检误查高危HPV致婚事告吹"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 冥王星5月8日开启逆行",
-                         "id":  220,
-                         "url":  "https://www.baidu.com/s?wd=%e5%86%a5%e7%8e%8b%e6%98%9f5%e6%9c%888%e6%97%a5%e5%bc%80%e5%90%af%e9%80%86%e8%a1%8c",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  563240,
-                         "time":  "08:40",
-                         "date":  "2026-05-07",
-                         "comments":  56324,
-                         "title":  "冥王星5月8日开启逆行"
-                     },
-                     {
-                         "source":  "央视新闻",
-                         "summary":  "[央视新闻] 最高检挂牌督办浏阳烟花爆炸案",
-                         "id":  221,
-                         "url":  "https://www.baidu.com/s?wd=%e6%9c%80%e9%ab%98%e6%a3%80%e6%8c%82%e7%89%8c%e7%9d%a3%e5%8a%9e%e6%b5%8f%e9%98%b3%e7%83%9f%e8%8a%b1%e7%88%86%e7%82%b8%e6%a1%88",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款",
-                                      "争议"
-                                  ],
-                         "likes":  57181,
-                         "time":  "10:47",
-                         "date":  "2026-05-07",
-                         "comments":  9530,
-                         "title":  "最高检挂牌督办浏阳烟花爆炸案"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 猛推猴子男子3年内禁入峨眉山",
-                         "id":  222,
-                         "url":  "https://www.baidu.com/s?wd=%e7%8c%9b%e6%8e%a8%e7%8c%b4%e5%ad%90%e7%94%b7%e5%ad%903%e5%b9%b4%e5%86%85%e7%a6%81%e5%85%a5%e5%b3%a8%e7%9c%89%e5%b1%b1",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议"
-                                  ],
-                         "likes":  306383,
-                         "time":  "12:54",
-                         "date":  "2026-05-07",
-                         "comments":  27853,
-                         "title":  "猛推猴子男子3年内禁入峨眉山"
-                     },
-                     {
-                         "source":  "央视新闻",
-                         "summary":  "[央视新闻] 受贿1.34亿余元 周喜安一审被判死缓",
-                         "id":  223,
-                         "url":  "https://www.baidu.com/s?wd=%e5%8f%97%e8%b4%bf1.34%e4%ba%bf%e4%bd%99%e5%85%83+%e5%91%a8%e5%96%9c%e5%ae%89%e4%b8%80%e5%ae%a1%e8%a2%ab%e5%88%a4%e6%ad%bb%e7%bc%93",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  559576,
-                         "time":  "14:01",
-                         "date":  "2026-05-07",
-                         "comments":  79939,
-                         "title":  "受贿1.34亿余元 周喜安一审被判死缓"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 三星史上最大罢工逼近",
-                         "id":  224,
-                         "url":  "https://www.baidu.com/s?wd=%e4%b8%89%e6%98%9f%e5%8f%b2%e4%b8%8a%e6%9c%80%e5%a4%a7%e7%bd%a2%e5%b7%a5%e9%80%bc%e8%bf%91",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  169318,
-                         "time":  "16:08",
-                         "date":  "2026-05-07",
-                         "comments":  12094,
-                         "title":  "三星史上最大罢工逼近"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 首都机场海关查获710克黄金制品",
-                         "id":  225,
-                         "url":  "https://www.baidu.com/s?wd=%e9%a6%96%e9%83%bd%e6%9c%ba%e5%9c%ba%e6%b5%b7%e5%85%b3%e6%9f%a5%e8%8e%b7710%e5%85%8b%e9%bb%84%e9%87%91%e5%88%b6%e5%93%81",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  360538,
-                         "time":  "18:15",
-                         "date":  "2026-05-07",
-                         "comments":  90134,
-                         "title":  "首都机场海关查获710克黄金制品"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 菲方蓄意抵近滋扰 中国海警管控处置",
-                         "id":  226,
-                         "url":  "https://www.baidu.com/s?wd=%e8%8f%b2%e6%96%b9%e8%93%84%e6%84%8f%e6%8a%b5%e8%bf%91%e6%bb%8b%e6%89%b0+%e4%b8%ad%e5%9b%bd%e6%b5%b7%e8%ad%a6%e7%ae%a1%e6%8e%a7%e5%a4%84%e7%bd%ae",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  515059,
-                         "time":  "20:22",
-                         "date":  "2026-05-07",
-                         "comments":  36790,
-                         "title":  "菲方蓄意抵近滋扰 中国海警管控处置"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 女子吃保健品5年 子宫长出多个肌瘤",
-                         "id":  227,
-                         "url":  "https://www.baidu.com/s?wd=%e5%a5%b3%e5%ad%90%e5%90%83%e4%bf%9d%e5%81%a5%e5%93%815%e5%b9%b4+%e5%ad%90%e5%ae%ab%e9%95%bf%e5%87%ba%e5%a4%9a%e4%b8%aa%e8%82%8c%e7%98%a4",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  454279,
-                         "time":  "22:29",
-                         "date":  "2026-05-07",
-                         "comments":  34945,
-                         "title":  "女子吃保健品5年 子宫长出多个肌瘤"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 7岁男童被烧烤签刺穿眼球险失明",
-                         "id":  228,
-                         "url":  "https://www.baidu.com/s?wd=7%e5%b2%81%e7%94%b7%e7%ab%a5%e8%a2%ab%e7%83%a7%e7%83%a4%e7%ad%be%e5%88%ba%e7%a9%bf%e7%9c%bc%e7%90%83%e9%99%a9%e5%a4%b1%e6%98%8e",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  260610,
-                         "time":  "00:36",
-                         "date":  "2026-05-07",
-                         "comments":  52122,
-                         "title":  "7岁男童被烧烤签刺穿眼球险失明"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] A股总市值突破120万亿",
-                         "id":  229,
-                         "url":  "https://www.baidu.com/s?wd=A%e8%82%a1%e6%80%bb%e5%b8%82%e5%80%bc%e7%aa%81%e7%a0%b4120%e4%b8%87%e4%ba%bf",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  481095,
-                         "time":  "02:43",
-                         "date":  "2026-05-07",
-                         "comments":  80182,
-                         "title":  "A股总市值突破120万亿"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 托管班给孩子吃变质食材：肉是臭的",
-                         "id":  230,
-                         "url":  "https://www.baidu.com/s?wd=%e6%89%98%e7%ae%a1%e7%8f%ad%e7%bb%99%e5%ad%a9%e5%ad%90%e5%90%83%e5%8f%98%e8%b4%a8%e9%a3%9f%e6%9d%90%ef%bc%9a%e8%82%89%e6%98%af%e8%87%ad%e7%9a%84",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  188794,
-                         "time":  "04:50",
-                         "date":  "2026-05-07",
-                         "comments":  17163,
-                         "title":  "托管班给孩子吃变质食材：肉是臭的"
-                     },
-                     {
-                         "source":  "央视新闻",
-                         "summary":  "[央视新闻] 伊朗指定2条航道供船只通行霍尔木兹",
-                         "id":  231,
-                         "url":  "https://www.baidu.com/s?wd=%e4%bc%8a%e6%9c%97%e6%8c%87%e5%ae%9a2%e6%9d%a1%e8%88%aa%e9%81%93%e4%be%9b%e8%88%b9%e5%8f%aa%e9%80%9a%e8%a1%8c%e9%9c%8d%e5%b0%94%e6%9c%a8%e5%85%b9",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  372237,
-                         "time":  "06:57",
-                         "date":  "2026-05-07",
-                         "comments":  28634,
-                         "title":  "伊朗指定2条航道供船只通行霍尔木兹"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 国乒女团3-0韩国进4强",
-                         "id":  232,
-                         "url":  "https://www.baidu.com/s?wd=%e5%9b%bd%e4%b9%92%e5%a5%b3%e5%9b%a23-0%e9%9f%a9%e5%9b%bd%e8%bf%9b4%e5%bc%ba",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "热议",
-                                      "娱乐"
-                                  ],
-                         "likes":  156486,
-                         "time":  "08:04",
-                         "date":  "2026-05-07",
-                         "comments":  39122,
-                         "title":  "国乒女团3-0韩国进4强"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 北方将迎今年首场高温",
-                         "id":  233,
-                         "url":  "https://www.baidu.com/s?wd=%e5%8c%97%e6%96%b9%e5%b0%86%e8%bf%8e%e4%bb%8a%e5%b9%b4%e9%a6%96%e5%9c%ba%e9%ab%98%e6%b8%a9",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  326145,
-                         "time":  "10:11",
-                         "date":  "2026-05-07",
-                         "comments":  29650,
-                         "title":  "北方将迎今年首场高温"
-                     },
-                     {
-                         "source":  "百度热搜",
-                         "summary":  "[百度热搜] 一渠污水向田流 臭水到底从哪来",
-                         "id":  234,
-                         "url":  "https://www.baidu.com/s?wd=%e4%b8%80%e6%b8%a0%e6%b1%a1%e6%b0%b4%e5%90%91%e7%94%b0%e6%b5%81+%e8%87%ad%e6%b0%b4%e5%88%b0%e5%ba%95%e4%bb%8e%e5%93%aa%e6%9d%a5",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  594110,
-                         "time":  "12:18",
-                         "date":  "2026-05-07",
-                         "comments":  49509,
-                         "title":  "一渠污水向田流 臭水到底从哪来"
-                     },
-                     {
-                         "source":  "bilibili",
-                         "summary":  "[bilibili] NIP战胜AL LPL第二赛段",
-                         "id":  235,
-                         "url":  "https://www.baidu.com/s?wd=NIP%e6%88%98%e8%83%9cAL+LPL%e7%ac%ac%e4%ba%8c%e8%b5%9b%e6%ae%b5",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "娱乐"
-                                  ],
-                         "likes":  58235,
-                         "time":  "14:25",
-                         "date":  "2026-05-07",
-                         "comments":  8319,
-                         "title":  "NIP战胜AL LPL第二赛段"
-                     },
-                     {
-                         "source":  "bilibili",
-                         "summary":  "[bilibili] 台湾问题是中国核心利益中的核心",
-                         "id":  236,
-                         "url":  "https://www.baidu.com/s?wd=%e5%8f%b0%e6%b9%be%e9%97%ae%e9%a2%98%e6%98%af%e4%b8%ad%e5%9b%bd%e6%a0%b8%e5%bf%83%e5%88%a9%e7%9b%8a%e4%b8%ad%e7%9a%84%e6%a0%b8%e5%bf%83",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "爆款"
-                                  ],
-                         "likes":  45135,
-                         "time":  "16:32",
-                         "date":  "2026-05-07",
-                         "comments":  3472,
-                         "title":  "台湾问题是中国核心利益中的核心"
-                     },
-                     {
-                         "source":  "bilibili",
-                         "summary":  "[bilibili] FIFA转播权定价逻辑是什么",
-                         "id":  237,
-                         "url":  "https://www.baidu.com/s?wd=FIFA%e8%bd%ac%e6%92%ad%e6%9d%83%e5%ae%9a%e4%bb%b7%e9%80%bb%e8%be%91%e6%98%af%e4%bb%80%e4%b9%88",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差"
-                                  ],
-                         "likes":  466485,
-                         "time":  "18:39",
-                         "date":  "2026-05-07",
-                         "comments":  46648,
-                         "title":  "FIFA转播权定价逻辑是什么"
-                     },
-                     {
-                         "source":  "bilibili",
-                         "summary":  "[bilibili] 汉坦病毒风险如何",
-                         "id":  238,
-                         "url":  "https://www.baidu.com/s?wd=%e6%b1%89%e5%9d%a6%e7%97%85%e6%af%92%e9%a3%8e%e9%99%a9%e5%a6%82%e4%bd%95",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "争议"
-                                  ],
-                         "likes":  138964,
-                         "time":  "20:46",
-                         "date":  "2026-05-07",
-                         "comments":  11580,
-                         "title":  "汉坦病毒风险如何"
-                     },
-                     {
-                         "source":  "bilibili",
-                         "summary":  "[bilibili] 现场见证巴黎再进欧冠决赛",
-                         "id":  239,
-                         "url":  "https://www.baidu.com/s?wd=%e7%8e%b0%e5%9c%ba%e8%a7%81%e8%af%81%e5%b7%b4%e9%bb%8e%e5%86%8d%e8%bf%9b%e6%ac%a7%e5%86%a0%e5%86%b3%e8%b5%9b",
-                         "tags":  [
-                                      "社会热点",
-                                      "信息差",
-                                      "娱乐"
-                                  ],
-                         "likes":  458077,
-                         "time":  "22:53",
-                         "date":  "2026-05-07",
-                         "comments":  114519,
-                         "title":  "现场见证巴黎再进欧冠决赛"
                      }
                  ],
     "inspirations":  [
                          {
-                             "topic":  "中方回应英方制裁中国实体",
-                             "source":  "抖音",
-                             "wangba_style":  "故事型: 用\"能理解 能理解 中方回应英方制裁\"",
-                             "aqi_style":  "主题型: 用\"关于中方回应英方制裁的几点思考\""
+                             "topic":  "同济大学通报教师论文造假事件处置，院长免职降级，一作解聘，如何看待这一处理结果？",
+                             "source":  "知乎",
+                             "wangba_style":  "同济大学通报教师论文造假？懂你意思",
+                             "aqi_style":  "05/07社会热点信息差",
+                             "chen_style":  "同济大学通报教师论文造假全程高能"
                          },
                          {
-                             "topic":  "硬刚国际足联 中国这次在争什么",
-                             "source":  "百度热搜",
-                             "wangba_style":  "感叹型: 用\"再见！硬刚国际足联 中！\"",
-                             "aqi_style":  "日期型: 用\"5月7日社会热点信息差\""
+                             "topic":  "肘赢复活赛!尘白重新开服",
+                             "source":  "贴吧",
+                             "wangba_style":  "肘赢复活赛!尘白重新开服？懂你意思",
+                             "aqi_style":  "关于肘赢复活赛!尘白重新开服的几点看法",
+                             "chen_style":  "大型纪录片肘赢复活赛!尘白重新开服：真相来了"
                          },
                          {
-                             "topic":  "国际足联回应中国区天价世界杯版权",
+                             "topic":  "俄罗斯：呼吁各国及时从基辅撤离人员",
                              "source":  "今日头条",
-                             "wangba_style":  "悬念型: 用\"国际足联回应中国 难不成是真的！\"",
-                             "aqi_style":  "合集型: 放入\"上周逆天事件合集\""
+                             "wangba_style":  "这操作6啊 俄罗斯：呼吁各国及时从基辅撤",
+                             "aqi_style":  "05/07今日热点速览：俄罗斯：呼吁各国及时从基",
+                             "chen_style":  "独家解读俄罗斯：呼吁各国及时从基背后的商业逻辑"
+                         },
+                         {
+                             "topic":  "JDG战胜TES LPL第二赛段",
+                             "source":  "bilibili 热搜",
+                             "wangba_style":  "说实话 JDG战胜TES LPL第二",
+                             "aqi_style":  "05/07热点合集：JDG战胜TES LPL",
+                             "chen_style":  "JDG战胜TES LPL，老板都坐不住了"
+                         },
+                         {
+                             "topic":  "美伊局势暂趋缓和，芯片股力挺标普纳指新高，原油下挫，盘后AMD大涨",
+                             "source":  "华尔街见闻",
+                             "wangba_style":  "美伊局势暂趋缓和，芯片股？懂你意思",
+                             "aqi_style":  "本周TOP5：美伊局势暂趋缓和，芯片股",
+                             "chen_style":  "独家解读美伊局势暂趋缓和，芯片股背后的商业逻辑"
                          },
                          {
                              "topic":  "中国航天招志愿者最新消息：能玩手机",
                              "source":  "百度热搜",
-                             "wangba_style":  "悬念型: 用\"中国航天招志愿者 难不成是真的！\"",
-                             "aqi_style":  "合集型: 放入\"上周逆天事件合集\""
+                             "wangba_style":  "中国航天招志愿者最新消息？懂你意思",
+                             "aqi_style":  "05/07热点合集：中国航天招志愿者最新消息",
+                             "chen_style":  "大型纪录片之中国航天招志愿者最新消息持续为您播出"
                          },
                          {
-                             "topic":  "三星宣布在中国大陆市场停止销售含电视、显示器在内的所有家电产品",
-                             "source":  "澎湃新闻",
-                             "wangba_style":  "悬念型: 用\"三星宣布在中国大 难不成是真的！\"",
-                             "aqi_style":  "主题型: 用\"关于三星宣布在中国大的几点思考\""
+                             "topic":  "巴黎连续两年闯入欧冠决赛",
+                             "source":  "抖音",
+                             "wangba_style":  "不是吧不是吧 巴黎连续两年闯入欧冠决赛",
+                             "aqi_style":  "本周TOP5：巴黎连续两年闯入欧冠决赛",
+                             "chen_style":  "大型纪录片巴黎连续两年闯入欧冠决赛：真相来了"
                          },
                          {
-                             "topic":  "三星：停止在中国市场销售所有家电产品",
+                             "topic":  "淘宝免单",
+                             "source":  "微博",
+                             "wangba_style":  "说实话 淘宝免单",
+                             "aqi_style":  "05/07社会热点信息差",
+                             "chen_style":  "独家解读淘宝免单背后的商业逻辑"
+                         },
+                         {
+                             "topic":  "如何看待「耿同学讲故事」再举报中山大学副院长邝栋明论文造假？",
+                             "source":  "知乎",
+                             "wangba_style":  "如何看待「耿同学讲故事」？懂你意思",
+                             "aqi_style":  "关于如何看待「耿同学讲故事」的几点看法",
+                             "chen_style":  "如何看待「耿同学讲故事」，老板都坐不住了"
+                         },
+                         {
+                             "topic":  "国际足联可能已经慌了",
+                             "source":  "微博",
+                             "wangba_style":  "给我整不会了 国际足联可能已经慌了",
+                             "aqi_style":  "05/07社会热点信息差",
+                             "chen_style":  "国际足联可能已经慌了全程高能"
+                         },
+                         {
+                             "topic":  "国际足联回应中国区天价世界杯版权",
+                             "source":  "今日头条",
+                             "wangba_style":  "国际足联回应中国区天价世？懂你意思",
+                             "aqi_style":  "05/07今日热点速览：国际足联回应中国区天价世",
+                             "chen_style":  "独家解读国际足联回应中国区天价世背后的商业逻辑"
+                         },
+                         {
+                             "topic":  "赛后复盘巴黎晋级欧冠决赛",
+                             "source":  "bilibili 热搜",
+                             "wangba_style":  "赛后复盘巴黎晋级欧冠决赛？懂你意思",
+                             "aqi_style":  "05/07社会热点信息差",
+                             "chen_style":  "独家解读赛后复盘巴黎晋级欧冠决赛背后的商业逻辑"
+                         },
+                         {
+                             "topic":  "硬刚国际足联 中国这次在争什么",
+                             "source":  "百度热搜",
+                             "wangba_style":  "懂的都懂 硬刚国际足联 中国这次在争什",
+                             "aqi_style":  "05/07热点合集：硬刚国际足联 中国这次在",
+                             "chen_style":  "硬刚国际足联 中国这次在全程高能"
+                         },
+                         {
+                             "topic":  "中方回应英方制裁中国实体",
+                             "source":  "抖音",
+                             "wangba_style":  "这新闻我刷到了 中方回应英方制裁中国实体",
+                             "aqi_style":  "关于中方回应英方制裁中国实体的几点看法",
+                             "chen_style":  "中方回应英方制裁中国实体，老板都坐不住了"
+                         },
+                         {
+                             "topic":  "【早报】油价大幅跳水！特朗普：美伊“很有可能”达成协议；以军在停火期间突袭贝鲁特",
                              "source":  "财联社热门",
-                             "wangba_style":  "故事型: 用\"能理解 能理解 三星：停止在中国\"",
-                             "aqi_style":  "主题型: 用\"关于三星：停止在中国的几点思考\""
-                         },
-                         {
-                             "topic":  "阿拉格齐称访华富有成果，中国认为战前战后的伊朗完全不同",
-                             "source":  "凤凰网",
-                             "wangba_style":  "悬念型: 用\"阿拉格齐称访华富 难不成是真的！\"",
-                             "aqi_style":  "日期型: 用\"5月7日社会热点信息差\""
-                         },
-                         {
-                             "topic":  "伊学者：这场战争，让中国意识到伊朗的战略性意义",
-                             "source":  "凤凰网",
-                             "wangba_style":  "感叹型: 用\"再见！伊学者：这场战争！\"",
-                             "aqi_style":  "主题型: 用\"关于伊学者：这场战争的几点思考\""
+                             "wangba_style":  "这新闻我刷到了 【早报】油价大幅跳水！特朗普",
+                             "aqi_style":  "05/07社会热点信息差",
+                             "chen_style":  "大型纪录片【早报】油价大幅跳水！特：真相来了"
                          }
                      ],
-    "updated_at":  "2026-05-08T00:15:45+08:00"
+    "updated_at":  "2026-05-08T00:33:18.6217279+08:00"
 }

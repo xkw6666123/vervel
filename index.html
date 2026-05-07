@@ -74,6 +74,24 @@ main{max-width:720px;margin:0 auto;padding:16px}
 .fav-btn.active{color:#F0C040;text-shadow:0 0 8px rgba(240,192,64,0.4)}
 .card{position:relative}
 
+/* analysis card */
+.analysis-card{background:linear-gradient(135deg,#1A1F2E,#161B22);border:1px solid #30363D;border-radius:12px;padding:18px;margin-bottom:14px}
+.analysis-card h3{font-size:15px;color:#F0F6FC;margin-bottom:10px;font-weight:600}
+.analysis-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.analysis-item{background:rgba(48,54,61,0.3);border-radius:8px;padding:10px}
+.analysis-item .label{font-size:10px;color:#484F58;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.analysis-item .value{font-size:13px;color:#C9D1D9;line-height:1.5}
+.analysis-item .tag-list{display:flex;gap:4px;flex-wrap:wrap;margin-top:4px}
+.analysis-item .tag-list span{font-size:11px;padding:2px 8px;border-radius:10px;background:#58A6FF22;color:#58A6FF}
+.analysis-tip{background:linear-gradient(90deg,#F0C04011,transparent);border-left:3px solid #F0C040;padding:10px 14px;margin-top:10px;border-radius:0 8px 8px 0;font-size:13px;color:#E8D5CD;line-height:1.6}
+
+/* ai gen */
+.ai-card{background:linear-gradient(135deg,#2D1B4E,#1A1F2E);border:1px solid #8B5CF644;border-radius:12px;padding:18px;margin-bottom:14px}
+.ai-card .topic{font-size:12px;color:#8B5CF6;margin-bottom:6px;font-weight:500}
+.ai-card h4{font-size:14px;color:#F0F6FC;margin-bottom:8px}
+.ai-card .ai-suggestion{font-size:13px;color:#C9D1D9;line-height:1.6;padding:8px 12px;background:rgba(139,92,246,0.1);border-radius:8px;margin:6px 0}
+.ai-card .ai-tag{display:inline-block;font-size:10px;padding:2px 8px;border-radius:10px;background:#8B5CF622;color:#8B5CF6;margin-right:4px}
+
 /* section title */
 .section-title{font-size:13px;color:#484F58;margin:0 0 12px;padding:0 4px;font-weight:500;display:flex;align-items:center;gap:8px}
 .section-title::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#30363D,transparent)}
@@ -105,6 +123,7 @@ body{padding-bottom:70px}
 <a href="#" class="active" data-filter="all">精选</a>
 <a href="#" data-filter="hot">热点</a>
 <a href="#" data-filter="inspire">灵感</a>
+<a href="#" data-filter="analysis">拆解</a>
 <a href="#" data-filter="fav">收藏</a>
 </div>
 </div>
@@ -124,6 +143,7 @@ body{padding-bottom:70px}
 <a href="#" class="active" data-filter="all"><span class="nav-icon">🔥</span>精选</a>
 <a href="#" data-filter="hot"><span class="nav-icon">📰</span>热点</a>
 <a href="#" data-filter="inspire"><span class="nav-icon">💡</span>灵感</a>
+<a href="#" data-filter="analysis"><span class="nav-icon">🔬</span>拆解</a>
 <a href="#" data-filter="fav"><span class="nav-icon">⭐</span>收藏</a>
 </div>
 
@@ -214,6 +234,8 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(a=>{
     const filter=a.dataset.filter;
     if(filter==='inspire'){
       renderInspire();
+    }else if(filter==='analysis'){
+      renderAnalysis();
     }else if(filter==='fav'){
       const el=document.getElementById('content');
       const f=getFavs();
@@ -273,6 +295,26 @@ function renderInspire(){
       <div class="suggestion">${a.aqi_style}</div>
       <button onclick="toggleInspFav(${i})" style="margin-top:10px;padding:4px 14px;border-radius:20px;border:1px solid ${isFaved?'#F0C040':'#30363D'};background:${isFaved?'#F0C04022':'transparent'};color:${isFaved?'#F0C040':'#8B949E'};cursor:pointer;font-size:12px;font-family:inherit">${isFaved?'👍 已标记有趣':'🤔 这个有意思'}</button>
     </div>`}).join('');
+}
+
+// 爆款视频拆解
+function renderAnalysis(){
+  const el=document.getElementById('content');
+  const vids=data.filter(a=>a.source==='blogger');
+  if(!vids.length){el.innerHTML='<div class="empty-state"><div class="icon">🔬</div><p>暂无视频数据</p></div>';return}
+  let h='<div class="section-title">爆款视频拆解分析</div>';
+  vids.forEach(v=>{
+    const a=json.viral_analysis&&json.viral_analysis[v.id];
+    h+='<div class="analysis-card"><h3>🔍 '+v.title+'</h3><div class="analysis-grid">'
+    if(a){h+='<div class="analysis-item"><div class="label">关键词</div><div class="value">'+a.keywords.join(' · ')+'</div></div><div class="analysis-item"><div class="label">视频类型</div><div class="value">'+a.video_type+'</div></div><div class="analysis-item"><div class="label">封面风格</div><div class="value">'+a.cover_style+'</div></div><div class="analysis-item"><div class="label">发布规律</div><div class="value">'+a.publish_pattern+'</div></div><div class="analysis-item" style="grid-column:span 2"><div class="label">热门标签</div><div class="tag-list">'+(v.tags||[]).map(t=>'<span>#'+t+'</span>').join('')+'</div></div>'}
+    else{h+='<div class="analysis-item" style="grid-column:span 2"><div class="label">基础数据</div><div class="value">点赞 '+fmt(v.likes)+' · 评论 '+fmt(v.comments)+'</div></div>'}
+    if(a){h+='<div class="analysis-tip">💡 可复制建议：'+a.replicable_tip+'</div>'}
+    h+='<div style="margin-top:8px;font-size:11px;color:#484F58">📅 '+v.date+' '+v.time+' · '+v.source+'</div></div>'
+  })
+  h+='<div class="section-title" style="margin-top:20px">🤖 AI 生成创作建议</div>'
+  h+='<div class="ai-card"><div class="topic">🎯 网吧信息差风格</div><div class="ai-suggestion">悬念标题：将今日热点用"难不成是真的"句式改写<br>共鸣选题：把社会新闻代入大学生视角<br>玩梗推荐：结合网络热词包装普通话题</div></div>'
+  h+='<div class="ai-card"><div class="topic">🎬 阿七大型纪录片风格</div><div class="ai-suggestion">日期标题："5月7日社会热点信息差"<br>合集整理：本周TOP5热点事件汇总<br>主题深挖：选一个热门话题做深度拆解</div></div>'
+  el.innerHTML=h
 }
 
 // 灵感有趣标记（每日自动清空）

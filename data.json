@@ -5,6 +5,35 @@
              },
     "articles":  [
                      {
+                         "id":  "BV1d1dGBvEKx",
+                         "blogger_name":  "沙漠一之雕",
+                         "time":  "10:56",
+                         "analysis":  {
+                                          "video_type":  "热点资讯",
+                                          "replicable_tip":  "热点采集+搞笑剪辑，1-2分钟合集式呈现",
+                                          "publish_pattern":  "日更 10:56",
+                                          "cover_style":  "新闻截图 + 大字标题",
+                                          "keywords":  [
+                                                           "热点",
+                                                           "信息差",
+                                                           "搞笑"
+                                                       ]
+                                      },
+                         "title":  "[沙漠一之雕] 今日热点快报",
+                         "tags":  [
+                                      "沙漠一之雕",
+                                      "信息差",
+                                      "热点"
+                                  ],
+                         "url":  "https://www.bilibili.com/video/BV1d1dGBvEKx",
+                         "content_intro":  "沙漠一之雕 B站最新视频",
+                         "source":  "blogger",
+                         "comments":  10,
+                         "summary":  "沙漠一之雕 B站最新视频",
+                         "likes":  265,
+                         "date":  "2026-05-08"
+                     },
+                     {
                          "id":  7637292553041136911,
                          "blogger_name":  "网吧信息差",
                          "time":  "10:00",
@@ -3015,5 +3044,5 @@
                              "chen_style":  "大型纪录片【早报】油价大幅跳水！特：真相来了"
                          }
                      ],
-    "updated_at":  "2026-05-08T20:00:26+08:00"
+    "updated_at":  "2026-05-08T20:23:29+08:00"
 }

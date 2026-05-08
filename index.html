@@ -7,6 +7,7 @@
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="description" content="每日社会热点聚合 + 爆款视频拆解 + AI选题灵感，帮你用信息差做内容。覆盖抖音、知乎、微博、百度等平台热点。">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>热点信息差 — 用信息差做内容</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
@@ -286,6 +287,10 @@ body{padding-bottom:0}
 ::-webkit-scrollbar-thumb{background:var(--border);border-radius:3px}
 ::-webkit-scrollbar-thumb:hover{background:var(--text-muted)}
 
+/* search */
+.search-highlight{background:rgba(201,169,110,0.25);color:var(--gold);padding:0 2px;border-radius:2px}
+#searchInput::placeholder{color:var(--text-muted)}
+
 /* responsive */
 @media(max-width:640px){
   .hero{padding:40px 20px 28px}
@@ -311,6 +316,8 @@ body{padding-bottom:0}
 <header>
 <div class="header-inner">
 <div class="logo">热点信息差</div>
+<div style="display:flex;align-items:center;gap:8px">
+  <input id="searchInput" type="text" placeholder="搜索文章..." style="width:100px;padding:5px 10px;font-size:12px;border:1px solid var(--border);border-radius:8px;background:var(--bg-surface);color:var(--text-pri);outline:none;transition:all .3s" onfocus="this.style.width='160px'" onblur="if(!this.value)this.style.width='100px'" oninput="doSearch(this.value)">
 <nav class="header-tabs">
 <a href="#" class="active" data-filter="all">精选</a>
 <a href="#" data-filter="hot">热点</a>
@@ -1094,6 +1101,29 @@ function toggleInspFav(idx){
   localStorage.setItem('inspire_favs',JSON.stringify(raw));
   renderInspire();
 }
+
+// search
+let searchTimer;
+function doSearch(q){
+  clearTimeout(searchTimer);
+  if(!q||!q.trim()){renderCurrent();return}
+  searchTimer=setTimeout(()=>{
+    const term=q.trim().toLowerCase();
+    const results=data.filter(a=>{
+      const s=(a.title+(a.summary||'')+(a.content_intro||'')+(a.blogger_name||'')+(a.source||'')).toLowerCase();
+      return s.includes(term);
+    });
+    const el=document.getElementById('content');
+    if(!results.length){
+      el.innerHTML='<div class="empty-state"><div class="icon">🔍</div><p>没有找到 "'+term+'" 的相关内容</p></div>';
+      return;
+    }
+    let h='<div class="section-title" style="margin-top:0">🔍 搜索 "'+term+'" · '+results.length+'条结果</div>';
+    h+=results.map(a=>renderCard(a)).join('');
+    el.innerHTML=h;
+  },300);
+}
+
 </script>
 </body>
 </html>

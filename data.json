@@ -187,6 +187,66 @@
                          "date":  "2026-05-07"
                      },
                      {
+                         "id":  "20260508_053",
+                         "title":  "科技赋能中国农业加速跑",
+                         "summary":  "【抖音】科技赋能中国农业加速跑",
+                         "source":  "抖音",
+                         "date":  "2026-05-08",
+                         "time":  "10:01",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2492301",
+                         "likes":  65470,
+                         "comments":  4091
+                     },
+                     {
+                         "id":  "20260508_031",
+                         "title":  "官媒下场三问享界夹人事件",
+                         "summary":  "【贴吧】官媒下场三问享界夹人事件",
+                         "source":  "贴吧",
+                         "date":  "2026-05-08",
+                         "time":  "14:47",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%AE%98%E5%AA%92%E4%B8%8B%E5%9C%BA%E4%B8%89%E9%97%AE%E4%BA%AB%E7%95%8C%E5%A4%B9%E4%BA%BA%E4%BA%8B%E4%BB%B6\u0026topic_id=28354103",
+                         "likes":  246008,
+                         "comments":  13667
+                     },
+                     {
+                         "id":  "20260508_030",
+                         "title":  "美军，突然“反击”",
+                         "summary":  "【凤凰网】美军，突然“反击”",
+                         "source":  "凤凰网",
+                         "date":  "2026-05-08",
+                         "time":  "12:30",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://news.ifeng.com/c/8sxm8cNArDu",
+                         "likes":  252890,
+                         "comments":  16859
+                     },
+                     {
+                         "id":  "20260508_029",
+                         "title":  "UP vs LNG LPL第二赛段",
+                         "summary":  "【bilibili 热搜】UP vs LNG LPL第二赛段",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-05-08",
+                         "time":  "10:13",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=UP+LNG",
+                         "likes":  266560,
+                         "comments":  20504
+                     },
+                     {
                          "id":  "20260508_051",
                          "title":  "武汉大学教授柯涛逝世 终年48岁",
                          "summary":  "【今日头条】武汉大学教授柯涛逝世 终年48岁",
@@ -2955,5 +3015,5 @@
                              "chen_style":  "大型纪录片【早报】油价大幅跳水！特：真相来了"
                          }
                      ],
-    "updated_at":  "2026-05-08T17:00:25+08:00"
+    "updated_at":  "2026-05-08T20:00:26+08:00"
 }

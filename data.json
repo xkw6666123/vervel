@@ -2912,6 +2912,93 @@
                          "date":  "2026-05-07"
                      },
                      {
+                         "id":  7637137991799134073,
+                         "blogger_name":  "信息黑板报",
+                         "time":  "22:48",
+                         "analysis":  {
+                                          "video_type":  "热点资讯搬运",
+                                          "replicable_tip":  "日期锚点式标题 + 社会热点合集速览，日更节奏",
+                                          "publish_pattern":  "日更",
+                                          "cover_style":  "新闻截图 + 红色大字标题",
+                                          "keywords":  [
+                                                           "热点",
+                                                           "资讯",
+                                                           "信息差"
+                                                       ]
+                                      },
+                         "title":  "[信息黑板报] 5月7日社会网络热点信息差",
+                         "tags":  [
+                                      "信息黑板报",
+                                      "信息差",
+                                      "热点"
+                                  ],
+                         "url":  "https://www.douyin.com/video/7637137991799134073",
+                         "content_intro":  "5月7日社会网络热点信息差",
+                         "source":  "blogger",
+                         "comments":  19,
+                         "summary":  "5月7日社会网络热点信息差",
+                         "likes":  560,
+                         "date":  "2026-05-08"
+                     },
+                     {
+                         "id":  7636380086177949553,
+                         "blogger_name":  "信息黑板报",
+                         "time":  "22:48",
+                         "analysis":  {
+                                          "video_type":  "热点资讯搬运",
+                                          "replicable_tip":  "日期锚点式标题 + 社会热点合集速览，日更节奏",
+                                          "publish_pattern":  "日更",
+                                          "cover_style":  "新闻截图 + 红色大字标题",
+                                          "keywords":  [
+                                                           "热点",
+                                                           "资讯",
+                                                           "信息差"
+                                                       ]
+                                      },
+                         "title":  "[信息黑板报] 5月5日逆天事件合集",
+                         "tags":  [
+                                      "信息黑板报",
+                                      "信息差",
+                                      "热点"
+                                  ],
+                         "url":  "https://www.douyin.com/video/7636380086177949553",
+                         "content_intro":  "5月5日逆天事件合集",
+                         "source":  "blogger",
+                         "comments":  32,
+                         "summary":  "5月5日逆天事件合集",
+                         "likes":  1484,
+                         "date":  "2026-05-08"
+                     },
+                     {
+                         "id":  7635582384162744314,
+                         "blogger_name":  "信息黑板报",
+                         "time":  "22:48",
+                         "analysis":  {
+                                          "video_type":  "热点资讯搬运",
+                                          "replicable_tip":  "日期锚点式标题 + 社会热点合集速览，日更节奏",
+                                          "publish_pattern":  "日更",
+                                          "cover_style":  "新闻截图 + 红色大字标题",
+                                          "keywords":  [
+                                                           "热点",
+                                                           "资讯",
+                                                           "信息差"
+                                                       ]
+                                      },
+                         "title":  "[信息黑板报] 5月3日逆天事件合集",
+                         "tags":  [
+                                      "信息黑板报",
+                                      "信息差",
+                                      "热点"
+                                  ],
+                         "url":  "https://www.douyin.com/video/7635582384162744314",
+                         "content_intro":  "5月3日逆天事件合集",
+                         "source":  "blogger",
+                         "comments":  1545,
+                         "summary":  "5月3日逆天事件合集",
+                         "likes":  37278,
+                         "date":  "2026-05-08"
+                     },
+                     {
                          "id":  "BV1d1dGBvEKx",
                          "blogger_name":  "沙漠一之雕",
                          "time":  "10:56",
@@ -3106,5 +3193,5 @@
                              "chen_style":  "大型纪录片【早报】油价大幅跳水！特：真相来了"
                          }
                      ],
-    "updated_at":  "2026-05-08T20:24:04+08:00"
+    "updated_at":  "2026-05-08T22:48:11+08:00"
 }

@@ -2,7 +2,9 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"><meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="description" content="每日社会热点聚合 + 爆款视频拆解 + AI选题灵感，帮你用信息差做内容。覆盖抖音、知乎、微博、百度等平台热点。">
 <title>热点信息差 — 用信息差做内容</title>
@@ -3274,6 +3276,8 @@ const EMBEDDED = {
 
 json = EMBEDDED;
 data = json.articles;
+
+document.addEventListener('DOMContentLoaded', function() {
   const tagSet=new Set();
   data.forEach(a=>a.tags.forEach(t=>tagSet.add(t)));
   allTags=['全部',...tagSet];
@@ -3298,6 +3302,7 @@ data = json.articles;
 
   renderTags('全部');
   renderFeatured();
+});
 
 function renderTags(active){
   const bar=document.getElementById('tagBar');
@@ -3908,3 +3913,4 @@ function toggleInspFav(idx){
 </script>
 </body>
 </html>
+

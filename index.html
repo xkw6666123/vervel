@@ -305,6 +305,7 @@ body{padding-bottom:0}
 </style>
 </head>
 <body>
+<div id="jsError" style="display:none;background:#ff5252;color:#fff;padding:12px 20px;font-size:14px;position:fixed;top:0;left:0;width:100%;z-index:9999;line-height:1.6"></div>
 
 <!-- ===== Header ===== -->
 <header>
@@ -371,7 +372,7 @@ body{padding-bottom:0}
 
 <!-- ===== Footer ===== -->
 <footer>
-<span>© 2026 热点信息差 · 用信息差做内容</span>
+<span>© 2026 热点信息差 · 用信息差做内容 · v20260508.4</span>
 <span>数据来源：抖音 · 知乎 · 微博 · 百度 · 贴吧 · 凤凰网 · 财联社 · bilibili</span>
 </footer>
 
@@ -3278,6 +3279,7 @@ json = EMBEDDED;
 data = json.articles;
 
 document.addEventListener('DOMContentLoaded', function() {
+  try {
   const tagSet=new Set();
   data.forEach(a=>a.tags.forEach(t=>tagSet.add(t)));
   allTags=['全部',...tagSet];
@@ -3302,6 +3304,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   renderTags('全部');
   renderFeatured();
+  } catch(err) {
+    document.getElementById('jsError').style.display='block';
+    document.getElementById('jsError').innerHTML='JS错误: '+err.message+'<br>请截图发给我';
+    console.error(err);
+  }
 });
 
 function renderTags(active){
@@ -3330,6 +3337,7 @@ function render(items){
 
 // 精选首页：爆款+博主新视频+高热度置顶
 function renderFeatured(){
+  try {
   const el=document.getElementById('content');
   const today=new Date().toISOString().slice(0,10);
 
@@ -3382,6 +3390,10 @@ function renderFeatured(){
   }
 
   el.innerHTML=h||'<div class="empty-state"><div class="icon">🔍</div><p>暂无内容</p></div>';
+  } catch(err) {
+    document.getElementById('content').innerHTML='<div class="empty-state"><div class="icon">⚠️</div><p>渲染出错</p><p style="font-size:12px">'+err.message+'</p></div>';
+    console.error(err);
+  }
 }
 
 function renderCard(a){

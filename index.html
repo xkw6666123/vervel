@@ -10,6 +10,7 @@
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <title>热点信息差 — 用信息差做内容</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <style>
 /* ===== Variables ===== */
 :root {
@@ -291,6 +292,12 @@ body{padding-bottom:0}
 .search-highlight{background:rgba(201,169,110,0.25);color:var(--gold);padding:0 2px;border-radius:2px}
 #searchInput::placeholder{color:var(--text-muted)}
 
+/* trend chart */
+.chart-wrap{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;margin-bottom:16px}
+.chart-wrap h3{font-size:14px;color:var(--text-pri);margin-bottom:4px;font-weight:600}
+.chart-wrap .sub{font-size:11px;color:var(--text-muted);margin-bottom:14px}
+.chart-wrap canvas{max-height:220px;max-width:100%}
+
 /* responsive */
 @media(max-width:640px){
   .hero{padding:40px 20px 28px}
@@ -322,6 +329,7 @@ body{padding-bottom:0}
 <a href="#" class="active" data-filter="all">精选</a>
 <a href="#" data-filter="hot">热点</a>
 <a href="#" data-filter="inspire">灵感</a>
+<a href="#" data-filter="trend">📈趋势</a>
 <a href="#" data-filter="analysis">拆解</a>
 <a href="#" data-filter="fav">收藏</a>
 </nav>
@@ -388,6 +396,7 @@ body{padding-bottom:0}
 <a href="#" class="active" data-filter="all"><span class="nav-icon">🔥</span>精选</a>
 <a href="#" data-filter="hot"><span class="nav-icon">📰</span>热点</a>
 <a href="#" data-filter="inspire"><span class="nav-icon">💡</span>灵感</a>
+<a href="#" data-filter="trend"><span class="nav-icon">📈</span>趋势</a>
 <a href="#" data-filter="analysis"><span class="nav-icon">🔬</span>拆解</a>
 <a href="#" data-filter="fav"><span class="nav-icon">⭐</span>收藏</a>
 </div>
@@ -636,6 +645,7 @@ let currentFilter='all';
 function renderCurrent(){
   if(currentFilter==='all')renderFeatured();
   else if(currentFilter==='inspire')renderInspire();
+  else if(currentFilter==='trend')renderTrend();
   else if(currentFilter==='analysis')renderAnalysis();
   else if(currentFilter==='hot'){renderTags('全部');render(data.filter(d=>d.source!=='blogger'))}
   else if(currentFilter==='fav'){}
@@ -661,6 +671,8 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(tab=>{
     try{
     if(filter==='inspire'){
       renderInspire();
+    }else if(filter==='trend'){
+      renderTrend();
     }else if(filter==='analysis'){
       renderAnalysis();
     }else if(filter==='fav'){
@@ -1087,6 +1099,49 @@ function renderAnalysis(){
   h+='<div class="ai-card"><div class="topic">🎬 阿七大型纪录片风格</div>';
   h+='<div class="ai-suggestion">日期标题："5月7日社会热点信息差"<br>合集整理：本周TOP5热点事件汇总<br>主题深挖：选一个热门话题做深度拆解</div></div>';
   el.innerHTML=h;
+}
+
+function renderTrend(){
+  const el=document.getElementById('content');
+  let h='<div class="section-title">📈 热点趋势 <span style="font-size:11px;color:var(--text-muted);font-weight:400">基于近3天数据自动统计</span></div>';
+
+  // 1. 按天统计
+  const dayCount={};
+  data.forEach(a=>{const d=a.date;if(d)dayCount[d]=(dayCount[d]||0)+1});
+  const days=Object.keys(dayCount).sort();
+  const dayLabels=days.map(d=>{const m=d.slice(5,7),dd=d.slice(8,10);return m+'月'+dd+'日'});
+  const dayValues=days.map(d=>dayCount[d]);
+
+  h+='<div class="chart-wrap"><h3>📅 每日热点数量</h3><div class="sub">近3天热点文章分布趋势</div><canvas id="chartDay"></canvas></div>';
+
+  // 2. 按平台统计(非博主)
+  const srcCount={};
+  data.filter(a=>a.source!=='blogger').forEach(a=>{const s=a.source||'未知';srcCount[s]=(srcCount[s]||0)+1});
+  const srcSorted=Object.entries(srcCount).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const srcLabels=srcSorted.map(s=>s[0]);
+  const srcValues=srcSorted.map(s=>s[1]);
+
+  h+='<div class="chart-wrap"><h3>🏷️ 热门平台来源</h3><div class="sub">Top 10 热点来源平台</div><canvas id="chartSrc"></canvas></div>';
+
+  // 3. 热门标签Top 10
+  const tagCount={};
+  data.forEach(a=>(a.tags||[]).forEach(t=>{tagCount[t]=(tagCount[t]||0)+1}));
+  const tagSorted=Object.entries(tagCount).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  const tagLabels=tagSorted.map(t=>t[0]);
+  const tagValues=tagSorted.map(t=>t[1]);
+
+  h+='<div class="chart-wrap"><h3>🔖 热门标签 Top 10</h3><div class="sub">出现频率最高的标签</div><canvas id="chartTag"></canvas></div>';
+
+  el.innerHTML=h;
+
+  // 画图
+  setTimeout(()=>{
+    try{
+      new Chart(document.getElementById('chartDay'),{type:'bar',data:{labels:dayLabels,datasets:[{label:'文章数',data:dayValues,backgroundColor:'rgba(201,169,110,0.7)',borderColor:'#C9A96E',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}},x:{grid:{display:false}}}}});
+      new Chart(document.getElementById('chartSrc'),{type:'bar',data:{labels:srcLabels,datasets:[{label:'文章数',data:srcValues,backgroundColor:'rgba(74,143,228,0.7)',borderColor:'#4A8FE4',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{y:{grid:{display:false}},x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}}}}});
+      new Chart(document.getElementById('chartTag'),{type:'bar',data:{labels:tagLabels,datasets:[{label:'出现次数',data:tagValues,backgroundColor:'rgba(255,87,34,0.7)',borderColor:'#FF5722',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{y:{grid:{display:false}},x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}}}}});
+    }catch(e){}
+  },100);
 }
 
 function toggleInspFav(idx){

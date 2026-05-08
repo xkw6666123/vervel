@@ -562,7 +562,7 @@ function renderCurrent(){
   else if(currentFilter==='inspire')renderInspire();
   else if(currentFilter==='analysis')renderAnalysis();
   else if(currentFilter==='hot'){renderTags('全部');render(data.filter(d=>d.source!=='blogger'))}
-  else if(currentFilter==='fav'){/* fav tab has its own complex logic, skip for now */}
+  else if(currentFilter==='fav'){}
   else render(data);
 }
 function getRecommended(){

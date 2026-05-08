@@ -187,6 +187,51 @@
                          "date":  "2026-05-07"
                      },
                      {
+                         "id":  "20260508_051",
+                         "title":  "武汉大学教授柯涛逝世 终年48岁",
+                         "summary":  "【今日头条】武汉大学教授柯涛逝世 终年48岁",
+                         "source":  "今日头条",
+                         "date":  "2026-05-08",
+                         "time":  "06:27",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7637284558564114474/",
+                         "likes":  84120,
+                         "comments":  7010
+                     },
+                     {
+                         "id":  "20260508_044",
+                         "title":  "这是中国外贸的一张“新名片”",
+                         "summary":  "【今日头条】这是中国外贸的一张“新名片”",
+                         "source":  "今日头条",
+                         "date":  "2026-05-08",
+                         "time":  "16:28",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7637420729843355186/",
+                         "likes":  141164,
+                         "comments":  28232
+                     },
+                     {
+                         "id":  "20260508_009",
+                         "title":  "北京JDG vs 佛山DRG 挑战者杯",
+                         "summary":  "【bilibili 热搜】北京JDG vs 佛山DRG 挑战者杯",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-05-08",
+                         "time":  "18:33",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%8C%97%E4%BA%ACJDG+%E4%BD%9B%E5%B1%B1DRG",
+                         "likes":  444091,
+                         "comments":  40371
+                     },
+                     {
                          "id":  "20260508_023",
                          "title":  "榴莲仅退款买家发声",
                          "summary":  "【微博】榴莲仅退款买家发声",
@@ -2910,5 +2955,5 @@
                              "chen_style":  "大型纪录片【早报】油价大幅跳水！特：真相来了"
                          }
                      ],
-    "updated_at":  "2026-05-08T12:00:24+08:00"
+    "updated_at":  "2026-05-08T17:00:25+08:00"
 }

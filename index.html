@@ -407,17 +407,21 @@ async function loadData(){
       var decoded = new TextDecoder().decode(bytes);
       EMBEDDED = JSON.parse(decoded);
     } catch(_e) {
-      var el=document.getElementById('content');if(el)el.innerHTML='Data error: '+_e.message;
-      throw _e;
+      document.getElementById('jsError').style.display='block';
+      document.getElementById('jsError').innerHTML='JS错误(Base64回退失败): '+_e.message+'<br>请截图发给我';
+      return; // 静默返回，不阻止页面继续渲染
     }
   }
   json = EMBEDDED;
-  data = json.articles;
+  data = json && json.articles ? json.articles : [];
   initPage();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  loadData();
+  loadData().catch(function(err){
+    document.getElementById('jsError').style.display='block';
+    document.getElementById('jsError').innerHTML='JS错误: '+err.message+'<br>请截图发给我';
+  });
 });
 
 function initPage(){

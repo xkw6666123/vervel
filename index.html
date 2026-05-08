@@ -440,6 +440,63 @@ function render(items){
   }
   el.innerHTML=items.map(a=>renderCard(a)).join('');
 }
+
+// 精选首页：爆款+博主新视频+高热度置顶
+function renderFeatured(){
+  const el=document.getElementById('content');
+  const today=new Date().toISOString().slice(0,10);
+
+  // 1. 爆款文章（有 🔥 标签的）
+  const viralItems=data.filter(a=>a.tags&&a.tags.includes('爆款')).sort((a,b)=>(b.likes||0)-(a.likes||0));
+  
+  // 2. 博主最新视频（取每个博主最新1条）
+  const seenBloggers={};
+  const blogItems=[];
+  data.filter(a=>a.source==='blogger').forEach(a=>{
+    if(!seenBloggers[a.blogger_name]){
+      seenBloggers[a.blogger_name]=true;
+      blogItems.push(a);
+    }
+  });
+  
+  // 3. 今天的高热度新闻（非博主，排除已在爆款的）
+  const viralIds=new Set(viralItems.map(a=>String(a.id)));
+  const hotNews=data.filter(a=>a.source!=='blogger'&&!viralIds.has(String(a.id)))
+    .sort((a,b)=>(b.likes||0)-(a.likes||0)).slice(0,5);
+  
+  // 4. 其余文章（排除已选中的）
+  const selectedIds=new Set([...viralItems,...blogItems,...hotNews].map(a=>String(a.id)));
+  const rest=data.filter(a=>!selectedIds.has(String(a.id)));
+
+  let h='';
+
+  // 板块1：爆款 🔥
+  if(viralItems.length>0){
+    h+='<div class="section-title">🔥 今日爆款 <span style="font-size:11px;color:var(--text-muted);font-weight:400">高热度爆款内容</span></div>';
+    h+=viralItems.map(a=>renderCard(a)).join('');
+  }
+
+  // 板块2：博主新视频
+  if(blogItems.length>0){
+    h+='<div class="section-title" style="margin-top:16px">🎬 博主最新 <span style="font-size:11px;color:var(--text-muted);font-weight:400">追踪博主最近更新</span></div>';
+    h+=blogItems.map(a=>renderCard(a)).join('');
+  }
+
+  // 板块3：高热度新闻
+  if(hotNews.length>0){
+    h+='<div class="section-title" style="margin-top:16px">📈 热门趋势 <span style="font-size:11px;color:var(--text-muted);font-weight:400">近3天高热度新闻</span></div>';
+    h+=hotNews.map(a=>renderCard(a)).join('');
+  }
+
+  // 板块4：其余
+  if(rest.length>0){
+    h+='<div class="section-title" style="margin-top:16px">📰 更多资讯 <span style="font-size:11px;color:var(--text-muted);font-weight:400">共'+rest.length+'条</span></div>';
+    h+=rest.map(a=>renderCard(a)).join('');
+  }
+
+  el.innerHTML=h||'<div class="empty-state"><div class="icon">🔍</div><p>暂无内容</p></div>';
+}
+
 function renderCard(a){
   const liked=getLikes().includes(a.id);
   const isBlogger=a.source==='blogger';
@@ -479,23 +536,33 @@ function renderCard(a){
 
 function getFavs(){try{return JSON.parse(localStorage.getItem('favs')||'[]').map(String)}catch{return[]}}
 function isFav(id){return getFavs().includes(String(id))}
-function toggleFav(id){id=String(id);let f=getFavs();let i=f.indexOf(id);if(i>-1){f.splice(i,1)}else{f.push(id)};localStorage.setItem('favs',JSON.stringify(f));render(data)}
+function toggleFav(id){id=String(id);let f=getFavs();let i=f.indexOf(id);if(i>-1){f.splice(i,1)}else{f.push(id)};localStorage.setItem('favs',JSON.stringify(f));renderCurrent()}
 
 function getLikes(){try{return JSON.parse(localStorage.getItem('likes')||'[]').map(String)}catch{return[]}}
 function getLikeTags(){try{return JSON.parse(localStorage.getItem('likeTags')||'[]')}catch{return[]}}
 function toggleLike(id,tags){
   id=String(id);let ids=getLikes();let ts=getLikeTags();let i=ids.indexOf(id)
-  if(i>-1){ids.splice(i,1);// 重新聚合所有已点赞视频的标签
+  if(i>-1){ids.splice(i,1);
     ts=[]
     ids.forEach(likedId=>{
       const likedItem=data.find(a=>String(a.id)===likedId)
       if(likedItem&&likedItem.tags)ts.push(...likedItem.tags)
     })
-    ts=[...new Set(ts)] // 去重
+    ts=[...new Set(ts)]
   }else{ids.push(id);ts=[...new Set([...ts,...(tags||[])])]}
   localStorage.setItem('likes',JSON.stringify(ids))
   localStorage.setItem('likeTags',JSON.stringify(ts))
-  render(data)
+  renderCurrent()
+}
+
+let currentFilter='all';
+function renderCurrent(){
+  if(currentFilter==='all')renderFeatured();
+  else if(currentFilter==='inspire')renderInspire();
+  else if(currentFilter==='analysis')renderAnalysis();
+  else if(currentFilter==='hot'){renderTags('全部');render(data.filter(d=>d.source!=='blogger'))}
+  else if(currentFilter==='fav'){/* fav tab has its own complex logic, skip for now */}
+  else render(data);
 }
 function getRecommended(){
   const likeTags=getLikeTags()
@@ -513,6 +580,7 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(tab=>{
     document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(x=>x.classList.remove('active'));
     tab.classList.add('active');
     const filter=tab.dataset.filter;
+    currentFilter=filter;
     try{
     if(filter==='inspire'){
       renderInspire();
@@ -553,7 +621,7 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(tab=>{
       render(hotItems);
     }else if(filter==='all'||!filter){
       renderTags('全部');
-      render(data);
+      renderFeatured();
     }
     }catch(err){document.getElementById('content').innerHTML='<div class="empty-state"><div class="icon">⚠️</div><p>加载出错</p><p style="font-size:12px">'+err.message+'</p></div>';}
   };

@@ -1192,8 +1192,8 @@ function renderTrend(){
   setTimeout(()=>{
     try{
       new Chart(document.getElementById('chartDay'),{type:'bar',data:{labels:dayLabels,datasets:[{label:'文章数',data:dayValues,backgroundColor:'rgba(201,169,110,0.7)',borderColor:'#C9A96E',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:false}},scales:{y:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}},x:{grid:{display:false}}}}});
-      new Chart(document.getElementById('chartSrc'),{type:'bar',data:{labels:srcLabels,datasets:[{label:'文章数',data:srcValues,backgroundColor:'rgba(74,143,228,0.7)',borderColor:'#4A8FE4',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{y:{grid:{display:false}},x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}}}});
-      new Chart(document.getElementById('chartTag'),{type:'bar',data:{labels:tagLabels,datasets:[{label:'出现次数',data:tagValues,backgroundColor:'rgba(255,87,34,0.7)',borderColor:'#FF5722',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{y:{grid:{display:false}},x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}}}});
+      new Chart(document.getElementById('chartSrc'),{type:'bar',data:{labels:srcLabels,datasets:[{label:'文章数',data:srcValues,backgroundColor:'rgba(74,143,228,0.7)',borderColor:'#4A8FE4',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{y:{grid:{display:false}},x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}}}}});
+      new Chart(document.getElementById('chartTag'),{type:'bar',data:{labels:tagLabels,datasets:[{label:'出现次数',data:tagValues,backgroundColor:'rgba(255,87,34,0.7)',borderColor:'#FF5722',borderWidth:1}]},options:{responsive:true,maintainAspectRatio:false,indexAxis:'y',plugins:{legend:{display:false}},scales:{y:{grid:{display:false}},x:{beginAtZero:true,grid:{color:'rgba(255,255,255,0.05)'}}}}});
     }catch(e){}
   },100);
 }

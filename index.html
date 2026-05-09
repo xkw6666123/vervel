@@ -297,7 +297,7 @@ footer a:hover{color:var(--gold-hover)}
 }
 .mobile-nav a.active{color:var(--gold)}
 .mobile-nav a .nav-icon{font-size:20px;display:block;margin-bottom:3px}
-body{padding-bottom:0}
+body{padding-bottom:0} /* 已由上方覆盖 */
 @media(max-width:768px){body{padding-bottom:70px}.mobile-nav{display:flex}}
 @media(min-width:769px){.mobile-nav{display:none}}
 
@@ -368,12 +368,18 @@ body{padding-bottom:0}
   .card-summary{font-size:13px}
 }
 
-/* 新增：移动端隐藏顶部导航，防止重复 */
+
+/* 移动端隐藏底部导航（保留顶部导航），防止重复和横向滚动 */
 @media(max-width:768px){
-  .header-tabs{display:none!important}
-  #searchInput{width:120px!important}
-  #searchInput:focus{width:160px!important}
+  .mobile-nav{display:none!important}
+  .header-inner{overflow:hidden}
+  .header-right{max-width:calc(100% - 100px);overflow:hidden}
+  #searchInput{width:80px!important;flex-shrink:0}
+  #searchInput:focus{width:130px!important}
+  .header-tabs{-webkit-overflow-scrolling:touch;overflow-x:auto;scrollbar-width:none}
+  .header-tabs::-webkit-scrollbar{display:none}
 }
+body{padding-bottom:0} /* 已由上方覆盖 */
 </style>
 </head>
 <body>

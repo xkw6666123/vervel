@@ -62,7 +62,7 @@ header{
   flex-shrink:0;
 }
 /* 新增：header-right 容器 */
-.header-right{
+.header-right{max-width:calc(100% - 100px);
   display:flex;align-items:center;gap:8px;
   flex-shrink:1;min-width:0;
 }
@@ -340,7 +340,7 @@ body{padding-bottom:0}
   .hero-stat .num{font-size:20px}
   .header-inner{padding:0 14px;height:54px;flex-wrap:wrap;height:auto;padding-top:8px;padding-bottom:8px}
   .logo{font-size:16px;margin-bottom:4px}
-  .header-right{width:100%;justify-content:space-between}
+  .header-right{max-width:calc(100% - 100px);width:100%;justify-content:space-between}
   #searchInput{width:70px;font-size:11px;padding:4px 8px}
   #searchInput:focus{width:100px}
   .header-tabs{padding:2px}
@@ -366,6 +366,13 @@ body{padding-bottom:0}
   .card{padding:14px 16px}
   .card-title{font-size:15px}
   .card-summary{font-size:13px}
+}
+
+/* 新增：移动端隐藏顶部导航，防止重复 */
+@media(max-width:768px){
+  .header-tabs{display:none!important}
+  #searchInput{width:120px!important}
+  #searchInput:focus{width:160px!important}
 }
 </style>
 </head>

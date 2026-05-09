@@ -395,6 +395,7 @@ body{padding-bottom:0} /* 已由上方覆盖 */
 <nav class="header-tabs">
 <a href="#" class="active" data-filter="all">精选</a>
 <a href="#" data-filter="hot">热点</a>
+<a href="#" data-filter="wechat">公众号</a>
 <a href="#" data-filter="inspire">灵感</a>
 <a href="#" data-filter="trend">📈趋势</a>
 <a href="#" data-filter="analysis">拆解</a>
@@ -463,6 +464,7 @@ body{padding-bottom:0} /* 已由上方覆盖 */
 <div class="mobile-nav" id="mobileNav">
 <a href="#" class="active" data-filter="all"><span class="nav-icon">🔥</span>精选</a>
 <a href="#" data-filter="hot"><span class="nav-icon">📰</span>热点</a>
+<a href="#" data-filter="wechat"><span class="nav-icon">💬</span>公众号</a>
 <a href="#" data-filter="inspire"><span class="nav-icon">💡</span>灵感</a>
 <a href="#" data-filter="trend"><span class="nav-icon">📈</span>趋势</a>
 <a href="#" data-filter="analysis"><span class="nav-icon">🔬</span>拆解</a>
@@ -776,6 +778,11 @@ document.querySelectorAll('.header-tabs a,.mobile-nav a').forEach(tab=>{
       renderTags('全部');
       const hotItems=data.filter(d=>d.source!=='blogger');
       render(hotItems);
+    
+    }else if(filter==='wechat'){
+      renderTags('全部');
+      const wcItems = data.filter(d=>d.source && d.source.indexOf('公众号') >= 0);
+      render(wcItems);
     }else if(filter==='all'||!filter){
       renderTags('全部');
       renderFeatured();

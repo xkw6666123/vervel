@@ -448,6 +448,40 @@
                          "date":  "2026-05-06"
                      },
                      {
+                         "id":  "wc_20260510_016",
+                         "title":  "[突发新闻] 费城大学城两警察昨晚遇袭,一名女警被狂射15枪",
+                         "summary":  "昨晚(9月16日),一名枪手在西费城埋伏袭击了一位警员.在逮捕前,这名枪手击中了四名市民和一名宾夕法尼亚大学的校警.警察...",
+                         "source":  "公众号热点",
+                         "date":  "2026-05-10",
+                         "time":  "08:42",
+                         "tags":  [
+                                      "公众号",
+                                      "信息差",
+                                      "热门"
+                                  ],
+                         "url":  "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6ft3wfAVofsP5Peu-UiA4DIIRxcsEVL6DLug-OSWP1CmVgrFeYQugDsYKPJtjoFYQ7MoSjh0tuA-SxdKuWXPd5CFNw1LrsXgNiokhXE_CAko_XqgM6XHFspqLqdywwJsuciPgSsykbrqihABR-SSPuqQiyF_XppbRjKzziNhLvsxfDhCjv9ApnmUUYI5au2-RyZhwpgUMKF2Q0peEsynYDmZ2joDlfEAvHYEqU6vgVuaPzeG9tVBdm2d2wMf6WVkW_VoExh7hlq2VQpiugGg615CSrxby8snviZqwg0yoRFw.\u0026amp;type=2\u0026amp;query=%E7%AA%81%E5%8F%91%E6%96%B0%E9%97%BB\u0026amp;token=75663C4453EB16324245122E9B16F6F34371178F69FFF513",
+                         "likes":  185000,
+                         "comments":  18500
+                     },
+                     {
+                         "id":  "wc_20260510_017",
+                         "title":  "突发新闻!合肥市区发生车辆自燃!一居民楼发生火灾!",
+                         "summary":  "安徽交通广播、安徽省应急广播FM90.8最新消息:今天下午4点左右,合肥市徽州大道东陈岗附近,南向北路段,发生一辆红色越野车...",
+                         "source":  "公众号热点",
+                         "date":  "2026-05-10",
+                         "time":  "11:42",
+                         "tags":  [
+                                      "公众号",
+                                      "信息差",
+                                      "争议",
+                                      "爆款",
+                                      "热门"
+                                  ],
+                         "url":  "https://weixin.sogou.com/link?url=dn9a_-gY295K0Rci_xozVXfdMkSQTLW6cwJThYulHEtVjXrGTiVgS909ZJaDNVyOVtiEHBaRDZjtfMLPcgQ7yFqXa8Fplpd9qp_a_n1HIGAI2j6LXXKib1iP1U_G6t9C5yfrmQeu38JzVoBqH6KtDHXZyaGJp3fqdMVHAqoERR5vg1j5m7_29rg17v5-BxmtQIBIdQGVHbMeGxQp43_OBQ6i8a_TSKm30JARGgE9Juxl0QXBoRsZsHeFZ_5U3NjyfWAoNmlBN7DFcvUoAZZH7Q..\u0026amp;type=2\u0026amp;query=%E7%AA%81%E5%8F%91%E6%96%B0%E9%97%BB\u0026amp;token=75663C4453EB16324245122E9B16F6F34371178F69FFF513",
+                         "likes":  280000,
+                         "comments":  28000
+                     },
+                     {
                          "id":  "20260510_016",
                          "title":  "普京：俄乌冲突正接近尾声",
                          "summary":  "【凤凰网】普京：俄乌冲突正接近尾声",
@@ -4974,5 +5008,5 @@
                              "chen_style":  "大型纪录片【早报】油价大幅跳水！特：真相来了"
                          }
                      ],
-    "updated_at":  "2026-05-10T11:01:21+08:00"
+    "updated_at":  "2026-05-10T11:01:50+08:00"
 }

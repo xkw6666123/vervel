@@ -630,9 +630,14 @@ function renderTags(active){
 
 function render(items){
   const el=document.getElementById('content');
-  // 过滤已点叉的
+  // 过滤已点叉的 + 屏蔽的来源
   const dismissed=getDismissed();
-  items=items.filter(a=>!dismissed.includes(String(a.id)));
+  const blockedSources=getBlockedSources();
+  items=items.filter(a=>{
+    if(dismissed.includes(String(a.id)))return false;
+    if(blockedSources.length&&a.source&&blockedSources.includes(a.source))return false;
+    return true;
+  });
   if(!items.length){
     el.innerHTML='<div class="empty-state"><div class="icon">🔍</div><p>没有找到相关内容</p><p style="font-size:12px;margin-top:4px">试试看看其它分类</p></div>';
     return;
@@ -715,14 +720,15 @@ function renderCard(a){
   const today=new Date().toISOString().slice(0,10);
   const isNew=a.date===today;
   const newBadge=isNew?'<span style="margin-left:6px;font-size:10px;background:var(--gold-dim);color:var(--gold);padding:1px 6px;border-radius:10px">NEW</span>':'';
-  return `<div style="position:relative">
+  const srcBlocked=isBlockedSource(a.source);
+  return `<div style="position:relative;${srcBlocked?'display:none':''}">
     <button class="dismiss-btn" data-id="${a.id}" onclick="event.preventDefault();event.stopPropagation();toggleDismiss(this.dataset.id)" title="不感兴趣">✕</button>
     <button class="fav-btn ${isFav(a.id)?'active':''}" data-id="${a.id}" onclick="event.preventDefault();event.stopPropagation();toggleFav(this.dataset.id)">${isFav(a.id)?'⭐':'☆'}</button>
     ${isBlogger?`<button class="fav-btn" style="right:40px;${liked?'background:var(--gold-dim);color:var(--gold)':'color:var(--text-muted)'}" data-id="${a.id}" data-tags='${esc(JSON.stringify(a.tags||[]))}' onclick="event.preventDefault();event.stopPropagation();toggleLike(this.dataset.id,this.dataset.tags)">${liked?'❤️':'🤍'}</button>`:''}
     <a href="${esc(a.url||'#')}" target="_blank" class="card" style="display:block;color:inherit;${isNew?'border-left:3px solid var(--gold)':''}">
       <div class="card-time">
         <span class="dot"></span>${a.date} ${a.time}
-        <span class="source">${a.source||''}</span>
+        <span class="source" style="cursor:pointer" onclick="event.preventDefault();event.stopPropagation();toggleBlockSource('${esc(a.source||'')}',this)" title="点击屏蔽此来源">${a.source||''}</span>
         ${badge?`<span style="margin-left:6px;font-size:13px">${badge}</span>`:''}
         ${newBadge}
       </div>
@@ -754,6 +760,11 @@ function toggleFav(id){id=String(id);let f=getFavs();let i=f.indexOf(id);if(i>-1
 function getDismissed(){try{return JSON.parse(localStorage.getItem('dismissed')||'[]').map(String)}catch{return[]}}
 function isDismissed(id){return getDismissed().includes(String(id))}
 function toggleDismiss(id){id=String(id);let d=getDismissed();if(!d.includes(id)){d.push(id);localStorage.setItem('dismissed',JSON.stringify(d))};let el=document.querySelector(`.dismiss-btn[data-id="${id}"]`);if(el){let card=el.closest('[style*="position:relative"]');if(card)card.style.display='none'}}
+
+// 屏蔽来源
+function getBlockedSources(){try{return JSON.parse(localStorage.getItem('blockedSources')||'[]')}catch{return[]}}
+function isBlockedSource(src){return src&&getBlockedSources().includes(src)}
+function toggleBlockSource(src,el){if(!src)return;let b=getBlockedSources();let i=b.indexOf(src);if(i>-1){b.splice(i,1)}else{b.push(src)};localStorage.setItem('blockedSources',JSON.stringify(b));el.style.textDecoration=i>-1?'':'line-through';el.style.opacity=i>-1?'1':'0.5';renderCurrent()}
 
 function getLikes(){try{return JSON.parse(localStorage.getItem('likes')||'[]').map(String)}catch{return[]}}
 function getLikeTags(){try{return JSON.parse(localStorage.getItem('likeTags')||'[]')}catch{return[]}}

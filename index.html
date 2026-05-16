@@ -526,42 +526,56 @@ function triggerUpdate(){
 var data=[],allTags=[],json={},dataError=null;
 
 function loadData(){
-  // 优先使用内联数据（嵌入在 script data-embed 标签中）
-  if (window.__HOT_DATA__ && window.__HOT_DATA__.articles) {
-    try {
-      json = window.__HOT_DATA__;
-      data = json.articles || [];
-      console.log('✅ 内联数据已加载 (' + data.length + '条)');
-      initPage();
-      return;
-    } catch(e) {
-      console.warn('内联数据解析异常，切换兜底方案:', e);
-    }
-  }
-
-  // 兜底：内联数据不可用，尝试从 data.json 加载
-  console.log('⚠️ 内联数据不可用，尝试加载 data.json...');
-  document.getElementById('jsError').style.display='block';
-  document.getElementById('jsError').innerHTML='⚠️ 内联数据加载失败，正在从 data.json 兜底加载...';
-
-  fetch('data.json?t=' + Date.now())
+  // 优先尝试从本地触发服务器获取最新数据
+  fetch('http://localhost:8765/latest-data',{mode:'cors'})
     .then(function(r){
-      if(!r.ok) throw new Error('HTTP '+r.status);
+      if(!r.ok)throw Error();
       return r.json();
     })
     .then(function(d){
-      json = d;
-      data = json.articles || [];
-      window.__HOT_DATA__ = d; // 缓存到全局变量
-      console.log('✅ data.json 兜底加载成功 (' + data.length + '条)');
-      document.getElementById('jsError').style.display='none';
-      initPage();
+      if(d&&d.articles&&d.articles.length>0){
+        window.__HOT_DATA__=d;json=d;data=d.articles;
+        console.log('✅ 本地数据 ('+data.length+'条)');
+        initPage();
+        return;
+      }
+      throw Error('空数据');
     })
-    .catch(function(e){
-      dataError = e.message;
-      console.error('❌ 数据加载失败:', e);
+    .catch(function(){
+      // 本地服务器不可用，降级到内嵌数据
+      if (window.__HOT_DATA__ && window.__HOT_DATA__.articles) {
+        try {
+          json = window.__HOT_DATA__;
+          data = json.articles || [];
+          console.log('✅ 内联数据 (' + data.length + '条)');
+          initPage();
+          return;
+        } catch(e) {
+          console.warn('内联数据异常:', e);
+        }
+      }
+      // 最后兜底：直接 fetch data.json
+      console.log('⚠️ 尝试从 data.json 加载...');
       document.getElementById('jsError').style.display='block';
-      document.getElementById('jsError').innerHTML='数据加载失败: '+e.message+'<br>请截图发给我';
+      document.getElementById('jsError').innerHTML='⏳ 正在从 data.json 加载...';
+      fetch('data.json?t=' + Date.now())
+        .then(function(r){
+          if(!r.ok) throw new Error('HTTP '+r.status);
+          return r.json();
+        })
+        .then(function(d){
+          json = d; data = json.articles || [];
+          window.__HOT_DATA__ = d;
+          console.log('✅ data.json 加载成功 ('+data.length+'条)');
+          document.getElementById('jsError').style.display='none';
+          initPage();
+        })
+        .catch(function(e){
+          dataError = e.message;
+          console.error('❌ 数据加载失败:', e);
+          document.getElementById('jsError').style.display='block';
+          document.getElementById('jsError').innerHTML='数据加载失败: '+e.message+'<br>请截图发给我';
+        });
     });
 }
 

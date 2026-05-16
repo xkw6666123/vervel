@@ -485,21 +485,32 @@ function toggleTheme(){
 // 一键更新：先触发本地追踪脚本，再从本地服务器拿最新数据
 function triggerUpdate(){
   const btn=document.getElementById('updateBtn');
-  btn.textContent='⏳ 追踪中(约1分钟)...';btn.disabled=true;
-  // 触发本地追踪
+  const origTxt=btn.textContent;
+  btn.textContent='⏳ 更新中...';btn.disabled=true;
+  
+  // 记录当前更新时间用于对比
+  const oldUpdated = json.updated_at || '';
+  
+  // 尝试多种方式触发本地追踪（部分可能被浏览器阻止，但无关紧要）
   fetch('http://localhost:8765/trigger',{mode:'cors'}).catch(function(){});
-  // 每5秒检查本地最新数据，最多等90秒
+  try{var img=new Image();img.src='http://localhost:8765/trigger?_='+Date.now();}catch(e){}
+  
+  // 每5秒轮询 data.json（同源请求），检测数据是否有更新
   var waited=0;
   var timer=setInterval(function(){
     waited+=5;
-    fetch('http://localhost:8765/latest-data',{mode:'cors'})
+    fetch('data.json?t='+Date.now())
       .then(function(r){if(!r.ok)throw Error();return r.json();})
       .then(function(d){
-        if(d&&d.articles&&d.articles.length>0){
+        if(d&&d.articles&&d.articles.length>0 && d.updated_at && d.updated_at!==oldUpdated){
           clearInterval(timer);
-          window.__HOT_DATA__=d;data=d.articles;json=d;loadData();
-          btn.textContent='✅ 已刷新(本地数据)';btn.style.background='#22c55e';
-          setTimeout(function(){btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
+          json=d;data=d.articles;
+          window.__HOT_DATA__=d;
+          console.log('✅ 数据已更新 ('+data.length+'条)');
+          initPage();
+          btn.textContent='✅ 已刷新';btn.style.background='#22c55e';
+          setTimeout(function(){btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},2000);
+          return;
         }
       })
       .catch(function(){});
@@ -522,60 +533,44 @@ function triggerUpdate(){
   }
 })();
 
-// ===== 数据加载（内联优先，data.json 兜底）=====
+// ===== 数据加载（data.json 优先，内联数据兜底）=====
 var data=[],allTags=[],json={},dataError=null;
 
 function loadData(){
-  // 优先尝试从本地触发服务器获取最新数据
-  fetch('http://localhost:8765/latest-data',{mode:'cors'})
+  // 优先从服务器获取最新 data.json（同源请求，不会被混合内容拦截）
+  fetch('data.json?t=' + Date.now())
     .then(function(r){
-      if(!r.ok)throw Error();
+      if(!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     })
     .then(function(d){
-      if(d&&d.articles&&d.articles.length>0){
-        window.__HOT_DATA__=d;json=d;data=d.articles;
-        console.log('✅ 本地数据 ('+data.length+'条)');
+      if(d && d.articles && d.articles.length > 0){
+        window.__HOT_DATA__ = d; json = d; data = d.articles;
+        console.log('✅ data.json (' + data.length + '条, ' + (d.updated_at || '') + ')');
+        document.getElementById('jsError').style.display = 'none';
         initPage();
         return;
       }
-      throw Error('空数据');
+      throw new Error('数据为空');
     })
-    .catch(function(){
-      // 本地服务器不可用，降级到内嵌数据
-      if (window.__HOT_DATA__ && window.__HOT_DATA__.articles) {
+    .catch(function(e){
+      console.warn('⚠️ data.json 加载失败:', e.message || e);
+      // 降级到 HTML 内嵌数据
+      if (window.__HOT_DATA__ && window.__HOT_DATA__.articles && window.__HOT_DATA__.articles.length > 0) {
         try {
           json = window.__HOT_DATA__;
           data = json.articles || [];
           console.log('✅ 内联数据 (' + data.length + '条)');
+          document.getElementById('jsError').style.display = 'none';
           initPage();
           return;
-        } catch(e) {
-          console.warn('内联数据异常:', e);
+        } catch(e2) {
+          console.warn('内联数据异常:', e2);
         }
       }
-      // 最后兜底：直接 fetch data.json
-      console.log('⚠️ 尝试从 data.json 加载...');
-      document.getElementById('jsError').style.display='block';
-      document.getElementById('jsError').innerHTML='⏳ 正在从 data.json 加载...';
-      fetch('data.json?t=' + Date.now())
-        .then(function(r){
-          if(!r.ok) throw new Error('HTTP '+r.status);
-          return r.json();
-        })
-        .then(function(d){
-          json = d; data = json.articles || [];
-          window.__HOT_DATA__ = d;
-          console.log('✅ data.json 加载成功 ('+data.length+'条)');
-          document.getElementById('jsError').style.display='none';
-          initPage();
-        })
-        .catch(function(e){
-          dataError = e.message;
-          console.error('❌ 数据加载失败:', e);
-          document.getElementById('jsError').style.display='block';
-          document.getElementById('jsError').innerHTML='数据加载失败: '+e.message+'<br>请截图发给我';
-        });
+      console.error('❌ 所有数据源加载失败');
+      document.getElementById('jsError').style.display = 'block';
+      document.getElementById('jsError').innerHTML = '数据加载失败，请刷新页面重试';
     });
 }
 

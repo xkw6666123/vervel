@@ -482,28 +482,33 @@ function toggleTheme(){
   localStorage.setItem('theme',isLight?'light':'dark');
   document.getElementById('themeToggle').textContent=isLight?'☀️':'🌙';
 }
-// 一键更新：先触发本地追踪脚本，再刷新数据
+// 一键更新：先触发本地追踪脚本，再从本地服务器拿最新数据
 function triggerUpdate(){
   const btn=document.getElementById('updateBtn');
-  btn.textContent='⏳ 追踪+刷新...';btn.disabled=true;
-  // 尝试触发本地追踪服务器
+  btn.textContent='⏳ 追踪中(约1分钟)...';btn.disabled=true;
+  // 触发本地追踪
   fetch('http://localhost:8765/trigger',{mode:'cors'}).catch(function(){});
-  // 等几秒让追踪脚本跑一下，然后刷新数据
-  setTimeout(function(){
-    fetch('data.json?_t='+Date.now())
-      .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
-      .then(d=>{
-        if(d&&d.articles){
+  // 每5秒检查本地最新数据，最多等90秒
+  var waited=0;
+  var timer=setInterval(function(){
+    waited+=5;
+    fetch('http://localhost:8765/latest-data',{mode:'cors'})
+      .then(function(r){if(!r.ok)throw Error();return r.json();})
+      .then(function(d){
+        if(d&&d.articles&&d.articles.length>0){
+          clearInterval(timer);
           window.__HOT_DATA__=d;data=d.articles;json=d;loadData();
-          btn.textContent='✅ 已刷新';btn.style.background='#22c55e';
-          setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},2000);
-        }else{throw new Error('数据格式错误');}
+          btn.textContent='✅ 已刷新(本地数据)';btn.style.background='#22c55e';
+          setTimeout(function(){btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
+        }
       })
-      .catch(e=>{
-        btn.textContent='❌ 失败';btn.style.background='#ef4444';
-        setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
-      });
-  },3000);
+      .catch(function(){});
+    if(waited>=90){
+      clearInterval(timer);
+      btn.textContent='⚠️ 超时';btn.style.background='#f59e0b';
+      setTimeout(function(){btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
+    }
+  },5000);
 }
 // 初始化主题
 (function(){

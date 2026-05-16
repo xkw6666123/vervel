@@ -5,6 +5,37 @@
              },
     "articles":  [
                      {
+                         "id":  7640058819367734563,
+                         "blogger_name":  "网吧信息差",
+                         "time":  "10:46",
+                         "analysis":  {
+                                          "video_type":  "大学生吐槽",
+                                          "replicable_tip":  "用\u0027难不成是真的\u0027悬念句式 + 大学生视角切入，制造反差共鸣",
+                                          "publish_pattern":  "发布 10:46",
+                                          "cover_style":  "人物表情 + 大字标题叠加",
+                                          "keywords":  [
+                                                           "你不是我的兄弟",
+                                                           "你是一个路人"
+                                                       ]
+                                      },
+                         "title":  "[网吧信息差] 你不是我的兄弟 你是一个路人",
+                         "tags":  [
+                                      "网吧信息差",
+                                      "信息差",
+                                      "内容过于真实",
+                                      "网吧信息差",
+                                      "搞笑",
+                                      "玩梗"
+                                  ],
+                         "url":  "https://www.douyin.com/video/7640058819367734563",
+                         "content_intro":  "你不是我的兄弟 你是一个路人",
+                         "source":  "blogger",
+                         "comments":  440,
+                         "summary":  "你不是我的兄弟 你是一个路人",
+                         "likes":  39063,
+                         "date":  "2026-05-16"
+                     },
+                     {
                          "id":  676734996,
                          "title":  "今日热点快报",
                          "summary":  "今日热点快报",
@@ -55,37 +86,6 @@
                          "play_count":  318170,
                          "aweme_id":  "BV1zX516vExY",
                          "create_time":  1778666502,
-                         "content_intro":  "",
-                         "analysis":  {
-                                          "video_type":  "社会热点信息快报",
-                                          "cover_style":  "新闻截图+醒目标签",
-                                          "publish_pattern":  "日更",
-                                          "keywords":  [
-                                                           "热点"
-                                                       ],
-                                          "replicable_tip":  "精选今日热门热点新闻做合集，标题用#热点标签引流"
-                                      }
-                     },
-                     {
-                         "id":  25018428,
-                         "title":  "今日热点快报",
-                         "summary":  "今日热点快报",
-                         "source":  "blogger",
-                         "blogger_name":  "沙漠一之雕",
-                         "platform":  "bilibili",
-                         "date":  "2026-05-12",
-                         "time":  "11:19",
-                         "tags":  [
-                                      "B站",
-                                      "博主",
-                                      "热点"
-                                  ],
-                         "url":  "https://www.bilibili.com/video/BV1rW5g6qEhb",
-                         "likes":  0,
-                         "comments":  15,
-                         "play_count":  16286,
-                         "aweme_id":  "BV1rW5g6qEhb",
-                         "create_time":  1778584761,
                          "content_intro":  "",
                          "analysis":  {
                                           "video_type":  "社会热点信息快报",
@@ -177,37 +177,6 @@
                                           "video_type":  "搞笑/沙雕向",
                                           "cover_style":  "新闻截图+醒目标签",
                                           "publish_pattern":  "日更",
-                                          "keywords":  [
-                                                           "热点",
-                                                           "信息差",
-                                                           "社会",
-                                                           "离谱",
-                                                           "逆天"
-                                                       ],
-                                          "replicable_tip":  "精选今日热门热点新闻做合集，标题用#热点#信息差#社会标签引流"
-                                      }
-                     },
-                     {
-                         "id":  196247665,
-                         "title":  "上周逆天人类合集及后续（5.4-5.10）#社会热点信息差 #逆天 #离谱 #人类迷惑行为大赏",
-                         "summary":  "上周逆天人类合集及后续（5.4-5.10）#社会热点信息差 #逆天 #离谱 #人类迷惑行为大赏",
-                         "source":  "blogger",
-                         "blogger_name":  "人类观察菌",
-                         "date":  "2026-05-12",
-                         "time":  "17:27",
-                         "tags":  [
-                                      "博主",
-                                      "爆款",
-                                      "拆解"
-                                  ],
-                         "url":  "https://www.douyin.com/video/7638934534990066873",
-                         "likes":  239848,
-                         "comments":  13458,
-                         "content_intro":  "上周逆天人类合集及后续（5.4-5.10） 话题：#社会热点信息差 #逆天 #离谱 #人类迷惑行为大赏",
-                         "analysis":  {
-                                          "video_type":  "热点合集盘点",
-                                          "cover_style":  "新闻截图+醒目标签",
-                                          "publish_pattern":  "周更",
                                           "keywords":  [
                                                            "热点",
                                                            "信息差",
@@ -8438,5 +8407,5 @@
                              "chen_style":  "大型纪录片: 用\"大型纪录片之特朗普结束对中国全程高能\""
                          }
                      ],
-    "updated_at":  "2026-05-15T21:06:19+08:00"
+    "updated_at":  "2026-05-16T10:46:28+08:00"
 }

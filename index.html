@@ -482,25 +482,29 @@ function toggleTheme(){
   localStorage.setItem('theme',isLight?'light':'dark');
   document.getElementById('themeToggle').textContent=isLight?'☀️':'🌙';
 }
-// 一键更新：通过 Cloudflare Pages Function 触发 GitHub Actions
+// 一键更新：直接重新加载data.json获取最新数据
 function triggerUpdate(){
   const btn=document.getElementById('updateBtn');
-  btn.textContent='⏳ 触发中...';btn.disabled=true;
-  fetch('/api/trigger-update',{method:'POST'})
-    .then(r=>r.json())
+  btn.textContent='⏳ 刷新中...';btn.disabled=true;
+  fetch('data.json?_t='+Date.now())
+    .then(r=>{
+      if(!r.ok)throw new Error('HTTP '+r.status);
+      return r.json();
+    })
     .then(d=>{
-      if(d.ok){
-        btn.textContent='✅ 已触发';btn.style.background='#22c55e';
-        setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
+      if(d&&d.articles){
+        window.__HOT_DATA__=d;
+        data=d.articles;
+        json=d;
+        loadData();
+        btn.textContent='✅ 已刷新';btn.style.background='#22c55e';
+        setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},2000);
       }else{
-        btn.textContent='❌ 失败';btn.style.background='#ef4444';
-        alert('更新失败: '+d.msg);
-        setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
+        throw new Error('数据格式错误');
       }
     })
     .catch(e=>{
       btn.textContent='❌ 失败';btn.style.background='#ef4444';
-      alert('网络错误: '+e.message);
       setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
     });
 }

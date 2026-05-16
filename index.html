@@ -482,31 +482,28 @@ function toggleTheme(){
   localStorage.setItem('theme',isLight?'light':'dark');
   document.getElementById('themeToggle').textContent=isLight?'☀️':'🌙';
 }
-// 一键更新：直接重新加载data.json获取最新数据
+// 一键更新：先触发本地追踪脚本，再刷新数据
 function triggerUpdate(){
   const btn=document.getElementById('updateBtn');
-  btn.textContent='⏳ 刷新中...';btn.disabled=true;
-  fetch('data.json?_t='+Date.now())
-    .then(r=>{
-      if(!r.ok)throw new Error('HTTP '+r.status);
-      return r.json();
-    })
-    .then(d=>{
-      if(d&&d.articles){
-        window.__HOT_DATA__=d;
-        data=d.articles;
-        json=d;
-        loadData();
-        btn.textContent='✅ 已刷新';btn.style.background='#22c55e';
-        setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},2000);
-      }else{
-        throw new Error('数据格式错误');
-      }
-    })
-    .catch(e=>{
-      btn.textContent='❌ 失败';btn.style.background='#ef4444';
-      setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
-    });
+  btn.textContent='⏳ 追踪+刷新...';btn.disabled=true;
+  // 尝试触发本地追踪服务器
+  fetch('http://localhost:8765/trigger',{mode:'cors'}).catch(function(){});
+  // 等几秒让追踪脚本跑一下，然后刷新数据
+  setTimeout(function(){
+    fetch('data.json?_t='+Date.now())
+      .then(r=>{if(!r.ok)throw new Error('HTTP '+r.status);return r.json();})
+      .then(d=>{
+        if(d&&d.articles){
+          window.__HOT_DATA__=d;data=d.articles;json=d;loadData();
+          btn.textContent='✅ 已刷新';btn.style.background='#22c55e';
+          setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},2000);
+        }else{throw new Error('数据格式错误');}
+      })
+      .catch(e=>{
+        btn.textContent='❌ 失败';btn.style.background='#ef4444';
+        setTimeout(()=>{btn.textContent='🔄 更新';btn.disabled=false;btn.style.background='';},3000);
+      });
+  },3000);
 }
 // 初始化主题
 (function(){

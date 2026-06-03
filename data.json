@@ -244,6 +244,66 @@
                          "date":  "2026-05-31"
                      },
                      {
+                         "id":  "20260603_058",
+                         "title":  "中国水上电梯创造多个世界第一",
+                         "summary":  "【bilibili 热搜】中国水上电梯创造多个世界第一",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-06-03",
+                         "time":  "20:26",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E6%B0%B4%E4%B8%8A%E7%94%B5%E6%A2%AF%E5%88%9B%E9%80%A0%E5%A4%9A%E4%B8%AA%E4%B8%96%E7%95%8C%E7%AC%AC%E4%B8%80",
+                         "likes":  55473,
+                         "comments":  11094
+                     },
+                     {
+                         "id":  "20260603_049",
+                         "title":  "周涛已任山东聊城市委常委",
+                         "summary":  "【今日头条】周涛已任山东聊城市委常委",
+                         "source":  "今日头条",
+                         "date":  "2026-06-03",
+                         "time":  "02:53",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7646961968159653898/",
+                         "likes":  109288,
+                         "comments":  5752
+                     },
+                     {
+                         "id":  "20260603_036",
+                         "title":  "稳住心态更要守住防线",
+                         "summary":  "【微博】稳住心态更要守住防线",
+                         "source":  "微博",
+                         "date":  "2026-06-03",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E7%A8%B3%E4%BD%8F%E5%BF%83%E6%80%81%E6%9B%B4%E8%A6%81%E5%AE%88%E4%BD%8F%E9%98%B2%E7%BA%BF%23",
+                         "likes":  219552,
+                         "comments":  12197
+                     },
+                     {
+                         "id":  "20260603_035",
+                         "title":  "石翔曝亚运黑料:朱开拖累选手",
+                         "summary":  "【贴吧】石翔曝亚运黑料:朱开拖累选手",
+                         "source":  "贴吧",
+                         "date":  "2026-06-03",
+                         "time":  "22:55",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E7%9F%B3%E7%BF%94%E6%9B%9D%E4%BA%9A%E8%BF%90%E9%BB%91%E6%96%99%3A%E6%9C%B1%E5%BC%80%E6%8B%96%E7%B4%AF%E9%80%89%E6%89%8B\u0026topic_id=28354806",
+                         "likes":  223862,
+                         "comments":  13991
+                     },
+                     {
                          "id":  "20260603_059",
                          "title":  "影之刃零官宣延期",
                          "summary":  "【bilibili 热搜】影之刃零官宣延期",
@@ -2890,5 +2950,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-06-03T12:01:40+08:00"
+    "updated_at":  "2026-06-03T13:01:17+08:00"
 }

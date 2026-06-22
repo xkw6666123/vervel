@@ -243,6 +243,36 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260622_058",
+                         "title":  "凡人告黑子,一个都不放过",
+                         "summary":  "【贴吧】凡人告黑子,一个都不放过",
+                         "source":  "贴吧",
+                         "date":  "2026-06-22",
+                         "time":  "20:26",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%87%A1%E4%BA%BA%E5%91%8A%E9%BB%91%E5%AD%90%2C%E4%B8%80%E4%B8%AA%E9%83%BD%E4%B8%8D%E6%94%BE%E8%BF%87\u0026topic_id=28355277",
+                         "likes":  58654,
+                         "comments":  4511
+                     },
+                     {
+                         "id":  "20260622_024",
+                         "title":  "崩坏因缘精灵最新实机",
+                         "summary":  "【bilibili 热搜】崩坏因缘精灵最新实机",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-06-22",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%B4%A9%E5%9D%8F%E5%9B%A0%E7%BC%98%E7%B2%BE%E7%81%B5",
+                         "likes":  289093,
+                         "comments":  57818
+                     },
+                     {
                          "id":  "20260622_039",
                          "title":  "假日经济活力迸发",
                          "summary":  "【抖音】假日经济活力迸发",
@@ -3690,5 +3720,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-06-22T13:01:31+08:00"
+    "updated_at":  "2026-06-22T14:01:54+08:00"
 }

@@ -243,6 +243,96 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260625_047",
+                         "title":  "世界杯小组赛 C 组，巴西 3-0 战胜苏格兰头名出线，内马尔替补登场，如何评价本场比赛？",
+                         "summary":  "【知乎】世界杯小组赛 C 组，巴西 3-0 战胜苏格兰头名出线，内马尔替补登场，如何评价本场比赛？",
+                         "source":  "知乎",
+                         "date":  "2026-06-25",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2053071755242103665",
+                         "likes":  129641,
+                         "comments":  21606
+                     },
+                     {
+                         "id":  "20260625_046",
+                         "title":  "内马尔归位,巴西军团头名出线",
+                         "summary":  "【贴吧】内马尔归位,巴西军团头名出线",
+                         "source":  "贴吧",
+                         "date":  "2026-06-25",
+                         "time":  "20:02",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%86%85%E9%A9%AC%E5%B0%94%E5%BD%92%E4%BD%8D%2C%E5%B7%B4%E8%A5%BF%E5%86%9B%E5%9B%A2%E5%A4%B4%E5%90%8D%E5%87%BA%E7%BA%BF\u0026topic_id=28355630",
+                         "likes":  141902,
+                         "comments":  15766
+                     },
+                     {
+                         "id":  "20260625_028",
+                         "title":  "巴西3-0苏格兰",
+                         "summary":  "【bilibili 热搜】巴西3-0苏格兰",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-06-25",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%B7%B4%E8%A5%BF3-0%E8%8B%8F%E6%A0%BC%E5%85%B0",
+                         "likes":  266383,
+                         "comments":  22198
+                     },
+                     {
+                         "id":  "20260625_025",
+                         "title":  "投资600万加油站建成即被责令拆除",
+                         "summary":  "【今日头条】投资600万加油站建成即被责令拆除",
+                         "source":  "今日头条",
+                         "date":  "2026-06-25",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7654959402625253417/",
+                         "likes":  293406,
+                         "comments":  58681
+                     },
+                     {
+                         "id":  "20260625_024",
+                         "title":  "如何看待周星驰新电影《功夫女足》？",
+                         "summary":  "【知乎】如何看待周星驰新电影《功夫女足》？",
+                         "source":  "知乎",
+                         "date":  "2026-06-25",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2053067286899058574",
+                         "likes":  316177,
+                         "comments":  19761
+                     },
+                     {
+                         "id":  "20260625_013",
+                         "title":  "GTA6公布售价",
+                         "summary":  "【bilibili 热搜】GTA6公布售价",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-06-25",
+                         "time":  "02:41",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=GTA6%E5%85%AC%E5%B8%83%E5%94%AE%E4%BB%B7",
+                         "likes":  381768,
+                         "comments":  23860
+                     },
+                     {
                          "id":  "20260625_059",
                          "title":  "清理戒网瘾学校突破性进展",
                          "summary":  "【bilibili 热搜】清理戒网瘾学校突破性进展",
@@ -3727,5 +3817,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-06-25T02:01:20+08:00"
+    "updated_at":  "2026-06-25T10:01:17+08:00"
 }

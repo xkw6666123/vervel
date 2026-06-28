@@ -243,6 +243,113 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260628_050",
+                         "title":  "韩援报国,T1喜提MSI首胜",
+                         "summary":  "【贴吧】韩援报国,T1喜提MSI首胜",
+                         "source":  "贴吧",
+                         "date":  "2026-06-28",
+                         "time":  "04:10",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E9%9F%A9%E6%8F%B4%E6%8A%A5%E5%9B%BD%2CT1%E5%96%9C%E6%8F%90MSI%E9%A6%96%E8%83%9C\u0026topic_id=28355707",
+                         "likes":  95170,
+                         "comments":  5287
+                     },
+                     {
+                         "id":  "20260628_047",
+                         "title":  "美国海军陆战队接收首批「无雷达」F-35，没有雷达在现代战争中意味着什么？",
+                         "summary":  "【知乎】美国海军陆战队接收首批「无雷达」F-35，没有雷达在现代战争中意味着什么？",
+                         "source":  "知乎",
+                         "date":  "2026-06-28",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2053970381673861771",
+                         "likes":  130800,
+                         "comments":  14533
+                     },
+                     {
+                         "id":  "20260628_039",
+                         "title":  "新修订的商标法明年起施行",
+                         "summary":  "【抖音】新修订的商标法明年起施行",
+                         "source":  "抖音",
+                         "date":  "2026-06-28",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2550692",
+                         "likes":  187869,
+                         "comments":  9887
+                     },
+                     {
+                         "id":  "20260628_038",
+                         "title":  "全球首发核电站彩蛋攻略",
+                         "summary":  "【bilibili 热搜】全球首发核电站彩蛋攻略",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-06-28",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%85%A8%E7%90%83%E9%A6%96%E5%8F%91%E6%A0%B8%E7%94%B5%E7%AB%99%E5%BD%A9%E8%9B%8B%E6%94%BB%E7%95%A5",
+                         "likes":  190389,
+                         "comments":  11899
+                     },
+                     {
+                         "id":  "20260628_036",
+                         "title":  "未来5年充电供热供暖将有大变化",
+                         "summary":  "【今日头条】未来5年充电供热供暖将有大变化",
+                         "source":  "今日头条",
+                         "date":  "2026-06-28",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7656345359567916590/",
+                         "likes":  201363,
+                         "comments":  13424
+                     },
+                     {
+                         "id":  "20260628_025",
+                         "title":  "浪姐结束各回各咖",
+                         "summary":  "【微博】浪姐结束各回各咖",
+                         "source":  "微博",
+                         "date":  "2026-06-28",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E6%B5%AA%E5%A7%90%E7%BB%93%E6%9D%9F%E5%90%84%E5%9B%9E%E5%90%84%E5%92%96%23",
+                         "likes":  316261,
+                         "comments":  22590
+                     },
+                     {
+                         "id":  "20260628_024",
+                         "title":  "复盘葡萄牙逼平哥伦比亚",
+                         "summary":  "【bilibili 热搜】复盘葡萄牙逼平哥伦比亚",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-06-28",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%A4%8D%E7%9B%98%E8%91%A1%E8%90%84%E7%89%99%E9%80%BC%E5%B9%B3%E5%93%A5%E4%BC%A6%E6%AF%94%E4%BA%9A",
+                         "likes":  319960,
+                         "comments":  53326
+                     },
+                     {
                          "id":  "20260628_059",
                          "title":  "韩国队世界杯惨遭淘汰",
                          "summary":  "【bilibili 热搜】韩国队世界杯惨遭淘汰",
@@ -3542,5 +3649,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-06-28T16:01:20+08:00"
+    "updated_at":  "2026-06-28T17:01:23+08:00"
 }

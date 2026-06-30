@@ -243,6 +243,81 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260630_051",
+                         "title":  "bw 恋与深空",
+                         "summary":  "【微博】bw 恋与深空",
+                         "source":  "微博",
+                         "date":  "2026-06-30",
+                         "time":  "06:27",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=bw+%E6%81%8B%E4%B8%8E%E6%B7%B1%E7%A9%BA",
+                         "likes":  103167,
+                         "comments":  7935
+                     },
+                     {
+                         "id":  "20260630_050",
+                         "title":  "主播怼人被告,法庭双方玩LOL",
+                         "summary":  "【贴吧】主播怼人被告,法庭双方玩LOL",
+                         "source":  "贴吧",
+                         "date":  "2026-06-30",
+                         "time":  "04:10",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%B8%BB%E6%92%AD%E6%80%BC%E4%BA%BA%E8%A2%AB%E5%91%8A%2C%E6%B3%95%E5%BA%AD%E5%8F%8C%E6%96%B9%E7%8E%A9LOL\u0026topic_id=28355750",
+                         "likes":  112320,
+                         "comments":  16045
+                     },
+                     {
+                         "id":  "20260630_039",
+                         "title":  "我国创新解决油气开发世界级难题",
+                         "summary":  "【抖音】我国创新解决油气开发世界级难题",
+                         "source":  "抖音",
+                         "date":  "2026-06-30",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2552684",
+                         "likes":  176442,
+                         "comments":  22055
+                     },
+                     {
+                         "id":  "20260630_038",
+                         "title":  "一人一句祝党生日快乐",
+                         "summary":  "【微博】一人一句祝党生日快乐",
+                         "source":  "微博",
+                         "date":  "2026-06-30",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E4%B8%80%E4%BA%BA%E4%B8%80%E5%8F%A5%E7%A5%9D%E5%85%9A%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90%23",
+                         "likes":  190284,
+                         "comments":  23785
+                     },
+                     {
+                         "id":  "20260630_036",
+                         "title":  "全国夏播粮食近八成",
+                         "summary":  "【今日头条】全国夏播粮食近八成",
+                         "source":  "今日头条",
+                         "date":  "2026-06-30",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7657009434421530158/",
+                         "likes":  231096,
+                         "comments":  33013
+                     },
+                     {
                          "id":  "20260630_057",
                          "title":  "人民锐评：网红不能困在无底线逐利里",
                          "summary":  "【百度热搜】人民锐评：网红不能困在无底线逐利里",
@@ -3156,5 +3231,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-06-30T11:01:43+08:00"
+    "updated_at":  "2026-06-30T12:01:37+08:00"
 }

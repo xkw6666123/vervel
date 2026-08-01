@@ -243,6 +243,21 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260801_017",
+                         "title":  "Wenbo渐入佳境,BLG中路点菜",
+                         "summary":  "【贴吧】Wenbo渐入佳境,BLG中路点菜",
+                         "source":  "贴吧",
+                         "date":  "2026-08-01",
+                         "time":  "10:49",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=Wenbo%E6%B8%90%E5%85%A5%E4%BD%B3%E5%A2%83%2CBLG%E4%B8%AD%E8%B7%AF%E7%82%B9%E8%8F%9C\u0026topic_id=28356710",
+                         "likes":  378642,
+                         "comments":  75728
+                     },
+                     {
                          "id":  "20260801_039",
                          "title":  "出生时被抱错 两女子错换37年人生",
                          "summary":  "【百度热搜】出生时被抱错 两女子错换37年人生",
@@ -1714,5 +1729,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-08-01T23:01:24+08:00"
+    "updated_at":  "2026-08-02T00:01:21+08:00"
 }

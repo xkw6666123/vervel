@@ -243,6 +243,66 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260827_058",
+                         "title":  "清华美院教授画清洁工遭群嘲",
+                         "summary":  "【贴吧】清华美院教授画清洁工遭群嘲",
+                         "source":  "贴吧",
+                         "date":  "2026-08-27",
+                         "time":  "20:26",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E6%B8%85%E5%8D%8E%E7%BE%8E%E9%99%A2%E6%95%99%E6%8E%88%E7%94%BB%E6%B8%85%E6%B4%81%E5%B7%A5%E9%81%AD%E7%BE%A4%E5%98%B2\u0026topic_id=28360848",
+                         "likes":  40761,
+                         "comments":  5823
+                     },
+                     {
+                         "id":  "20260827_039",
+                         "title":  "金鹰奖延期",
+                         "summary":  "【微博】金鹰奖延期",
+                         "source":  "微博",
+                         "date":  "2026-08-27",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E9%87%91%E9%B9%B0%E5%A5%96%E5%BB%B6%E6%9C%9F%23",
+                         "likes":  185261,
+                         "comments":  9750
+                     },
+                     {
+                         "id":  "20260827_038",
+                         "title":  "山东公布夏季高考调整优化方案",
+                         "summary":  "【抖音】山东公布夏季高考调整优化方案",
+                         "source":  "抖音",
+                         "date":  "2026-08-27",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2625463",
+                         "likes":  182177,
+                         "comments":  9108
+                     },
+                     {
+                         "id":  "20260827_036",
+                         "title":  "上海公厕路牌走红后连夜被拆",
+                         "summary":  "【贴吧】上海公厕路牌走红后连夜被拆",
+                         "source":  "贴吧",
+                         "date":  "2026-08-27",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%B8%8A%E6%B5%B7%E5%85%AC%E5%8E%95%E8%B7%AF%E7%89%8C%E8%B5%B0%E7%BA%A2%E5%90%8E%E8%BF%9E%E5%A4%9C%E8%A2%AB%E6%8B%86\u0026topic_id=28360803",
+                         "likes":  193509,
+                         "comments":  32251
+                     },
+                     {
                          "id":  "20260827_050",
                          "title":  "才浅打翻黄金吓坏于谦",
                          "summary":  "【bilibili 热搜】才浅打翻黄金吓坏于谦",
@@ -2904,5 +2964,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-08-27T21:01:19+08:00"
+    "updated_at":  "2026-08-27T22:01:17+08:00"
 }

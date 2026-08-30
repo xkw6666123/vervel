@@ -243,6 +243,81 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260830_050",
+                         "title":  "我国首次实现地月激光通信",
+                         "summary":  "【抖音】我国首次实现地月激光通信",
+                         "source":  "抖音",
+                         "date":  "2026-08-30",
+                         "time":  "04:10",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2629296",
+                         "likes":  94994,
+                         "comments":  7916
+                     },
+                     {
+                         "id":  "20260830_028",
+                         "title":  "JDG vs WE LPL第三赛段",
+                         "summary":  "【bilibili 热搜】JDG vs WE LPL第三赛段",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-08-30",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=JDG+WE",
+                         "likes":  261285,
+                         "comments":  13751
+                     },
+                     {
+                         "id":  "20260830_027",
+                         "title":  "南极冰川融化正释放剧毒水银",
+                         "summary":  "【百度热搜】南极冰川融化正释放剧毒水银",
+                         "source":  "百度热搜",
+                         "date":  "2026-08-30",
+                         "time":  "06:39",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%8D%97%E6%9E%81%E5%86%B0%E5%B7%9D%E8%9E%8D%E5%8C%96%E6%AD%A3%E9%87%8A%E6%94%BE%E5%89%A7%E6%AF%92%E6%B0%B4%E9%93%B6",
+                         "likes":  283973,
+                         "comments":  23664
+                     },
+                     {
+                         "id":  "20260830_025",
+                         "title":  "台风沙德尔抵达广西",
+                         "summary":  "【抖音】台风沙德尔抵达广西",
+                         "source":  "抖音",
+                         "date":  "2026-08-30",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2628868",
+                         "likes":  313637,
+                         "comments":  52272
+                     },
+                     {
+                         "id":  "20260830_024",
+                         "title":  "吴敬平回应樊振东输户上隼辅",
+                         "summary":  "【微博】吴敬平回应樊振东输户上隼辅",
+                         "source":  "微博",
+                         "date":  "2026-08-30",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E5%90%B4%E6%95%AC%E5%B9%B3%E5%9B%9E%E5%BA%94%E6%A8%8A%E6%8C%AF%E4%B8%9C%E8%BE%93%E6%88%B7%E4%B8%8A%E9%9A%BC%E8%BE%85%23",
+                         "likes":  289196,
+                         "comments":  41313
+                     },
+                     {
                          "id":  "20260830_057",
                          "title":  "有钱的家庭该如何富养孩子",
                          "summary":  "【微博】有钱的家庭该如何富养孩子",
@@ -2806,5 +2881,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-08-30T18:01:17+08:00"
+    "updated_at":  "2026-08-30T19:01:16+08:00"
 }

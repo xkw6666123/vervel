@@ -243,6 +243,67 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20260909_057",
+                         "title":  "服贸会今日开幕",
+                         "summary":  "【微博】服贸会今日开幕",
+                         "source":  "微博",
+                         "date":  "2026-09-09",
+                         "time":  "18:09",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E6%9C%8D%E8%B4%B8%E4%BC%9A%E4%BB%8A%E6%97%A5%E5%BC%80%E5%B9%95%23",
+                         "likes":  43955,
+                         "comments":  2930
+                     },
+                     {
+                         "id":  "20260909_039",
+                         "title":  "河南地震",
+                         "summary":  "【微博】河南地震",
+                         "source":  "微博",
+                         "date":  "2026-09-09",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E6%B2%B3%E5%8D%97%E5%9C%B0%E9%9C%87",
+                         "likes":  178940,
+                         "comments":  9417
+                     },
+                     {
+                         "id":  "20260909_038",
+                         "title":  "洲彦祖回归三角洲",
+                         "summary":  "【bilibili 热搜】洲彦祖回归三角洲",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-09-09",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%B4%B2%E5%BD%A6%E7%A5%96%E5%9B%9E%E5%BD%92%E4%B8%89%E8%A7%92%E6%B4%B2",
+                         "likes":  197415,
+                         "comments":  21935
+                     },
+                     {
+                         "id":  "20260909_014",
+                         "title":  "救援人员时薪1欧,车手麻了",
+                         "summary":  "【贴吧】救援人员时薪1欧,车手麻了",
+                         "source":  "贴吧",
+                         "date":  "2026-09-09",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E6%95%91%E6%8F%B4%E4%BA%BA%E5%91%98%E6%97%B6%E8%96%AA1%E6%AC%A7%2C%E8%BD%A6%E6%89%8B%E9%BA%BB%E4%BA%86\u0026topic_id=28363239",
+                         "likes":  372483,
+                         "comments":  33862
+                     },
+                     {
                          "id":  "20260909_049",
                          "title":  "2026服贸会今日开幕",
                          "summary":  "【百度热搜】2026服贸会今日开幕",
@@ -2608,5 +2669,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-09-09T19:01:21+08:00"
+    "updated_at":  "2026-09-09T20:01:25+08:00"
 }

@@ -243,6 +243,66 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20261012_058",
+                         "title":  "我国物流业景气水平进一步提升",
+                         "summary":  "【抖音】我国物流业景气水平进一步提升",
+                         "source":  "抖音",
+                         "date":  "2026-10-12",
+                         "time":  "20:26",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2690269",
+                         "likes":  56469,
+                         "comments":  9411
+                     },
+                     {
+                         "id":  "20261012_057",
+                         "title":  "探访东北虎豹国家公园",
+                         "summary":  "【微博】探访东北虎豹国家公园",
+                         "source":  "微博",
+                         "date":  "2026-10-12",
+                         "time":  "18:09",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E6%8E%A2%E8%AE%BF%E4%B8%9C%E5%8C%97%E8%99%8E%E8%B1%B9%E5%9B%BD%E5%AE%B6%E5%85%AC%E5%9B%AD%23",
+                         "likes":  52995,
+                         "comments":  8832
+                     },
+                     {
+                         "id":  "20261012_039",
+                         "title":  "369 Karsa重聊纳尔往事",
+                         "summary":  "【bilibili 热搜】369 Karsa重聊纳尔往事",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-12",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=369+Karsa%E9%87%8D%E8%81%8A%E7%BA%B3%E5%B0%94%E5%BE%80%E4%BA%8B",
+                         "likes":  190219,
+                         "comments":  15851
+                     },
+                     {
+                         "id":  "20261012_017",
+                         "title":  "众星祝贺郑钦文中网夺冠",
+                         "summary":  "【抖音】众星祝贺郑钦文中网夺冠",
+                         "source":  "抖音",
+                         "date":  "2026-10-12",
+                         "time":  "10:49",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2691205",
+                         "likes":  355636,
+                         "comments":  35563
+                     },
+                     {
                          "id":  "20261012_051",
                          "title":  "Vitality3-0横扫MOUZ夺冠",
                          "summary":  "【bilibili 热搜】Vitality3-0横扫MOUZ夺冠",
@@ -2734,5 +2794,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-12T13:01:19+08:00"
+    "updated_at":  "2026-10-12T14:01:21+08:00"
 }

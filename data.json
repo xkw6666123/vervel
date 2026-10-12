@@ -243,6 +243,66 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20261012_046",
+                         "title":  "奥迪全系买一赠一？上汽奥迪回应",
+                         "summary":  "【百度热搜】奥迪全系买一赠一？上汽奥迪回应",
+                         "source":  "百度热搜",
+                         "date":  "2026-10-12",
+                         "time":  "20:02",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%A5%A5%E8%BF%AA%E5%85%A8%E7%B3%BB%E4%B9%B0%E4%B8%80%E8%B5%A0%E4%B8%80%EF%BC%9F%E4%B8%8A%E6%B1%BD%E5%A5%A5%E8%BF%AA%E5%9B%9E%E5%BA%94",
+                         "likes":  117816,
+                         "comments":  16830
+                     },
+                     {
+                         "id":  "20261012_038",
+                         "title":  "马斯克称泽连斯基太过分了",
+                         "summary":  "【今日头条】马斯克称泽连斯基太过分了",
+                         "source":  "今日头条",
+                         "date":  "2026-10-12",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7695470347420566067/",
+                         "likes":  213593,
+                         "comments":  14239
+                     },
+                     {
+                         "id":  "20261012_020",
+                         "title":  "KT vs VIT 德玛西亚杯",
+                         "summary":  "【bilibili 热搜】KT vs VIT 德玛西亚杯",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-12",
+                         "time":  "16:40",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=KT+VIT",
+                         "likes":  334552,
+                         "comments":  19679
+                     },
+                     {
+                         "id":  "20261012_014",
+                         "title":  "B站跨年晚会动了",
+                         "summary":  "【bilibili 热搜】B站跨年晚会动了",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-12",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=B%E7%AB%99%E8%B7%A8%E5%B9%B4%E6%99%9A%E4%BC%9A%E5%8A%A8%E4%BA%86",
+                         "likes":  381253,
+                         "comments":  23828
+                     },
+                     {
                          "id":  "20261012_058",
                          "title":  "我国物流业景气水平进一步提升",
                          "summary":  "【抖音】我国物流业景气水平进一步提升",
@@ -2794,5 +2854,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-12T18:01:24+08:00"
+    "updated_at":  "2026-10-12T19:01:17+08:00"
 }

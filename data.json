@@ -243,6 +243,81 @@
                          "date":  "2026-06-01"
                      },
                      {
+                         "id":  "20261016_040",
+                         "title":  "嫁金钗开播",
+                         "summary":  "【微博】嫁金钗开播",
+                         "source":  "微博",
+                         "date":  "2026-10-16",
+                         "time":  "08:20",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E5%AB%81%E9%87%91%E9%92%97%E5%BC%80%E6%92%AD%23",
+                         "likes":  160007,
+                         "comments":  9412
+                     },
+                     {
+                         "id":  "20261016_039",
+                         "title":  "没吃回扣!TES郭皓回应签证问题",
+                         "summary":  "【贴吧】没吃回扣!TES郭皓回应签证问题",
+                         "source":  "贴吧",
+                         "date":  "2026-10-16",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E6%B2%A1%E5%90%83%E5%9B%9E%E6%89%A3%21TES%E9%83%AD%E7%9A%93%E5%9B%9E%E5%BA%94%E7%AD%BE%E8%AF%81%E9%97%AE%E9%A2%98\u0026topic_id=28367277",
+                         "likes":  168657,
+                         "comments":  16865
+                     },
+                     {
+                         "id":  "20261016_036",
+                         "title":  "VIT vs LOUD 上海冠军赛",
+                         "summary":  "【bilibili 热搜】VIT vs LOUD 上海冠军赛",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-16",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=VIT+LOUD",
+                         "likes":  196843,
+                         "comments":  13122
+                     },
+                     {
+                         "id":  "20261016_016",
+                         "title":  "美国肯德基 2027 年起将改用可口可乐，背后是什么原因？消费者实际感受差别大吗？",
+                         "summary":  "【知乎】美国肯德基 2027 年起将改用可口可乐，背后是什么原因？消费者实际感受差别大吗？",
+                         "source":  "知乎",
+                         "date":  "2026-10-16",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2094346221913690254",
+                         "likes":  377454,
+                         "comments":  25163
+                     },
+                     {
+                         "id":  "20261016_013",
+                         "title":  "跑车会飞!特斯拉上演凌空飞车",
+                         "summary":  "【贴吧】跑车会飞!特斯拉上演凌空飞车",
+                         "source":  "贴吧",
+                         "date":  "2026-10-16",
+                         "time":  "02:41",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E8%B7%91%E8%BD%A6%E4%BC%9A%E9%A3%9E%21%E7%89%B9%E6%96%AF%E6%8B%89%E4%B8%8A%E6%BC%94%E5%87%8C%E7%A9%BA%E9%A3%9E%E8%BD%A6\u0026topic_id=28367278",
+                         "likes":  383004,
+                         "comments":  47875
+                     },
+                     {
                          "id":  "20261016_058",
                          "title":  "教师“耻辱”合影事件调查结果公布",
                          "summary":  "【百度热搜】教师“耻辱”合影事件调查结果公布",
@@ -2633,5 +2708,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-16T17:01:25+08:00"
+    "updated_at":  "2026-10-16T18:01:28+08:00"
 }

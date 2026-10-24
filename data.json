@@ -622,6 +622,36 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261025_059",
+                         "title":  "兵部尚书被冻死,女频剧情引激辩",
+                         "summary":  "【贴吧】兵部尚书被冻死,女频剧情引激辩",
+                         "source":  "贴吧",
+                         "date":  "2026-10-25",
+                         "time":  "22:43",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%85%B5%E9%83%A8%E5%B0%9A%E4%B9%A6%E8%A2%AB%E5%86%BB%E6%AD%BB%2C%E5%A5%B3%E9%A2%91%E5%89%A7%E6%83%85%E5%BC%95%E6%BF%80%E8%BE%A9\u0026topic_id=28368006",
+                         "likes":  52085,
+                         "comments":  4006
+                     },
+                     {
+                         "id":  "20261025_056",
+                         "title":  "柴西探索现实版夜之城",
+                         "summary":  "【bilibili 热搜】柴西探索现实版夜之城",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-25",
+                         "time":  "16:52",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%9F%B4%E8%A5%BF%E6%8E%A2%E7%B4%A2%E7%8E%B0%E5%AE%9E%E7%89%88%E5%A4%9C%E4%B9%8B%E5%9F%8E",
+                         "likes":  64478,
+                         "comments":  4298
+                     },
+                     {
                          "id":  "20261025_057",
                          "title":  "速通中土网友对线大战",
                          "summary":  "【bilibili 热搜】速通中土网友对线大战",
@@ -3370,5 +3400,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-25T03:02:26+08:00"
+    "updated_at":  "2026-10-25T04:02:10+08:00"
 }

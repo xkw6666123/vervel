@@ -622,6 +622,36 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261025_047",
+                         "title":  "父亲突发脑梗儿子用豆包抢出救命时间",
+                         "summary":  "【今日头条】父亲突发脑梗儿子用豆包抢出救命时间",
+                         "source":  "今日头条",
+                         "date":  "2026-10-25",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7700114606144032283/",
+                         "likes":  125803,
+                         "comments":  10483
+                     },
+                     {
+                         "id":  "20261025_046",
+                         "title":  "MKOI战胜CFO S16瑞士轮",
+                         "summary":  "【bilibili 热搜】MKOI战胜CFO S16瑞士轮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-25",
+                         "time":  "20:02",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=MKOI+CFO",
+                         "likes":  135760,
+                         "comments":  15084
+                     },
+                     {
                          "id":  "20261025_054",
                          "title":  "青海玉树州杂多县发生5.3级地震",
                          "summary":  "【抖音】青海玉树州杂多县发生5.3级地震",
@@ -3416,5 +3446,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-25T06:02:08+08:00"
+    "updated_at":  "2026-10-25T07:02:10+08:00"
 }

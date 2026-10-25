@@ -622,6 +622,21 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261025_016",
+                         "title":  "IG对阵HLE有哪些看点",
+                         "summary":  "【bilibili 热搜】IG对阵HLE有哪些看点",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-25",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=IG%E5%AF%B9%E9%98%B5HLE%E6%9C%89%E5%93%AA%E4%BA%9B%E7%9C%8B%E7%82%B9",
+                         "likes":  369468,
+                         "comments":  41052
+                     },
+                     {
                          "id":  "20261025_031",
                          "title":  "2026共创之夜节目单",
                          "summary":  "【微博】2026共创之夜节目单",
@@ -3671,5 +3686,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-25T16:02:34+08:00"
+    "updated_at":  "2026-10-25T17:02:25+08:00"
 }

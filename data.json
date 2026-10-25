@@ -622,6 +622,36 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261025_038",
+                         "title":  "头文字F4",
+                         "summary":  "【bilibili 热搜】头文字F4",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-25",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%A4%B4%E6%96%87%E5%AD%97F4",
+                         "likes":  199450,
+                         "comments":  18131
+                     },
+                     {
+                         "id":  "20261025_037",
+                         "title":  "张雪挑战成功后开香槟激动庆祝",
+                         "summary":  "【今日头条】张雪挑战成功后开香槟激动庆祝",
+                         "source":  "今日头条",
+                         "date":  "2026-10-25",
+                         "time":  "02:29",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7700514554324749862/",
+                         "likes":  194914,
+                         "comments":  13922
+                     },
+                     {
                          "id":  "20261025_016",
                          "title":  "IG对阵HLE有哪些看点",
                          "summary":  "【bilibili 热搜】IG对阵HLE有哪些看点",
@@ -3686,5 +3716,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-25T18:02:36+08:00"
+    "updated_at":  "2026-10-25T19:02:25+08:00"
 }

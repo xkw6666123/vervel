@@ -654,6 +654,51 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261026_049",
+                         "title":  "姑娘花3.8万在鹤岗买房入住后傻眼",
+                         "summary":  "【今日头条】姑娘花3.8万在鹤岗买房入住后傻眼",
+                         "source":  "今日头条",
+                         "date":  "2026-10-26",
+                         "time":  "02:53",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7700115642267844644/",
+                         "likes":  111278,
+                         "comments":  7418
+                     },
+                     {
+                         "id":  "20261026_047",
+                         "title":  "DK战胜MKOI S16瑞士轮",
+                         "summary":  "【bilibili 热搜】DK战胜MKOI S16瑞士轮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-26",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=MKOI+DK",
+                         "likes":  133774,
+                         "comments":  8918
+                     },
+                     {
+                         "id":  "20261026_035",
+                         "title":  "S16 瑞士轮 HLE 0-1 iG，如何评价这场比赛？",
+                         "summary":  "【知乎】S16 瑞士轮 HLE 0-1 iG，如何评价这场比赛？",
+                         "source":  "知乎",
+                         "date":  "2026-10-26",
+                         "time":  "22:55",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2097842344846419225",
+                         "likes":  232937,
+                         "comments":  23293
+                     },
+                     {
                          "id":  "20261026_033",
                          "title":  "西藏巴青地震抢险安置工作一刻没停",
                          "summary":  "【微博】西藏巴青地震抢险安置工作一刻没停",
@@ -3619,5 +3664,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-26T06:02:07+08:00"
+    "updated_at":  "2026-10-26T07:02:16+08:00"
 }

@@ -622,6 +622,81 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261025_027",
+                         "title":  "TES拿下AL,内战幻神发力了",
+                         "summary":  "【贴吧】TES拿下AL,内战幻神发力了",
+                         "source":  "贴吧",
+                         "date":  "2026-10-25",
+                         "time":  "06:39",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=TES%E6%8B%BF%E4%B8%8BAL%2C%E5%86%85%E6%88%98%E5%B9%BB%E7%A5%9E%E5%8F%91%E5%8A%9B%E4%BA%86\u0026topic_id=28368009",
+                         "likes":  281810,
+                         "comments":  18787
+                     },
+                     {
+                         "id":  "20261025_025",
+                         "title":  "iPhone Duo能否撕掉磨砂膜",
+                         "summary":  "【bilibili 热搜】iPhone Duo能否撕掉磨砂膜",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-25",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=iPhone+Duo%E8%83%BD%E5%90%A6%E6%92%95%E6%8E%89%E7%A3%A8%E7%A0%82%E8%86%9C",
+                         "likes":  297416,
+                         "comments":  18588
+                     },
+                     {
+                         "id":  "20261025_024",
+                         "title":  "苏超半决赛落幕",
+                         "summary":  "【抖音】苏超半决赛落幕",
+                         "source":  "抖音",
+                         "date":  "2026-10-25",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2711954",
+                         "likes":  311408,
+                         "comments":  18318
+                     },
+                     {
+                         "id":  "20261025_013",
+                         "title":  "IG力克TSW,LPL外战止血",
+                         "summary":  "【贴吧】IG力克TSW,LPL外战止血",
+                         "source":  "贴吧",
+                         "date":  "2026-10-25",
+                         "time":  "02:41",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=IG%E5%8A%9B%E5%85%8BTSW%2CLPL%E5%A4%96%E6%88%98%E6%AD%A2%E8%A1%80\u0026topic_id=28368010",
+                         "likes":  409689,
+                         "comments":  34140
+                     },
+                     {
+                         "id":  "20261025_011",
+                         "title":  "BLG vs TLAW S16瑞士轮",
+                         "summary":  "【bilibili 热搜】BLG vs TLAW S16瑞士轮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-25",
+                         "time":  "22:07",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=BLG+TLAW",
+                         "likes":  409308,
+                         "comments":  21542
+                     },
+                     {
                          "id":  "20261025_050",
                          "title":  "GEN战胜HLE S16瑞士轮",
                          "summary":  "【bilibili 热搜】GEN战胜HLE S16瑞士轮",
@@ -3551,5 +3626,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-25T09:02:40+08:00"
+    "updated_at":  "2026-10-25T10:02:55+08:00"
 }

@@ -713,6 +713,36 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261027_058",
+                         "title":  "红灯变绿后，为什么总有前车要愣两三秒才起步？",
+                         "summary":  "【知乎】红灯变绿后，为什么总有前车要愣两三秒才起步？",
+                         "source":  "知乎",
+                         "date":  "2026-10-27",
+                         "time":  "20:26",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2090404697324767186",
+                         "likes":  40118,
+                         "comments":  2865
+                     },
+                     {
+                         "id":  "20261027_028",
+                         "title":  "詹姆斯单曲LeBron Funk",
+                         "summary":  "【bilibili 热搜】詹姆斯单曲LeBron Funk",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-27",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E8%A9%B9%E5%A7%86%E6%96%AF%E5%8D%95%E6%9B%B2LeBron+Funk",
+                         "likes":  272552,
+                         "comments":  30283
+                     },
+                     {
                          "id":  "20261027_047",
                          "title":  "金银铜铝为何跌幅天差地别",
                          "summary":  "【今日头条】金银铜铝为何跌幅天差地别",
@@ -3958,5 +3988,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-27T03:02:15+08:00"
+    "updated_at":  "2026-10-27T04:02:12+08:00"
 }

@@ -713,6 +713,36 @@
                          "date":  "2026-10-24"
                      },
                      {
+                         "id":  "20261027_027",
+                         "title":  "LPL连续两年一号种子止步16强",
+                         "summary":  "【微博】LPL连续两年一号种子止步16强",
+                         "source":  "微博",
+                         "date":  "2026-10-27",
+                         "time":  "06:39",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23LPL%E8%BF%9E%E7%BB%AD%E4%B8%A4%E5%B9%B4%E4%B8%80%E5%8F%B7%E7%A7%8D%E5%AD%90%E6%AD%A2%E6%AD%A516%E5%BC%BA%23",
+                         "likes":  282310,
+                         "comments":  28231
+                     },
+                     {
+                         "id":  "20261027_006",
+                         "title":  "影视飓风升级VOGUE子弹时间",
+                         "summary":  "【bilibili 热搜】影视飓风升级VOGUE子弹时间",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-27",
+                         "time":  "12:42",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%BD%B1%E8%A7%86%E9%A3%93%E9%A3%8E%E5%8D%87%E7%BA%A7VOGUE%E5%AD%90%E5%BC%B9%E6%97%B6%E9%97%B4",
+                         "likes":  452649,
+                         "comments":  30176
+                     },
+                     {
                          "id":  "20261027_050",
                          "title":  "金球奖",
                          "summary":  "【微博】金球奖",
@@ -4123,5 +4153,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-27T10:02:25+08:00"
+    "updated_at":  "2026-10-27T11:02:43+08:00"
 }

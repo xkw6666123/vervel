@@ -127,6 +127,67 @@
                          "date":  "2026-10-26"
                      },
                      {
+                         "id":  "20261029_049",
+                         "title":  "LYON vs IG S16瑞士轮",
+                         "summary":  "【bilibili 热搜】LYON vs IG S16瑞士轮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-29",
+                         "time":  "02:53",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=LYON+IG",
+                         "likes":  110707,
+                         "comments":  5535
+                     },
+                     {
+                         "id":  "20261029_039",
+                         "title":  "第140届广交会第二期圆满收官",
+                         "summary":  "【微博】第140届广交会第二期圆满收官",
+                         "source":  "微博",
+                         "date":  "2026-10-29",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E7%AC%AC140%E5%B1%8A%E5%B9%BF%E4%BA%A4%E4%BC%9A%E7%AC%AC%E4%BA%8C%E6%9C%9F%E5%9C%86%E6%BB%A1%E6%94%B6%E5%AE%98%23",
+                         "likes":  198214,
+                         "comments":  16517
+                     },
+                     {
+                         "id":  "20261029_025",
+                         "title":  "百家中资网贷出海印度亏损 70 亿退场，导致这一溃败的核心原因是什么？",
+                         "summary":  "【知乎】百家中资网贷出海印度亏损 70 亿退场，导致这一溃败的核心原因是什么？",
+                         "source":  "知乎",
+                         "date":  "2026-10-29",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2098323820520260042",
+                         "likes":  314616,
+                         "comments":  62923
+                     },
+                     {
+                         "id":  "20261029_024",
+                         "title":  "秋日山野漫游",
+                         "summary":  "【抖音】秋日山野漫游",
+                         "source":  "抖音",
+                         "date":  "2026-10-29",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2718148",
+                         "likes":  296841,
+                         "comments":  18552
+                     },
+                     {
                          "id":  "20261029_047",
                          "title":  "T1战胜MKOI S16瑞士轮",
                          "summary":  "【bilibili 热搜】T1战胜MKOI S16瑞士轮",
@@ -3417,5 +3478,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-29T08:02:09+08:00"
+    "updated_at":  "2026-10-29T09:02:27+08:00"
 }

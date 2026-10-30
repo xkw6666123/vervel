@@ -183,6 +183,533 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261031_059",
+                         "title":  "Bin回应不敌TES",
+                         "summary":  "【bilibili 热搜】Bin回应不敌TES",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-31",
+                         "time":  "22:43",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=Bin%E5%9B%9E%E5%BA%94%E4%B8%8D%E6%95%8CTES",
+                         "likes":  52822,
+                         "comments":  2934
+                     },
+                     {
+                         "id":  "20261031_056",
+                         "title":  "撞脸王祖贤女生去景区上班",
+                         "summary":  "【百度热搜】撞脸王祖贤女生去景区上班",
+                         "source":  "百度热搜",
+                         "date":  "2026-10-31",
+                         "time":  "16:52",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E6%92%9E%E8%84%B8%E7%8E%8B%E7%A5%96%E8%B4%A4%E5%A5%B3%E7%94%9F%E5%8E%BB%E6%99%AF%E5%8C%BA%E4%B8%8A%E7%8F%AD",
+                         "likes":  44508,
+                         "comments":  3709
+                     },
+                     {
+                         "id":  "20261031_055",
+                         "title":  "英国为何要加码对乌克兰援助",
+                         "summary":  "【今日头条】英国为何要加码对乌克兰援助",
+                         "source":  "今日头条",
+                         "date":  "2026-10-31",
+                         "time":  "14:35",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7702460615335349802/",
+                         "likes":  43331,
+                         "comments":  2280
+                     },
+                     {
+                         "id":  "20261031_054",
+                         "title":  "一喝水，尿就多，是肾坏了吗？",
+                         "summary":  "【知乎】一喝水，尿就多，是肾坏了吗？",
+                         "source":  "知乎",
+                         "date":  "2026-10-31",
+                         "time":  "12:18",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/615575278",
+                         "likes":  72151,
+                         "comments":  6012
+                     },
+                     {
+                         "id":  "20261031_053",
+                         "title":  "落日与风能发电机同框太治愈",
+                         "summary":  "【抖音】落日与风能发电机同框太治愈",
+                         "source":  "抖音",
+                         "date":  "2026-10-31",
+                         "time":  "10:01",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2721515",
+                         "likes":  83247,
+                         "comments":  5549
+                     },
+                     {
+                         "id":  "20261031_052",
+                         "title":  "美股",
+                         "summary":  "【微博】美股",
+                         "source":  "微博",
+                         "date":  "2026-10-31",
+                         "time":  "08:44",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E7%BE%8E%E8%82%A1",
+                         "likes":  74440,
+                         "comments":  7444
+                     },
+                     {
+                         "id":  "20261031_051",
+                         "title":  "吧友自述:精神科住院二三事",
+                         "summary":  "【贴吧】吧友自述:精神科住院二三事",
+                         "source":  "贴吧",
+                         "date":  "2026-10-31",
+                         "time":  "06:27",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%90%A7%E5%8F%8B%E8%87%AA%E8%BF%B0%3A%E7%B2%BE%E7%A5%9E%E7%A7%91%E4%BD%8F%E9%99%A2%E4%BA%8C%E4%B8%89%E4%BA%8B\u0026topic_id=28368595",
+                         "likes":  85156,
+                         "comments":  4730
+                     },
+                     {
+                         "id":  "20261031_048",
+                         "title":  "攻击21首次在四川舰起降",
+                         "summary":  "【bilibili 热搜】攻击21首次在四川舰起降",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-31",
+                         "time":  "00:36",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%94%BB%E5%87%BB21%E9%A6%96%E6%AC%A1%E5%9C%A8%E5%9B%9B%E5%B7%9D%E8%88%B0%E8%B5%B7%E9%99%8D",
+                         "likes":  119609,
+                         "comments":  9200
+                     },
+                     {
+                         "id":  "20261031_045",
+                         "title":  "作家大冰 不是靠直播翻红",
+                         "summary":  "【百度热搜】作家大冰 不是靠直播翻红",
+                         "source":  "百度热搜",
+                         "date":  "2026-10-31",
+                         "time":  "18:45",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E4%BD%9C%E5%AE%B6%E5%A4%A7%E5%86%B0+%E4%B8%8D%E6%98%AF%E9%9D%A0%E7%9B%B4%E6%92%AD%E7%BF%BB%E7%BA%A2",
+                         "likes":  148234,
+                         "comments":  18529
+                     },
+                     {
+                         "id":  "20261031_044",
+                         "title":  "人民日报：警惕“中国AI跑偏论”",
+                         "summary":  "【今日头条】人民日报：警惕“中国AI跑偏论”",
+                         "source":  "今日头条",
+                         "date":  "2026-10-31",
+                         "time":  "16:28",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7701987261797482550/",
+                         "likes":  141093,
+                         "comments":  17636
+                     },
+                     {
+                         "id":  "20261031_043",
+                         "title":  "如何看待币安遭黑客攻击，数十亿美元资产被盗，或成历史金额最大被盗事件？",
+                         "summary":  "【知乎】如何看待币安遭黑客攻击，数十亿美元资产被盗，或成历史金额最大被盗事件？",
+                         "source":  "知乎",
+                         "date":  "2026-10-31",
+                         "time":  "14:11",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2099446310872900107",
+                         "likes":  160864,
+                         "comments":  11490
+                     },
+                     {
+                         "id":  "20261031_042",
+                         "title":  "比冬天先来的是一顿热火锅",
+                         "summary":  "【抖音】比冬天先来的是一顿热火锅",
+                         "source":  "抖音",
+                         "date":  "2026-10-31",
+                         "time":  "12:54",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2720702",
+                         "likes":  159574,
+                         "comments":  17730
+                     },
+                     {
+                         "id":  "20261031_041",
+                         "title":  "我觉得我都要爱上厉娜了",
+                         "summary":  "【微博】我觉得我都要爱上厉娜了",
+                         "source":  "微博",
+                         "date":  "2026-10-31",
+                         "time":  "10:37",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E6%88%91%E8%A7%89%E5%BE%97%E6%88%91%E9%83%BD%E8%A6%81%E7%88%B1%E4%B8%8A%E5%8E%89%E5%A8%9C%E4%BA%86",
+                         "likes":  187634,
+                         "comments":  20848
+                     },
+                     {
+                         "id":  "20261031_040",
+                         "title":  "影之刃零冲击金摇杆,狂送cdk",
+                         "summary":  "【贴吧】影之刃零冲击金摇杆,狂送cdk",
+                         "source":  "贴吧",
+                         "date":  "2026-10-31",
+                         "time":  "08:20",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%BD%B1%E4%B9%8B%E5%88%83%E9%9B%B6%E5%86%B2%E5%87%BB%E9%87%91%E6%91%87%E6%9D%86%2C%E7%8B%82%E9%80%81cdk\u0026topic_id=28368561",
+                         "likes":  160409,
+                         "comments":  10693
+                     },
+                     {
+                         "id":  "20261031_037",
+                         "title":  "369六届S赛保底八强",
+                         "summary":  "【bilibili 热搜】369六届S赛保底八强",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-31",
+                         "time":  "02:29",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=369%E5%85%AD%E5%B1%8AS%E8%B5%9B%E4%BF%9D%E5%BA%95%E5%85%AB%E5%BC%BA",
+                         "likes":  185136,
+                         "comments":  12342
+                     },
+                     {
+                         "id":  "20261031_033",
+                         "title":  "今年全国实现生娃基本不花钱",
+                         "summary":  "【今日头条】今年全国实现生娃基本不花钱",
+                         "source":  "今日头条",
+                         "date":  "2026-10-31",
+                         "time":  "18:21",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7701865571654258218/",
+                         "likes":  243223,
+                         "comments":  24322
+                     },
+                     {
+                         "id":  "20261031_032",
+                         "title":  "如何看待 2026 年 10 月 30 日 A 股集体收跌，双创指数月跌超 23%，红利股逆势走强？",
+                         "summary":  "【知乎】如何看待 2026 年 10 月 30 日 A 股集体收跌，双创指数月跌超 23%，红利股逆势走强？",
+                         "source":  "知乎",
+                         "date":  "2026-10-31",
+                         "time":  "16:04",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2098388759943422649",
+                         "likes":  245850,
+                         "comments":  18911
+                     },
+                     {
+                         "id":  "20261031_031",
+                         "title":  "不怕远征难",
+                         "summary":  "【抖音】不怕远征难",
+                         "source":  "抖音",
+                         "date":  "2026-10-31",
+                         "time":  "14:47",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2721730",
+                         "likes":  244746,
+                         "comments":  17481
+                     },
+                     {
+                         "id":  "20261031_030",
+                         "title":  "透过三季报看中国经济向新向优",
+                         "summary":  "【微博】透过三季报看中国经济向新向优",
+                         "source":  "微博",
+                         "date":  "2026-10-31",
+                         "time":  "12:30",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E9%80%8F%E8%BF%87%E4%B8%89%E5%AD%A3%E6%8A%A5%E7%9C%8B%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%E5%90%91%E6%96%B0%E5%90%91%E4%BC%98%23",
+                         "likes":  248921,
+                         "comments":  14642
+                     },
+                     {
+                         "id":  "20261031_029",
+                         "title":  "16强开打,谁是最靓表情包",
+                         "summary":  "【贴吧】16强开打,谁是最靓表情包",
+                         "source":  "贴吧",
+                         "date":  "2026-10-31",
+                         "time":  "10:13",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=16%E5%BC%BA%E5%BC%80%E6%89%93%2C%E8%B0%81%E6%98%AF%E6%9C%80%E9%9D%93%E8%A1%A8%E6%83%85%E5%8C%85\u0026topic_id=28368582",
+                         "likes":  286279,
+                         "comments":  35784
+                     },
+                     {
+                         "id":  "20261031_026",
+                         "title":  "显卡价格连续三天大面积下跌",
+                         "summary":  "【bilibili 热搜】显卡价格连续三天大面积下跌",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-31",
+                         "time":  "04:22",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%98%BE%E5%8D%A1%E4%BB%B7%E6%A0%BC%E8%BF%9E%E7%BB%AD%E4%B8%89%E5%A4%A9%E5%A4%A7%E9%9D%A2%E7%A7%AF%E4%B8%8B%E8%B7%8C",
+                         "likes":  301981,
+                         "comments":  15099
+                     },
+                     {
+                         "id":  "20261031_023",
+                         "title":  "这件“关系民生的大事”务必抓实抓好",
+                         "summary":  "【百度热搜】这件“关系民生的大事”务必抓实抓好",
+                         "source":  "百度热搜",
+                         "date":  "2026-10-31",
+                         "time":  "22:31",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E8%BF%99%E4%BB%B6%E2%80%9C%E5%85%B3%E7%B3%BB%E6%B0%91%E7%94%9F%E7%9A%84%E5%A4%A7%E4%BA%8B%E2%80%9D%E5%8A%A1%E5%BF%85%E6%8A%93%E5%AE%9E%E6%8A%93%E5%A5%BD",
+                         "likes":  315888,
+                         "comments":  24299
+                     },
+                     {
+                         "id":  "20261031_022",
+                         "title":  "全面从严治党和鼓励担当作为内在统一",
+                         "summary":  "【今日头条】全面从严治党和鼓励担当作为内在统一",
+                         "source":  "今日头条",
+                         "date":  "2026-10-31",
+                         "time":  "20:14",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7702292641740210217/",
+                         "likes":  333119,
+                         "comments":  30283
+                     },
+                     {
+                         "id":  "20261031_021",
+                         "title":  "如何评价前小米高管王腾的公司发布首款智能戒指 ISHO Ring，定价 1799-2199 元？",
+                         "summary":  "【知乎】如何评价前小米高管王腾的公司发布首款智能戒指 ISHO Ring，定价 1799-2199 元？",
+                         "source":  "知乎",
+                         "date":  "2026-10-31",
+                         "time":  "18:57",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2099246181104858185",
+                         "likes":  326255,
+                         "comments":  16312
+                     },
+                     {
+                         "id":  "20261031_020",
+                         "title":  "攻击-21无人机在四川舰成功起降",
+                         "summary":  "【抖音】攻击-21无人机在四川舰成功起降",
+                         "source":  "抖音",
+                         "date":  "2026-10-31",
+                         "time":  "16:40",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2721373",
+                         "likes":  336969,
+                         "comments":  33696
+                     },
+                     {
+                         "id":  "20261031_019",
+                         "title":  "黄金",
+                         "summary":  "【微博】黄金",
+                         "source":  "微博",
+                         "date":  "2026-10-31",
+                         "time":  "14:23",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E9%BB%84%E9%87%91",
+                         "likes":  335046,
+                         "comments":  23931
+                     },
+                     {
+                         "id":  "20261031_018",
+                         "title":  "寻人启事!影之刃零全网首通送18pro",
+                         "summary":  "【贴吧】寻人启事!影之刃零全网首通送18pro",
+                         "source":  "贴吧",
+                         "date":  "2026-10-31",
+                         "time":  "12:06",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%AF%BB%E4%BA%BA%E5%90%AF%E4%BA%8B%21%E5%BD%B1%E4%B9%8B%E5%88%83%E9%9B%B6%E5%85%A8%E7%BD%91%E9%A6%96%E9%80%9A%E9%80%8118pro\u0026topic_id=28368591",
+                         "likes":  364249,
+                         "comments":  22765
+                     },
+                     {
+                         "id":  "20261031_015",
+                         "title":  "星游记前传电影启动",
+                         "summary":  "【bilibili 热搜】星游记前传电影启动",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-31",
+                         "time":  "06:15",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%98%9F%E6%B8%B8%E8%AE%B0%E5%89%8D%E4%BC%A0%E7%94%B5%E5%BD%B1%E5%90%AF%E5%8A%A8",
+                         "likes":  371709,
+                         "comments":  20650
+                     },
+                     {
+                         "id":  "20261031_012",
+                         "title":  "股票群再度“鸦雀无声”",
+                         "summary":  "【百度热搜】股票群再度“鸦雀无声”",
+                         "source":  "百度热搜",
+                         "date":  "2026-10-31",
+                         "time":  "00:24",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E8%82%A1%E7%A5%A8%E7%BE%A4%E5%86%8D%E5%BA%A6%E2%80%9C%E9%B8%A6%E9%9B%80%E6%97%A0%E5%A3%B0%E2%80%9D",
+                         "likes":  392892,
+                         "comments":  26192
+                     },
+                     {
+                         "id":  "20261031_011",
+                         "title":  "邵永灵：乌克兰低头了",
+                         "summary":  "【今日头条】邵永灵：乌克兰低头了",
+                         "source":  "今日头条",
+                         "date":  "2026-10-31",
+                         "time":  "22:07",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7702449996901142070/",
+                         "likes":  415043,
+                         "comments":  46115
+                     },
+                     {
+                         "id":  "20261031_010",
+                         "title":  "我军首型舰载察打一体隐身无人机「攻击 -21」在四川舰成功起降，这意味着什么？哪些亮点值得关注？",
+                         "summary":  "【知乎】我军首型舰载察打一体隐身无人机「攻击 -21」在四川舰成功起降，这意味着什么？哪些亮点值得关注？",
+                         "source":  "知乎",
+                         "date":  "2026-10-31",
+                         "time":  "20:50",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2099547313488269586",
+                         "likes":  414653,
+                         "comments":  34554
+                     },
+                     {
+                         "id":  "20261031_008",
+                         "title":  "披荆斩棘成团名单",
+                         "summary":  "【微博】披荆斩棘成团名单",
+                         "source":  "微博",
+                         "date":  "2026-10-31",
+                         "time":  "16:16",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E6%8A%AB%E8%8D%86%E6%96%A9%E6%A3%98%E6%88%90%E5%9B%A2%E5%90%8D%E5%8D%95",
+                         "likes":  433530,
+                         "comments":  25501
+                     },
+                     {
+                         "id":  "20261031_004",
+                         "title":  "央视记者直击德国总统访华",
+                         "summary":  "【bilibili 热搜】央视记者直击德国总统访华",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-31",
+                         "time":  "08:08",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%A4%AE%E8%A7%86%E8%AE%B0%E8%80%85%E7%9B%B4%E5%87%BB%E5%BE%B7%E5%9B%BD%E6%80%BB%E7%BB%9F%E8%AE%BF%E5%8D%8E",
+                         "likes":  484177,
+                         "comments":  26898
+                     },
+                     {
+                         "id":  "20261031_001",
+                         "title":  "街道试点“共享儿女”：最低199元每月",
+                         "summary":  "【百度热搜】街道试点“共享儿女”：最低199元每月",
+                         "source":  "百度热搜",
+                         "date":  "2026-10-31",
+                         "time":  "02:17",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E8%A1%97%E9%81%93%E8%AF%95%E7%82%B9%E2%80%9C%E5%85%B1%E4%BA%AB%E5%84%BF%E5%A5%B3%E2%80%9D%EF%BC%9A%E6%9C%80%E4%BD%8E199%E5%85%83%E6%AF%8F%E6%9C%88",
+                         "likes":  497180,
+                         "comments":  26167
+                     },
+                     {
+                         "id":  "20261031_000",
+                         "title":  "黄金大跌 铜价为何创新高",
+                         "summary":  "【今日头条】黄金大跌 铜价为何创新高",
+                         "source":  "今日头条",
+                         "date":  "2026-10-31",
+                         "time":  "00:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7701487346830557220/",
+                         "likes":  507317,
+                         "comments":  46119
+                     },
+                     {
                          "id":  "20261030_006",
                          "title":  "谷歌市值蒸发5000亿美元",
                          "summary":  "【今日头条】谷歌市值蒸发5000亿美元",
@@ -2826,5 +3353,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-31T00:02:43+08:00"
+    "updated_at":  "2026-10-31T01:02:39+08:00"
 }

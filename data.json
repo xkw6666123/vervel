@@ -183,6 +183,21 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261030_047",
+                         "title":  "KC战胜CFO S16瑞士轮",
+                         "summary":  "【bilibili 热搜】KC战胜CFO S16瑞士轮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-10-30",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=CFO+KC",
+                         "likes":  126929,
+                         "comments":  9763
+                     },
+                     {
                          "id":  "20261030_024",
                          "title":  "小城良方云包场拿下爱奇艺史冠",
                          "summary":  "【微博】小城良方云包场拿下爱奇艺史冠",
@@ -3443,5 +3458,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-30T07:02:25+08:00"
+    "updated_at":  "2026-10-30T08:02:19+08:00"
 }

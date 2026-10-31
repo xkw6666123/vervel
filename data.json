@@ -183,6 +183,21 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261031_016",
+                         "title":  "HLE抽到BLG",
+                         "summary":  "【微博】HLE抽到BLG",
+                         "source":  "微博",
+                         "date":  "2026-10-31",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23HLE%E6%8A%BD%E5%88%B0BLG%23",
+                         "likes":  386484,
+                         "comments":  77296
+                     },
+                     {
                          "id":  "20261031_028",
                          "title":  "BLG将对战HLE",
                          "summary":  "【bilibili 热搜】BLG将对战HLE",
@@ -3520,5 +3535,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-10-31T10:02:43+08:00"
+    "updated_at":  "2026-10-31T12:02:49+08:00"
 }

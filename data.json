@@ -183,6 +183,22 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261101_055",
+                         "title":  "火兰朋克5000硬币支持Bin哥",
+                         "summary":  "【bilibili 热搜】火兰朋克5000硬币支持Bin哥",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-01",
+                         "time":  "14:35",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E7%81%AB%E5%85%B0%E6%9C%8B%E5%85%8B5000%E7%A1%AC%E5%B8%81%E6%94%AF%E6%8C%81Bin%E5%93%A5",
+                         "likes":  53138,
+                         "comments":  3321
+                     },
+                     {
                          "id":  "20261101_059",
                          "title":  "AI短片邪修润魂子",
                          "summary":  "【bilibili 热搜】AI短片邪修润魂子",
@@ -3420,5 +3436,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-01T01:02:26+08:00"
+    "updated_at":  "2026-11-01T02:02:14+08:00"
 }

@@ -183,6 +183,36 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261101_058",
+                         "title":  "胡歌陈龙跨界当新闻主播手忙脚乱",
+                         "summary":  "【百度热搜】胡歌陈龙跨界当新闻主播手忙脚乱",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-01",
+                         "time":  "20:26",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E8%83%A1%E6%AD%8C%E9%99%88%E9%BE%99%E8%B7%A8%E7%95%8C%E5%BD%93%E6%96%B0%E9%97%BB%E4%B8%BB%E6%92%AD%E6%89%8B%E5%BF%99%E8%84%9A%E4%B9%B1",
+                         "likes":  31438,
+                         "comments":  2245
+                     },
+                     {
+                         "id":  "20261101_027",
+                         "title":  "山海君回顾IG战胜LYON",
+                         "summary":  "【bilibili 热搜】山海君回顾IG战胜LYON",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-01",
+                         "time":  "06:39",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%B1%B1%E6%B5%B7%E5%90%9B%E5%9B%9E%E9%A1%BEIG%E6%88%98%E8%83%9CLYON",
+                         "likes":  268971,
+                         "comments":  26897
+                     },
+                     {
                          "id":  "20261101_057",
                          "title":  "刘诗诗牵着关晓彤上台",
                          "summary":  "【微博】刘诗诗牵着关晓彤上台",
@@ -3482,5 +3512,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-01T03:02:06+08:00"
+    "updated_at":  "2026-11-01T04:02:04+08:00"
 }

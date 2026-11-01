@@ -183,6 +183,81 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261101_050",
+                         "title":  "HLE对战BLG",
+                         "summary":  "【微博】HLE对战BLG",
+                         "source":  "微博",
+                         "date":  "2026-11-01",
+                         "time":  "04:10",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=HLE%E5%AF%B9%E6%88%98BLG",
+                         "likes":  80741,
+                         "comments":  7340
+                     },
+                     {
+                         "id":  "20261101_047",
+                         "title":  "KC战胜MKOI S16瑞士轮",
+                         "summary":  "【bilibili 热搜】KC战胜MKOI S16瑞士轮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-01",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=MKOI+KC",
+                         "likes":  139519,
+                         "comments":  10732
+                     },
+                     {
+                         "id":  "20261101_038",
+                         "title":  "12个AI预测BLG对阵HLE",
+                         "summary":  "【bilibili 热搜】12个AI预测BLG对阵HLE",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-01",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=12%E4%B8%AAAI%E9%A2%84%E6%B5%8BBLG%E5%AF%B9%E9%98%B5HLE",
+                         "likes":  192648,
+                         "comments":  11332
+                     },
+                     {
+                         "id":  "20261101_024",
+                         "title":  "一条抖音告别我的2026苏超",
+                         "summary":  "【抖音】一条抖音告别我的2026苏超",
+                         "source":  "抖音",
+                         "date":  "2026-11-01",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2723335",
+                         "likes":  302905,
+                         "comments":  27536
+                     },
+                     {
+                         "id":  "20261101_013",
+                         "title":  "31省份居民消费榜：谁最能花钱",
+                         "summary":  "【百度热搜】31省份居民消费榜：谁最能花钱",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-01",
+                         "time":  "02:41",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=31%E7%9C%81%E4%BB%BD%E5%B1%85%E6%B0%91%E6%B6%88%E8%B4%B9%E6%A6%9C%EF%BC%9A%E8%B0%81%E6%9C%80%E8%83%BD%E8%8A%B1%E9%92%B1",
+                         "likes":  380435,
+                         "comments":  25362
+                     },
+                     {
                          "id":  "20261101_036",
                          "title":  "将有两名中国人登陆月球",
                          "summary":  "【今日头条】将有两名中国人登陆月球",
@@ -3542,5 +3617,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-01T08:02:19+08:00"
+    "updated_at":  "2026-11-01T09:02:35+08:00"
 }

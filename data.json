@@ -183,6 +183,36 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261101_028",
+                         "title":  "世界是个巨大的草台班子",
+                         "summary":  "【微博】世界是个巨大的草台班子",
+                         "source":  "微博",
+                         "date":  "2026-11-01",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E4%B8%96%E7%95%8C%E6%98%AF%E4%B8%AA%E5%B7%A8%E5%A4%A7%E7%9A%84%E8%8D%89%E5%8F%B0%E7%8F%AD%E5%AD%90",
+                         "likes":  277898,
+                         "comments":  18526
+                     },
+                     {
+                         "id":  "20261101_014",
+                         "title":  "数据回顾BLG战胜HLE",
+                         "summary":  "【bilibili 热搜】数据回顾BLG战胜HLE",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-01",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%95%B0%E6%8D%AE%E5%9B%9E%E9%A1%BEBLG%E6%88%98%E8%83%9CHLE",
+                         "likes":  382122,
+                         "comments":  76424
+                     },
+                     {
                          "id":  "20261101_025",
                          "title":  "巴萨6-1阿拉维斯",
                          "summary":  "【bilibili 热搜】巴萨6-1阿拉维斯",
@@ -3632,5 +3662,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-01T10:02:37+08:00"
+    "updated_at":  "2026-11-01T11:04:21+08:00"
 }

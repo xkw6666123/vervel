@@ -183,6 +183,67 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261103_047",
+                         "title":  "如何看待AI对数学教育的影响",
+                         "summary":  "【bilibili 热搜】如何看待AI对数学教育的影响",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-03",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85AI%E5%AF%B9%E6%95%B0%E5%AD%A6%E6%95%99%E8%82%B2%E7%9A%84%E5%BD%B1%E5%93%8D",
+                         "likes":  119226,
+                         "comments":  11922
+                     },
+                     {
+                         "id":  "20261103_028",
+                         "title":  "赵心童决胜局争黑球幸运取胜",
+                         "summary":  "【bilibili 热搜】赵心童决胜局争黑球幸运取胜",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-03",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E8%B5%B5%E5%BF%83%E7%AB%A5%E5%86%B3%E8%83%9C%E5%B1%80%E4%BA%89%E9%BB%91%E7%90%83%E5%B9%B8%E8%BF%90%E5%8F%96%E8%83%9C",
+                         "likes":  287854,
+                         "comments":  35981
+                     },
+                     {
+                         "id":  "20261103_027",
+                         "title":  "女生将同学男扮女装带进宿舍被处理",
+                         "summary":  "【今日头条】女生将同学男扮女装带进宿舍被处理",
+                         "source":  "今日头条",
+                         "date":  "2026-11-03",
+                         "time":  "06:39",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7702609170071178771/",
+                         "likes":  289229,
+                         "comments":  41318
+                     },
+                     {
+                         "id":  "20261103_014",
+                         "title":  "黄金价格暴跌背后的全球资本巨变",
+                         "summary":  "【今日头条】黄金价格暴跌背后的全球资本巨变",
+                         "source":  "今日头条",
+                         "date":  "2026-11-03",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7703560216603790867/",
+                         "likes":  390866,
+                         "comments":  43429
+                     },
+                     {
                          "id":  "20261103_040",
                          "title":  "数说进博会新亮点",
                          "summary":  "【微博】数说进博会新亮点",
@@ -3572,5 +3633,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-03T10:02:42+08:00"
+    "updated_at":  "2026-11-03T11:03:07+08:00"
 }

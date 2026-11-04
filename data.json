@@ -183,6 +183,51 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261104_049",
+                         "title":  "iPhone天气下周五温差",
+                         "summary":  "【微博】iPhone天气下周五温差",
+                         "source":  "微博",
+                         "date":  "2026-11-04",
+                         "time":  "02:53",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=iPhone%E5%A4%A9%E6%B0%94%E4%B8%8B%E5%91%A8%E4%BA%94%E6%B8%A9%E5%B7%AE",
+                         "likes":  112210,
+                         "comments":  5610
+                     },
+                     {
+                         "id":  "20261104_024",
+                         "title":  "珠峰南坡海拔4410米酒店雪中被烧毁",
+                         "summary":  "【百度热搜】珠峰南坡海拔4410米酒店雪中被烧毁",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-04",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E7%8F%A0%E5%B3%B0%E5%8D%97%E5%9D%A1%E6%B5%B7%E6%8B%944410%E7%B1%B3%E9%85%92%E5%BA%97%E9%9B%AA%E4%B8%AD%E8%A2%AB%E7%83%A7%E6%AF%81",
+                         "likes":  297821,
+                         "comments":  22909
+                     },
+                     {
+                         "id":  "20261104_013",
+                         "title":  "TES对战IG",
+                         "summary":  "【微博】TES对战IG",
+                         "source":  "微博",
+                         "date":  "2026-11-04",
+                         "time":  "02:41",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=TES%E5%AF%B9%E6%88%98IG",
+                         "likes":  412238,
+                         "comments":  31710
+                     },
+                     {
                          "id":  "20261104_035",
                          "title":  "TES vs IG S16淘汰赛",
                          "summary":  "【bilibili 热搜】TES vs IG S16淘汰赛",
@@ -3482,5 +3527,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-04T08:02:38+08:00"
+    "updated_at":  "2026-11-04T09:02:44+08:00"
 }

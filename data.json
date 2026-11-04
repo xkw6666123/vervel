@@ -183,6 +183,21 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261104_035",
+                         "title":  "TES vs IG S16淘汰赛",
+                         "summary":  "【bilibili 热搜】TES vs IG S16淘汰赛",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-04",
+                         "time":  "22:55",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=TES+IG",
+                         "likes":  235523,
+                         "comments":  13854
+                     },
+                     {
                          "id":  "20261104_046",
                          "title":  "高颜值保洁大叔：年轻时相亲被嫌丑",
                          "summary":  "【今日头条】高颜值保洁大叔：年轻时相亲被嫌丑",
@@ -3467,5 +3482,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-04T07:02:10+08:00"
+    "updated_at":  "2026-11-04T08:02:38+08:00"
 }

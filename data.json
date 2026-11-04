@@ -183,6 +183,38 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261104_038",
+                         "title":  "服务器爆炸,滔搏IG或重赛",
+                         "summary":  "【贴吧】服务器爆炸,滔搏IG或重赛",
+                         "source":  "贴吧",
+                         "date":  "2026-11-04",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议",
+                                      "爆款"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%88%86%E7%82%B8%2C%E6%BB%94%E6%90%8FIG%E6%88%96%E9%87%8D%E8%B5%9B\u0026topic_id=28369006",
+                         "likes":  212880,
+                         "comments":  13305
+                     },
+                     {
+                         "id":  "20261104_036",
+                         "title":  "iPhone系统天气bug 显示下周五-32℃",
+                         "summary":  "【百度热搜】iPhone系统天气bug 显示下周五-32℃",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-04",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=iPhone%E7%B3%BB%E7%BB%9F%E5%A4%A9%E6%B0%94bug+%E6%98%BE%E7%A4%BA%E4%B8%8B%E5%91%A8%E4%BA%94-32%E2%84%83",
+                         "likes":  224732,
+                         "comments":  14045
+                     },
+                     {
                          "id":  "20261104_050",
                          "title":  "9图看中国互联网发展最新成就",
                          "summary":  "【百度热搜】9图看中国互联网发展最新成就",
@@ -3663,5 +3695,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-04T11:02:41+08:00"
+    "updated_at":  "2026-11-04T12:02:36+08:00"
 }

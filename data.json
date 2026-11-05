@@ -183,6 +183,36 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261105_035",
+                         "title":  "乖乖待在我身边学英语不好吗",
+                         "summary":  "【bilibili 热搜】乖乖待在我身边学英语不好吗",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-05",
+                         "time":  "22:55",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E4%B9%96%E4%B9%96%E5%BE%85%E5%9C%A8%E6%88%91%E8%BA%AB%E8%BE%B9%E5%AD%A6%E8%8B%B1%E8%AF%AD%E4%B8%8D%E5%A5%BD%E5%90%97",
+                         "likes":  226972,
+                         "comments":  14185
+                     },
+                     {
+                         "id":  "20261105_014",
+                         "title":  "C罗宣布从葡萄牙国家队退役",
+                         "summary":  "【贴吧】C罗宣布从葡萄牙国家队退役",
+                         "source":  "贴吧",
+                         "date":  "2026-11-05",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=C%E7%BD%97%E5%AE%A3%E5%B8%83%E4%BB%8E%E8%91%A1%E8%90%84%E7%89%99%E5%9B%BD%E5%AE%B6%E9%98%9F%E9%80%80%E5%BD%B9\u0026topic_id=28369241",
+                         "likes":  386085,
+                         "comments":  38608
+                     },
+                     {
                          "id":  "20261105_013",
                          "title":  "2027放假安排公布",
                          "summary":  "【微博】2027放假安排公布",
@@ -3670,5 +3700,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-05T19:02:39+08:00"
+    "updated_at":  "2026-11-05T20:04:37+08:00"
 }

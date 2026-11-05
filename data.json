@@ -183,6 +183,66 @@
                          "date":  "2026-10-27"
                      },
                      {
+                         "id":  "20261105_024",
+                         "title":  "一道热乎菜开启各地冬天",
+                         "summary":  "【抖音】一道热乎菜开启各地冬天",
+                         "source":  "抖音",
+                         "date":  "2026-11-05",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2728300",
+                         "likes":  294238,
+                         "comments":  15486
+                     },
+                     {
+                         "id":  "20261105_019",
+                         "title":  "为什么陈赓的风评一边倒的好？",
+                         "summary":  "【知乎】为什么陈赓的风评一边倒的好？",
+                         "source":  "知乎",
+                         "date":  "2026-11-05",
+                         "time":  "14:23",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/1902454179068380492",
+                         "likes":  328229,
+                         "comments":  32822
+                     },
+                     {
+                         "id":  "20261105_003",
+                         "title":  "GEN战胜LYON晋级四强",
+                         "summary":  "【bilibili 热搜】GEN战胜LYON晋级四强",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-05",
+                         "time":  "06:51",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=GEN+LYON",
+                         "likes":  487707,
+                         "comments":  30481
+                     },
+                     {
+                         "id":  "20261105_002",
+                         "title":  "上岸第一件先娶意中人",
+                         "summary":  "【微博】上岸第一件先娶意中人",
+                         "source":  "微博",
+                         "date":  "2026-11-05",
+                         "time":  "04:34",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E4%B8%8A%E5%B2%B8%E7%AC%AC%E4%B8%80%E4%BB%B6%E5%85%88%E5%A8%B6%E6%84%8F%E4%B8%AD%E4%BA%BA",
+                         "likes":  464099,
+                         "comments":  27299
+                     },
+                     {
                          "id":  "20261105_050",
                          "title":  "特朗普中期选举失利后首次露面",
                          "summary":  "【百度热搜】特朗普中期选举失利后首次露面",
@@ -3550,5 +3610,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-05T09:02:16+08:00"
+    "updated_at":  "2026-11-05T10:02:43+08:00"
 }

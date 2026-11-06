@@ -68,6 +68,97 @@
                          "date":  "2026-11-06"
                      },
                      {
+                         "id":  "20261106_042",
+                         "title":  "如何看待文班亚马场均6扣篮",
+                         "summary":  "【bilibili 热搜】如何看待文班亚马场均6扣篮",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-06",
+                         "time":  "12:54",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%A6%82%E4%BD%95%E7%9C%8B%E5%BE%85%E6%96%87%E7%8F%AD%E4%BA%9A%E9%A9%AC%E5%9C%BA%E5%9D%876%E6%89%A3%E7%AF%AE",
+                         "likes":  169594,
+                         "comments":  8479
+                     },
+                     {
+                         "id":  "20261106_038",
+                         "title":  "我国秋粮收获已过9成",
+                         "summary":  "【微博】我国秋粮收获已过9成",
+                         "source":  "微博",
+                         "date":  "2026-11-06",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E6%88%91%E5%9B%BD%E7%A7%8B%E7%B2%AE%E6%94%B6%E8%8E%B7%E5%B7%B2%E8%BF%879%E6%88%90%23",
+                         "likes":  210925,
+                         "comments":  19175
+                     },
+                     {
+                         "id":  "20261106_025",
+                         "title":  "S16 淘汰赛 BLG 3:0 淘汰 DK 晋级四强，如何评价这场比赛？",
+                         "summary":  "【知乎】S16 淘汰赛 BLG 3:0 淘汰 DK 晋级四强，如何评价这场比赛？",
+                         "source":  "知乎",
+                         "date":  "2026-11-06",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2101903871006224647",
+                         "likes":  319844,
+                         "comments":  29076
+                     },
+                     {
+                         "id":  "20261106_024",
+                         "title":  "BLG战胜DK",
+                         "summary":  "【微博】BLG战胜DK",
+                         "source":  "微博",
+                         "date":  "2026-11-06",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=BLG%E6%88%98%E8%83%9CDK",
+                         "likes":  303846,
+                         "comments":  16880
+                     },
+                     {
+                         "id":  "20261106_006",
+                         "title":  "BLG 3-0 DK晋级四强",
+                         "summary":  "【bilibili 热搜】BLG 3-0 DK晋级四强",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-06",
+                         "time":  "12:42",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=DK+BLG",
+                         "likes":  437052,
+                         "comments":  23002
+                     },
+                     {
+                         "id":  "20261106_005",
+                         "title":  "美股暴跌 遭遇历史性抛售",
+                         "summary":  "【百度热搜】美股暴跌 遭遇历史性抛售",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-06",
+                         "time":  "10:25",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "争议"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E7%BE%8E%E8%82%A1%E6%9A%B4%E8%B7%8C+%E9%81%AD%E9%81%87%E5%8E%86%E5%8F%B2%E6%80%A7%E6%8A%9B%E5%94%AE",
+                         "likes":  465222,
+                         "comments":  27366
+                     },
+                     {
                          "id":  "20261106_050",
                          "title":  "官方回应居民医保参保人数下降",
                          "summary":  "【微博】官方回应居民医保参保人数下降",
@@ -3403,5 +3494,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-06T09:04:06+08:00"
+    "updated_at":  "2026-11-06T11:03:25+08:00"
 }

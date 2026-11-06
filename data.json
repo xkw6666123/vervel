@@ -68,6 +68,21 @@
                          "date":  "2026-11-06"
                      },
                      {
+                         "id":  "20261107_016",
+                         "title":  "JDG战胜WB赛后数据",
+                         "summary":  "【bilibili 热搜】JDG战胜WB赛后数据",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-07",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=JDG%E6%88%98%E8%83%9CWB%E8%B5%9B%E5%90%8E%E6%95%B0%E6%8D%AE",
+                         "likes":  373871,
+                         "comments":  62311
+                     },
+                     {
                          "id":  "20261107_053",
                          "title":  "深度解析BLG零封DK背后原因",
                          "summary":  "【bilibili 热搜】深度解析BLG零封DK背后原因",
@@ -3432,5 +3447,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-07T06:02:14+08:00"
+    "updated_at":  "2026-11-07T07:02:14+08:00"
 }

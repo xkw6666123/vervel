@@ -68,6 +68,21 @@
                          "date":  "2026-11-06"
                      },
                      {
+                         "id":  "20261109_004",
+                         "title":  "TheShy希望Chovy夺S冠",
+                         "summary":  "【贴吧】TheShy希望Chovy夺S冠",
+                         "source":  "贴吧",
+                         "date":  "2026-11-09",
+                         "time":  "08:08",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=TheShy%E5%B8%8C%E6%9C%9BChovy%E5%A4%BAS%E5%86%A0\u0026topic_id=28369499",
+                         "likes":  467551,
+                         "comments":  33396
+                     },
+                     {
                          "id":  "20261109_045",
                          "title":  "如何评价 the shy 选手赛后采访表示「希望 chovy 选手夺冠」？",
                          "summary":  "【知乎】如何评价 the shy 选手赛后采访表示「希望 chovy 选手夺冠」？",
@@ -3436,5 +3451,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-09T07:02:26+08:00"
+    "updated_at":  "2026-11-09T08:02:57+08:00"
 }

@@ -68,6 +68,36 @@
                          "date":  "2026-11-06"
                      },
                      {
+                         "id":  "20261109_057",
+                         "title":  "IG老板怒斥AL训练赛放鸽子",
+                         "summary":  "【贴吧】IG老板怒斥AL训练赛放鸽子",
+                         "source":  "贴吧",
+                         "date":  "2026-11-09",
+                         "time":  "18:09",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=IG%E8%80%81%E6%9D%BF%E6%80%92%E6%96%A5AL%E8%AE%AD%E7%BB%83%E8%B5%9B%E6%94%BE%E9%B8%BD%E5%AD%90\u0026topic_id=28369540",
+                         "likes":  34159,
+                         "comments":  3795
+                     },
+                     {
+                         "id":  "20261109_056",
+                         "title":  "Angel复盘BLG vs T1",
+                         "summary":  "【bilibili 热搜】Angel复盘BLG vs T1",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-09",
+                         "time":  "16:52",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=Angel%E5%A4%8D%E7%9B%98BLG+vs+T1",
+                         "likes":  39562,
+                         "comments":  5651
+                     },
+                     {
                          "id":  "20261109_055",
                          "title":  "你如何看待媒体刊发的评论《一有分歧就举报，老师还怎么教孩子？》？",
                          "summary":  "【知乎】你如何看待媒体刊发的评论《一有分歧就举报，老师还怎么教孩子？》？",
@@ -3572,5 +3602,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-09T15:02:59+08:00"
+    "updated_at":  "2026-11-09T16:02:41+08:00"
 }

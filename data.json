@@ -68,6 +68,36 @@
                          "date":  "2026-11-06"
                      },
                      {
+                         "id":  "20261110_024",
+                         "title":  "波兰枪击事件致9死16伤",
+                         "summary":  "【抖音】波兰枪击事件致9死16伤",
+                         "source":  "抖音",
+                         "date":  "2026-11-10",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2736629",
+                         "likes":  325490,
+                         "comments":  40686
+                     },
+                     {
+                         "id":  "20261110_016",
+                         "title":  "韩国人如何评价BLG战胜T1",
+                         "summary":  "【bilibili 热搜】韩国人如何评价BLG战胜T1",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-10",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E9%9F%A9%E5%9B%BD%E4%BA%BA%E5%A6%82%E4%BD%95%E8%AF%84%E4%BB%B7BLG%E6%88%98%E8%83%9CT1",
+                         "likes":  353774,
+                         "comments":  18619
+                     },
+                     {
                          "id":  "20261110_028",
                          "title":  "中国骑手遇害案嫌犯大闹法庭",
                          "summary":  "【今日头条】中国骑手遇害案嫌犯大闹法庭",
@@ -3465,5 +3495,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-10T09:02:47+08:00"
+    "updated_at":  "2026-11-10T10:03:38+08:00"
 }

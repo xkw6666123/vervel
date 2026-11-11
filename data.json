@@ -187,6 +187,21 @@
                          "date":  "2026-11-11"
                      },
                      {
+                         "id":  "20261111_038",
+                         "title":  "三家抢奶油两家抢Gala好戏开场",
+                         "summary":  "【贴吧】三家抢奶油两家抢Gala好戏开场",
+                         "source":  "贴吧",
+                         "date":  "2026-11-11",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%B8%89%E5%AE%B6%E6%8A%A2%E5%A5%B6%E6%B2%B9%E4%B8%A4%E5%AE%B6%E6%8A%A2Gala%E5%A5%BD%E6%88%8F%E5%BC%80%E5%9C%BA\u0026topic_id=28369751",
+                         "likes":  188397,
+                         "comments":  26913
+                     },
+                     {
                          "id":  "20261111_036",
                          "title":  "沉浸体验国产战机呼啸升空",
                          "summary":  "【bilibili 热搜】沉浸体验国产战机呼啸升空",
@@ -3707,5 +3722,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-11T18:02:42+08:00"
+    "updated_at":  "2026-11-11T19:09:25+08:00"
 }

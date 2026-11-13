@@ -249,6 +249,37 @@
                          "date":  "2026-11-11"
                      },
                      {
+                         "id":  "20261113_017",
+                         "title":  "AI预测BLG与GenG谁将夺冠",
+                         "summary":  "【bilibili 热搜】AI预测BLG与GenG谁将夺冠",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-13",
+                         "time":  "10:49",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=AI%E9%A2%84%E6%B5%8BBLG%E4%B8%8EGenG%E8%B0%81%E5%B0%86%E5%A4%BA%E5%86%A0",
+                         "likes":  368054,
+                         "comments":  40894
+                     },
+                     {
+                         "id":  "20261113_016",
+                         "title":  "男子花四千多元做AI短剧火了",
+                         "summary":  "【微博】男子花四千多元做AI短剧火了",
+                         "source":  "微博",
+                         "date":  "2026-11-13",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E7%94%B7%E5%AD%90%E8%8A%B1%E5%9B%9B%E5%8D%83%E5%A4%9A%E5%85%83%E5%81%9AAI%E7%9F%AD%E5%89%A7%E7%81%AB%E4%BA%86",
+                         "likes":  360751,
+                         "comments":  60125
+                     },
+                     {
                          "id":  "20261113_014",
                          "title":  "西班牙为何连发高铁事故",
                          "summary":  "【bilibili 热搜】西班牙为何连发高铁事故",
@@ -3740,5 +3771,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-13T12:02:36+08:00"
+    "updated_at":  "2026-11-13T13:02:57+08:00"
 }

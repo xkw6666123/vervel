@@ -128,6 +128,66 @@
                          "date":  "2026-11-13"
                      },
                      {
+                         "id":  "20261115_057",
+                         "title":  "小寒梦游",
+                         "summary":  "【微博】小寒梦游",
+                         "source":  "微博",
+                         "date":  "2026-11-15",
+                         "time":  "18:09",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E5%B0%8F%E5%AF%92%E6%A2%A6%E6%B8%B8",
+                         "likes":  40719,
+                         "comments":  2714
+                     },
+                     {
+                         "id":  "20261115_047",
+                         "title":  "BLG 决赛我们来了",
+                         "summary":  "【bilibili 热搜】BLG 决赛我们来了",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-15",
+                         "time":  "22:19",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=BLG+%E5%86%B3%E8%B5%9B%E6%88%91%E4%BB%AC%E6%9D%A5%E4%BA%86",
+                         "likes":  139056,
+                         "comments":  8691
+                     },
+                     {
+                         "id":  "20261115_036",
+                         "title":  "数读向新向优向好的中国经济",
+                         "summary":  "【微博】数读向新向优向好的中国经济",
+                         "source":  "微博",
+                         "date":  "2026-11-15",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E6%95%B0%E8%AF%BB%E5%90%91%E6%96%B0%E5%90%91%E4%BC%98%E5%90%91%E5%A5%BD%E7%9A%84%E4%B8%AD%E5%9B%BD%E7%BB%8F%E6%B5%8E%23",
+                         "likes":  211852,
+                         "comments":  30264
+                     },
+                     {
+                         "id":  "20261115_003",
+                         "title":  "多地中小学宣布调整作息",
+                         "summary":  "【百度热搜】多地中小学宣布调整作息",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-15",
+                         "time":  "06:51",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%A4%9A%E5%9C%B0%E4%B8%AD%E5%B0%8F%E5%AD%A6%E5%AE%A3%E5%B8%83%E8%B0%83%E6%95%B4%E4%BD%9C%E6%81%AF",
+                         "likes":  483323,
+                         "comments":  60415
+                     },
+                     {
                          "id":  "20261115_059",
                          "title":  "梓墨获2026KPL年总FMVP",
                          "summary":  "【bilibili 热搜】梓墨获2026KPL年总FMVP",
@@ -3396,5 +3456,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-15T01:03:02+08:00"
+    "updated_at":  "2026-11-15T02:02:37+08:00"
 }

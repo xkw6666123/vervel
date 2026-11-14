@@ -128,6 +128,81 @@
                          "date":  "2026-11-13"
                      },
                      {
+                         "id":  "20261115_054",
+                         "title":  "DYS解说S16总决赛",
+                         "summary":  "【bilibili 热搜】DYS解说S16总决赛",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-15",
+                         "time":  "12:18",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=DYS%E8%A7%A3%E8%AF%B4S16%E6%80%BB%E5%86%B3%E8%B5%9B",
+                         "likes":  79933,
+                         "comments":  7266
+                     },
+                     {
+                         "id":  "20261115_040",
+                         "title":  "中国数学家取得哥德巴赫猜想新突破",
+                         "summary":  "【bilibili 热搜】中国数学家取得哥德巴赫猜想新突破",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-15",
+                         "time":  "08:20",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E6%95%B0%E5%AD%A6%E5%AE%B6%E5%8F%96%E5%BE%97%E5%93%A5%E5%BE%B7%E5%B7%B4%E8%B5%AB%E7%8C%9C%E6%83%B3%E6%96%B0%E7%AA%81%E7%A0%B4",
+                         "likes":  177767,
+                         "comments":  35553
+                     },
+                     {
+                         "id":  "20261115_028",
+                         "title":  "BLG团战",
+                         "summary":  "【微博】BLG团战",
+                         "source":  "微博",
+                         "date":  "2026-11-15",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=BLG%E5%9B%A2%E6%88%98",
+                         "likes":  287621,
+                         "comments":  41088
+                     },
+                     {
+                         "id":  "20261115_025",
+                         "title":  "我的S16决赛观赛日记",
+                         "summary":  "【抖音】我的S16决赛观赛日记",
+                         "source":  "抖音",
+                         "date":  "2026-11-15",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2746323",
+                         "likes":  283381,
+                         "comments":  56676
+                     },
+                     {
+                         "id":  "20261115_014",
+                         "title":  "S16总决赛：BLG0比1落后GEN",
+                         "summary":  "【百度热搜】S16总决赛：BLG0比1落后GEN",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-15",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=S16%E6%80%BB%E5%86%B3%E8%B5%9B%EF%BC%9ABLG0%E6%AF%941%E8%90%BD%E5%90%8EGEN",
+                         "likes":  401154,
+                         "comments":  80230
+                     },
+                     {
                          "id":  "20261115_046",
                          "title":  "S16冠亚军决赛宣传片",
                          "summary":  "【bilibili 热搜】S16冠亚军决赛宣传片",
@@ -3516,5 +3591,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-15T05:02:32+08:00"
+    "updated_at":  "2026-11-15T06:02:28+08:00"
 }

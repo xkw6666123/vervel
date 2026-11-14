@@ -279,6 +279,37 @@
                          "date":  "2026-11-11"
                      },
                      {
+                         "id":  "20261114_024",
+                         "title":  "如何评价 11 月 13 日上市的问界新 M8，售价 37.98 万元起，这一价格在如今的市场有竞争力嘛？",
+                         "summary":  "【知乎】如何评价 11 月 13 日上市的问界新 M8，售价 37.98 万元起，这一价格在如今的市场有竞争力嘛？",
+                         "source":  "知乎",
+                         "date":  "2026-11-14",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2104607471683817591",
+                         "likes":  309126,
+                         "comments":  16269
+                     },
+                     {
+                         "id":  "20261114_003",
+                         "title":  "BLG针对Canyon就能赢GEN吗",
+                         "summary":  "【bilibili 热搜】BLG针对Canyon就能赢GEN吗",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-14",
+                         "time":  "06:51",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=BLG%E9%92%88%E5%AF%B9Canyon%E5%B0%B1%E8%83%BD%E8%B5%A2GEN%E5%90%97",
+                         "likes":  475626,
+                         "comments":  95125
+                     },
+                     {
                          "id":  "20261114_036",
                          "title":  "APEC时隔12年再次来到中国",
                          "summary":  "【微博】APEC时隔12年再次来到中国",
@@ -3589,5 +3620,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-14T07:02:33+08:00"
+    "updated_at":  "2026-11-14T08:03:51+08:00"
 }

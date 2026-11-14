@@ -128,6 +128,36 @@
                          "date":  "2026-11-13"
                      },
                      {
+                         "id":  "20261115_046",
+                         "title":  "S16冠亚军决赛宣传片",
+                         "summary":  "【bilibili 热搜】S16冠亚军决赛宣传片",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-15",
+                         "time":  "20:02",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=S16%E5%86%A0%E4%BA%9A%E5%86%9B%E5%86%B3%E8%B5%9B%E5%AE%A3%E4%BC%A0%E7%89%87",
+                         "likes":  127010,
+                         "comments":  11546
+                     },
+                     {
+                         "id":  "20261115_027",
+                         "title":  "S16决赛开幕式",
+                         "summary":  "【微博】S16决赛开幕式",
+                         "source":  "微博",
+                         "date":  "2026-11-15",
+                         "time":  "06:39",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23S16%E5%86%B3%E8%B5%9B%E5%BC%80%E5%B9%95%E5%BC%8F%23",
+                         "likes":  281960,
+                         "comments":  17622
+                     },
+                     {
                          "id":  "20261115_013",
                          "title":  "GEN对战BLG",
                          "summary":  "【微博】GEN对战BLG",
@@ -3486,5 +3516,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-15T04:02:32+08:00"
+    "updated_at":  "2026-11-15T05:02:32+08:00"
 }

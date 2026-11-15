@@ -128,6 +128,36 @@
                          "date":  "2026-11-13"
                      },
                      {
+                         "id":  "20261115_038",
+                         "title":  "Knight 获得 S16 总决赛 FMVP，成为继田野后 LPL 第二位大满贯，对此你有什么想说的？",
+                         "summary":  "【知乎】Knight 获得 S16 总决赛 FMVP，成为继田野后 LPL 第二位大满贯，对此你有什么想说的？",
+                         "source":  "知乎",
+                         "date":  "2026-11-15",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2105214731573096596",
+                         "likes":  206208,
+                         "comments":  18746
+                     },
+                     {
+                         "id":  "20261115_017",
+                         "title":  "Bin成为LPL历史首位大满贯上路选手",
+                         "summary":  "【微博】Bin成为LPL历史首位大满贯上路选手",
+                         "source":  "微博",
+                         "date":  "2026-11-15",
+                         "time":  "10:49",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23Bin%E6%88%90%E4%B8%BALPL%E5%8E%86%E5%8F%B2%E9%A6%96%E4%BD%8D%E5%A4%A7%E6%BB%A1%E8%B4%AF%E4%B8%8A%E8%B7%AF%E9%80%89%E6%89%8B%23",
+                         "likes":  352125,
+                         "comments":  44015
+                     },
+                     {
                          "id":  "20261115_035",
                          "title":  "BLG夺冠时刻",
                          "summary":  "【bilibili 热搜】BLG夺冠时刻",
@@ -3666,5 +3696,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-15T10:03:18+08:00"
+    "updated_at":  "2026-11-15T11:04:07+08:00"
 }

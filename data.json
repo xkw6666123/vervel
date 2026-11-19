@@ -125,6 +125,37 @@
                          "date":  "2026-11-16"
                      },
                      {
+                         "id":  "20261119_051",
+                         "title":  "特朗普沉浸式欣赏深圳夜景",
+                         "summary":  "【bilibili 热搜】特朗普沉浸式欣赏深圳夜景",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-19",
+                         "time":  "06:27",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E7%89%B9%E6%9C%97%E6%99%AE%E6%B2%89%E6%B5%B8%E5%BC%8F%E6%AC%A3%E8%B5%8F%E6%B7%B1%E5%9C%B3%E5%A4%9C%E6%99%AF",
+                         "likes":  72190,
+                         "comments":  4812
+                     },
+                     {
+                         "id":  "20261119_036",
+                         "title":  "RNG爆内幕Uzi卢锡安事件反转",
+                         "summary":  "【贴吧】RNG爆内幕Uzi卢锡安事件反转",
+                         "source":  "贴吧",
+                         "date":  "2026-11-19",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=RNG%E7%88%86%E5%86%85%E5%B9%95Uzi%E5%8D%A2%E9%94%A1%E5%AE%89%E4%BA%8B%E4%BB%B6%E5%8F%8D%E8%BD%AC\u0026topic_id=28369952",
+                         "likes":  227427,
+                         "comments":  11969
+                     },
+                     {
                          "id":  "20261119_034",
                          "title":  "普京特朗普欢迎晚宴互动握手",
                          "summary":  "【抖音】普京特朗普欢迎晚宴互动握手",
@@ -3393,5 +3424,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-19T11:02:40+08:00"
+    "updated_at":  "2026-11-19T12:03:01+08:00"
 }

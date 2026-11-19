@@ -125,6 +125,21 @@
                          "date":  "2026-11-16"
                      },
                      {
+                         "id":  "20261119_050",
+                         "title":  "APEC领导人宣言",
+                         "summary":  "【bilibili 热搜】APEC领导人宣言",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-19",
+                         "time":  "04:10",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=APEC%E9%A2%86%E5%AF%BC%E4%BA%BA%E5%AE%A3%E8%A8%80",
+                         "likes":  118894,
+                         "comments":  13210
+                     },
+                     {
                          "id":  "20261119_046",
                          "title":  "为什么大家这么关注 APEC 会议？",
                          "summary":  "【知乎】为什么大家这么关注 APEC 会议？",
@@ -3529,5 +3544,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-19T18:03:16+08:00"
+    "updated_at":  "2026-11-19T19:03:20+08:00"
 }

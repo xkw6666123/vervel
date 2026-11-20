@@ -96,6 +96,503 @@
                          "date":  "2026-11-18"
                      },
                      {
+                         "id":  "20261121_059",
+                         "title":  "任贤齐入驻B站",
+                         "summary":  "【bilibili 热搜】任贤齐入驻B站",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-21",
+                         "time":  "22:43",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E4%BB%BB%E8%B4%A4%E9%BD%90%E5%85%A5%E9%A9%BBB%E7%AB%99",
+                         "likes":  30878,
+                         "comments":  5146
+                     },
+                     {
+                         "id":  "20261121_056",
+                         "title":  "中国最大饺子店要上市了",
+                         "summary":  "【百度热搜】中国最大饺子店要上市了",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-21",
+                         "time":  "16:52",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E4%B8%AD%E5%9B%BD%E6%9C%80%E5%A4%A7%E9%A5%BA%E5%AD%90%E5%BA%97%E8%A6%81%E4%B8%8A%E5%B8%82%E4%BA%86",
+                         "likes":  61775,
+                         "comments":  12355
+                     },
+                     {
+                         "id":  "20261121_055",
+                         "title":  "钧正平：日方应收回涉台错误言论",
+                         "summary":  "【今日头条】钧正平：日方应收回涉台错误言论",
+                         "source":  "今日头条",
+                         "date":  "2026-11-21",
+                         "time":  "14:35",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7710243921330258458/",
+                         "likes":  52493,
+                         "comments":  2624
+                     },
+                     {
+                         "id":  "20261121_054",
+                         "title":  "酒店的浴室为什么大多是透明的？",
+                         "summary":  "【知乎】酒店的浴室为什么大多是透明的？",
+                         "source":  "知乎",
+                         "date":  "2026-11-21",
+                         "time":  "12:18",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/527454391",
+                         "likes":  51488,
+                         "comments":  3218
+                     },
+                     {
+                         "id":  "20261121_053",
+                         "title":  "外交部回应高市早苗涉台问题表态",
+                         "summary":  "【抖音】外交部回应高市早苗涉台问题表态",
+                         "source":  "抖音",
+                         "date":  "2026-11-21",
+                         "time":  "10:01",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2756269",
+                         "likes":  94281,
+                         "comments":  5545
+                     },
+                     {
+                         "id":  "20261121_052",
+                         "title":  "金价罕见大跌原因找到了",
+                         "summary":  "【微博】金价罕见大跌原因找到了",
+                         "source":  "微博",
+                         "date":  "2026-11-21",
+                         "time":  "08:44",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E9%87%91%E4%BB%B7%E7%BD%95%E8%A7%81%E5%A4%A7%E8%B7%8C%E5%8E%9F%E5%9B%A0%E6%89%BE%E5%88%B0%E4%BA%86%23",
+                         "likes":  102411,
+                         "comments":  17068
+                     },
+                     {
+                         "id":  "20261121_051",
+                         "title":  "吧友开发GTA6免费补帧软件",
+                         "summary":  "【贴吧】吧友开发GTA6免费补帧软件",
+                         "source":  "贴吧",
+                         "date":  "2026-11-21",
+                         "time":  "06:27",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%90%A7%E5%8F%8B%E5%BC%80%E5%8F%91GTA6%E5%85%8D%E8%B4%B9%E8%A1%A5%E5%B8%A7%E8%BD%AF%E4%BB%B6\u0026topic_id=28370028",
+                         "likes":  108768,
+                         "comments":  15538
+                     },
+                     {
+                         "id":  "20261121_048",
+                         "title":  "塔克法尔能成为76人的文班吗",
+                         "summary":  "【bilibili 热搜】塔克法尔能成为76人的文班吗",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-21",
+                         "time":  "00:36",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E5%A1%94%E5%85%8B%E6%B3%95%E5%B0%94%E8%83%BD%E6%88%90%E4%B8%BA76%E4%BA%BA%E7%9A%84%E6%96%87%E7%8F%AD%E5%90%97",
+                         "likes":  105230,
+                         "comments":  8769
+                     },
+                     {
+                         "id":  "20261121_045",
+                         "title":  "美团、京东、阿里集体盯上了厨房",
+                         "summary":  "【百度热搜】美团、京东、阿里集体盯上了厨房",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-21",
+                         "time":  "18:45",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E7%BE%8E%E5%9B%A2%E3%80%81%E4%BA%AC%E4%B8%9C%E3%80%81%E9%98%BF%E9%87%8C%E9%9B%86%E4%BD%93%E7%9B%AF%E4%B8%8A%E4%BA%86%E5%8E%A8%E6%88%BF",
+                         "likes":  150344,
+                         "comments":  18793
+                     },
+                     {
+                         "id":  "20261121_044",
+                         "title":  "特朗普刚返美就发重大预告",
+                         "summary":  "【今日头条】特朗普刚返美就发重大预告",
+                         "source":  "今日头条",
+                         "date":  "2026-11-21",
+                         "time":  "16:28",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7709509765424267300/",
+                         "likes":  136335,
+                         "comments":  9738
+                     },
+                     {
+                         "id":  "20261121_043",
+                         "title":  "神秘模型 Gestalt 横空出世，设计基准上大幅超越 Claude 、 GPT，这款模型到底是啥来历？",
+                         "summary":  "【知乎】神秘模型 Gestalt 横空出世，设计基准上大幅超越 Claude 、 GPT，这款模型到底是啥来历？",
+                         "source":  "知乎",
+                         "date":  "2026-11-21",
+                         "time":  "14:11",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2106839067346350136",
+                         "likes":  138617,
+                         "comments":  8153
+                     },
+                     {
+                         "id":  "20261121_042",
+                         "title":  "泰国总理带夫人在深圳吃夜宵",
+                         "summary":  "【抖音】泰国总理带夫人在深圳吃夜宵",
+                         "source":  "抖音",
+                         "date":  "2026-11-21",
+                         "time":  "12:54",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2755542",
+                         "likes":  170215,
+                         "comments":  18912
+                     },
+                     {
+                         "id":  "20261121_041",
+                         "title":  "金价",
+                         "summary":  "【微博】金价",
+                         "source":  "微博",
+                         "date":  "2026-11-21",
+                         "time":  "10:37",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%E9%87%91%E4%BB%B7",
+                         "likes":  165433,
+                         "comments":  11816
+                     },
+                     {
+                         "id":  "20261121_037",
+                         "title":  "DK官宣Doran和Kanavi加入",
+                         "summary":  "【bilibili 热搜】DK官宣Doran和Kanavi加入",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-21",
+                         "time":  "02:29",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=DK%E5%AE%98%E5%AE%A3Doran%E5%92%8CKanavi%E5%8A%A0%E5%85%A5",
+                         "likes":  190246,
+                         "comments":  11190
+                     },
+                     {
+                         "id":  "20261121_034",
+                         "title":  "羽毛球世界冠军周昊东兴奋剂检测阳性",
+                         "summary":  "【百度热搜】羽毛球世界冠军周昊东兴奋剂检测阳性",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-21",
+                         "time":  "20:38",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E7%BE%BD%E6%AF%9B%E7%90%83%E4%B8%96%E7%95%8C%E5%86%A0%E5%86%9B%E5%91%A8%E6%98%8A%E4%B8%9C%E5%85%B4%E5%A5%8B%E5%89%82%E6%A3%80%E6%B5%8B%E9%98%B3%E6%80%A7",
+                         "likes":  230598,
+                         "comments":  38433
+                     },
+                     {
+                         "id":  "20261121_033",
+                         "title":  "赖岳谦：汉奸走狗才盲目追捧日本人",
+                         "summary":  "【今日头条】赖岳谦：汉奸走狗才盲目追捧日本人",
+                         "source":  "今日头条",
+                         "date":  "2026-11-21",
+                         "time":  "18:21",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7709841146268353051/",
+                         "likes":  220857,
+                         "comments":  13803
+                     },
+                     {
+                         "id":  "20261121_032",
+                         "title":  "王毅介绍中俄美元首会晤情况，称这是一次「和平峰会」，是载入史册的标志性事件，传递出了哪些信号？",
+                         "summary":  "【知乎】王毅介绍中俄美元首会晤情况，称这是一次「和平峰会」，是载入史册的标志性事件，传递出了哪些信号？",
+                         "source":  "知乎",
+                         "date":  "2026-11-21",
+                         "time":  "16:04",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.zhihu.com/question/2107019870122547156",
+                         "likes":  262538,
+                         "comments":  17502
+                     },
+                     {
+                         "id":  "20261121_031",
+                         "title":  "亚太前沿领域机遇看中国",
+                         "summary":  "【抖音】亚太前沿领域机遇看中国",
+                         "source":  "抖音",
+                         "date":  "2026-11-21",
+                         "time":  "14:47",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2755049",
+                         "likes":  236825,
+                         "comments":  39470
+                     },
+                     {
+                         "id":  "20261121_030",
+                         "title":  "APEC盛会效应拉满",
+                         "summary":  "【微博】APEC盛会效应拉满",
+                         "source":  "微博",
+                         "date":  "2026-11-21",
+                         "time":  "12:30",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23APEC%E7%9B%9B%E4%BC%9A%E6%95%88%E5%BA%94%E6%8B%89%E6%BB%A1%23",
+                         "likes":  245257,
+                         "comments":  30657
+                     },
+                     {
+                         "id":  "20261121_029",
+                         "title":  "Viper欲回国BLG阵容生变",
+                         "summary":  "【贴吧】Viper欲回国BLG阵容生变",
+                         "source":  "贴吧",
+                         "date":  "2026-11-21",
+                         "time":  "10:13",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=Viper%E6%AC%B2%E5%9B%9E%E5%9B%BDBLG%E9%98%B5%E5%AE%B9%E7%94%9F%E5%8F%98\u0026topic_id=28370061",
+                         "likes":  280742,
+                         "comments":  21595
+                     },
+                     {
+                         "id":  "20261121_026",
+                         "title":  "明年闪存供应或增超25%",
+                         "summary":  "【bilibili 热搜】明年闪存供应或增超25%",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-21",
+                         "time":  "04:22",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%98%8E%E5%B9%B4%E9%97%AA%E5%AD%98%E4%BE%9B%E5%BA%94%E6%88%96%E5%A2%9E%E8%B6%8525%25",
+                         "likes":  294580,
+                         "comments":  42082
+                     },
+                     {
+                         "id":  "20261121_023",
+                         "title":  "科技新国货成“深圳特产”",
+                         "summary":  "【百度热搜】科技新国货成“深圳特产”",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-21",
+                         "time":  "22:31",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E7%A7%91%E6%8A%80%E6%96%B0%E5%9B%BD%E8%B4%A7%E6%88%90%E2%80%9C%E6%B7%B1%E5%9C%B3%E7%89%B9%E4%BA%A7%E2%80%9D",
+                         "likes":  309749,
+                         "comments":  22124
+                     },
+                     {
+                         "id":  "20261121_022",
+                         "title":  "亚太经合组织贸易数字化合作框架",
+                         "summary":  "【今日头条】亚太经合组织贸易数字化合作框架",
+                         "source":  "今日头条",
+                         "date":  "2026-11-21",
+                         "time":  "20:14",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7710217409394708019/",
+                         "likes":  328000,
+                         "comments":  32800
+                     },
+                     {
+                         "id":  "20261121_020",
+                         "title":  "APEC外宾游深圳邂逅地道美食",
+                         "summary":  "【抖音】APEC外宾游深圳邂逅地道美食",
+                         "source":  "抖音",
+                         "date":  "2026-11-21",
+                         "time":  "16:40",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2754647",
+                         "likes":  338591,
+                         "comments":  24185
+                     },
+                     {
+                         "id":  "20261121_019",
+                         "title":  "青稚MVP",
+                         "summary":  "【微博】青稚MVP",
+                         "source":  "微博",
+                         "date":  "2026-11-21",
+                         "time":  "14:23",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E9%9D%92%E7%A8%9AMVP%23",
+                         "likes":  343928,
+                         "comments":  42991
+                     },
+                     {
+                         "id":  "20261121_015",
+                         "title":  "数学家称用AI证明了黎曼猜想",
+                         "summary":  "【bilibili 热搜】数学家称用AI证明了黎曼猜想",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-21",
+                         "time":  "06:15",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E6%95%B0%E5%AD%A6%E5%AE%B6%E7%A7%B0%E7%94%A8AI%E8%AF%81%E6%98%8E%E4%BA%86%E9%BB%8E%E6%9B%BC%E7%8C%9C%E6%83%B3",
+                         "likes":  398339,
+                         "comments":  26555
+                     },
+                     {
+                         "id":  "20261121_012",
+                         "title":  "年轻人还逛商场 只是先去了B1层",
+                         "summary":  "【百度热搜】年轻人还逛商场 只是先去了B1层",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-21",
+                         "time":  "00:24",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%B9%B4%E8%BD%BB%E4%BA%BA%E8%BF%98%E9%80%9B%E5%95%86%E5%9C%BA+%E5%8F%AA%E6%98%AF%E5%85%88%E5%8E%BB%E4%BA%86B1%E5%B1%82",
+                         "likes":  400417,
+                         "comments":  50052
+                     },
+                     {
+                         "id":  "20261121_011",
+                         "title":  "高市早苗拍特朗普试图搭话被无视",
+                         "summary":  "【今日头条】高市早苗拍特朗普试图搭话被无视",
+                         "source":  "今日头条",
+                         "date":  "2026-11-21",
+                         "time":  "22:07",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7709960248785682474/",
+                         "likes":  419972,
+                         "comments":  23331
+                     },
+                     {
+                         "id":  "20261121_009",
+                         "title":  "U17男足0:5西班牙",
+                         "summary":  "【抖音】U17男足0:5西班牙",
+                         "source":  "抖音",
+                         "date":  "2026-11-21",
+                         "time":  "18:33",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2755170",
+                         "likes":  442819,
+                         "comments":  22140
+                     },
+                     {
+                         "id":  "20261121_008",
+                         "title":  "深圳人又开始原装出街了",
+                         "summary":  "【微博】深圳人又开始原装出街了",
+                         "source":  "微博",
+                         "date":  "2026-11-21",
+                         "time":  "16:16",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E6%B7%B1%E5%9C%B3%E4%BA%BA%E5%8F%88%E5%BC%80%E5%A7%8B%E5%8E%9F%E8%A3%85%E5%87%BA%E8%A1%97%E4%BA%86%23",
+                         "likes":  416372,
+                         "comments":  37852
+                     },
+                     {
+                         "id":  "20261121_004",
+                         "title":  "中俄美元首历史性会晤为何在中国",
+                         "summary":  "【bilibili 热搜】中俄美元首历史性会晤为何在中国",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-21",
+                         "time":  "08:08",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E4%B8%AD%E4%BF%84%E7%BE%8E%E5%85%83%E9%A6%96%E5%8E%86%E5%8F%B2%E6%80%A7%E4%BC%9A%E6%99%A4%E4%B8%BA%E4%BD%95%E5%9C%A8%E4%B8%AD%E5%9B%BD",
+                         "likes":  474845,
+                         "comments":  24991
+                     },
+                     {
+                         "id":  "20261121_001",
+                         "title":  "“工业母鸡”也被干成白菜价",
+                         "summary":  "【百度热搜】“工业母鸡”也被干成白菜价",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-21",
+                         "time":  "02:17",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E2%80%9C%E5%B7%A5%E4%B8%9A%E6%AF%8D%E9%B8%A1%E2%80%9D%E4%B9%9F%E8%A2%AB%E5%B9%B2%E6%88%90%E7%99%BD%E8%8F%9C%E4%BB%B7",
+                         "likes":  474324,
+                         "comments":  39527
+                     },
+                     {
+                         "id":  "20261121_000",
+                         "title":  "胖东来搬离后原址所开新商场几乎倒闭",
+                         "summary":  "【今日头条】胖东来搬离后原址所开新商场几乎倒闭",
+                         "source":  "今日头条",
+                         "date":  "2026-11-21",
+                         "time":  "00:00",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.toutiao.com/trending/7709314788123525147/",
+                         "likes":  506740,
+                         "comments":  38980
+                     },
+                     {
                          "id":  "20261120_036",
                          "title":  "如何看待马斯克离开深圳，突访上海？",
                          "summary":  "【知乎】如何看待马斯克离开深圳，突访上海？",
@@ -2661,5 +3158,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-21T00:14:09+08:00"
+    "updated_at":  "2026-11-21T01:02:44+08:00"
 }

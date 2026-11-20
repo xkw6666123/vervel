@@ -125,6 +125,36 @@
                          "date":  "2026-11-16"
                      },
                      {
+                         "id":  "20261120_018",
+                         "title":  "全妆深圳美得像小说里的A市",
+                         "summary":  "【百度热搜】全妆深圳美得像小说里的A市",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-20",
+                         "time":  "12:06",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%85%A8%E5%A6%86%E6%B7%B1%E5%9C%B3%E7%BE%8E%E5%BE%97%E5%83%8F%E5%B0%8F%E8%AF%B4%E9%87%8C%E7%9A%84A%E5%B8%82",
+                         "likes":  338521,
+                         "comments":  24180
+                     },
+                     {
+                         "id":  "20261120_016",
+                         "title":  "吧友肝九小时GTA6写深度体验",
+                         "summary":  "【贴吧】吧友肝九小时GTA6写深度体验",
+                         "source":  "贴吧",
+                         "date":  "2026-11-20",
+                         "time":  "08:32",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E5%90%A7%E5%8F%8B%E8%82%9D%E4%B9%9D%E5%B0%8F%E6%97%B6GTA6%E5%86%99%E6%B7%B1%E5%BA%A6%E4%BD%93%E9%AA%8C\u0026topic_id=28369998",
+                         "likes":  356325,
+                         "comments":  32393
+                     },
+                     {
                          "id":  "20261120_017",
                          "title":  "习主席的深圳APEC时间",
                          "summary":  "【bilibili 热搜】习主席的深圳APEC时间",
@@ -3425,5 +3455,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-20T14:02:50+08:00"
+    "updated_at":  "2026-11-20T15:07:05+08:00"
 }

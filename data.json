@@ -184,6 +184,21 @@
                          "date":  "2026-11-21"
                      },
                      {
+                         "id":  "20261125_050",
+                         "title":  "Claude称证明计算机理论重大猜想",
+                         "summary":  "【bilibili 热搜】Claude称证明计算机理论重大猜想",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-25",
+                         "time":  "04:10",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=Claude%E7%A7%B0%E8%AF%81%E6%98%8E%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%90%86%E8%AE%BA%E9%87%8D%E5%A4%A7%E7%8C%9C%E6%83%B3",
+                         "likes":  117656,
+                         "comments":  19609
+                     },
+                     {
                          "id":  "20261125_059",
                          "title":  "如何衡量黄仁勋本人的价值",
                          "summary":  "【bilibili 热搜】如何衡量黄仁勋本人的价值",
@@ -2351,5 +2366,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-25T01:03:02+08:00"
+    "updated_at":  "2026-11-25T02:02:35+08:00"
 }

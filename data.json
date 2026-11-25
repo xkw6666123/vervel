@@ -184,6 +184,96 @@
                          "date":  "2026-11-21"
                      },
                      {
+                         "id":  "20261125_039",
+                         "title":  "黎曼猜想证明者说25万页是玩笑",
+                         "summary":  "【bilibili 热搜】黎曼猜想证明者说25万页是玩笑",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-25",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E9%BB%8E%E6%9B%BC%E7%8C%9C%E6%83%B3%E8%AF%81%E6%98%8E%E8%80%85%E8%AF%B425%E4%B8%87%E9%A1%B5%E6%98%AF%E7%8E%A9%E7%AC%91",
+                         "likes":  200718,
+                         "comments":  10564
+                     },
+                     {
+                         "id":  "20261125_036",
+                         "title":  "神24出征续写航天荣光",
+                         "summary":  "【微博】神24出征续写航天荣光",
+                         "source":  "微博",
+                         "date":  "2026-11-25",
+                         "time":  "00:12",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E7%A5%9E24%E5%87%BA%E5%BE%81%E7%BB%AD%E5%86%99%E8%88%AA%E5%A4%A9%E8%8D%A3%E5%85%89%23",
+                         "likes":  200764,
+                         "comments":  16730
+                     },
+                     {
+                         "id":  "20261125_025",
+                         "title":  "美国民主党反扑彻查黄仁勋",
+                         "summary":  "【贴吧】美国民主党反扑彻查黄仁勋",
+                         "source":  "贴吧",
+                         "date":  "2026-11-25",
+                         "time":  "02:05",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E7%BE%8E%E5%9B%BD%E6%B0%91%E4%B8%BB%E5%85%9A%E5%8F%8D%E6%89%91%E5%BD%BB%E6%9F%A5%E9%BB%84%E4%BB%81%E5%8B%8B\u0026topic_id=28370209",
+                         "likes":  315198,
+                         "comments":  16589
+                     },
+                     {
+                         "id":  "20261125_024",
+                         "title":  "神舟二十四号发射升空",
+                         "summary":  "【bilibili 热搜】神舟二十四号发射升空",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-25",
+                         "time":  "00:48",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=%E7%A5%9E%E8%88%9F%E4%BA%8C%E5%8D%81%E5%9B%9B%E5%8F%B7%E5%8F%91%E5%B0%84%E5%8D%87%E7%A9%BA",
+                         "likes":  327236,
+                         "comments":  29748
+                     },
+                     {
+                         "id":  "20261125_020",
+                         "title":  "这个日常妆值得焊在脸上",
+                         "summary":  "【抖音】这个日常妆值得焊在脸上",
+                         "source":  "抖音",
+                         "date":  "2026-11-25",
+                         "time":  "16:40",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2762154",
+                         "likes":  347696,
+                         "comments":  23179
+                     },
+                     {
+                         "id":  "20261125_013",
+                         "title":  "神舟24号发射",
+                         "summary":  "【微博】神舟24号发射",
+                         "source":  "微博",
+                         "date":  "2026-11-25",
+                         "time":  "02:41",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E7%A5%9E%E8%88%9F24%E5%8F%B7%E5%8F%91%E5%B0%84%23",
+                         "likes":  391787,
+                         "comments":  30137
+                     },
+                     {
                          "id":  "20261125_049",
                          "title":  "神24航天员到达发射塔架",
                          "summary":  "【微博】神24航天员到达发射塔架",
@@ -2533,5 +2623,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-25T09:37:11+08:00"
+    "updated_at":  "2026-11-25T10:03:00+08:00"
 }

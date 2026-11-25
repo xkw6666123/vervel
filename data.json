@@ -184,6 +184,51 @@
                          "date":  "2026-11-21"
                      },
                      {
+                         "id":  "20261125_038",
+                         "title":  "ON暗示ELK回归BLG",
+                         "summary":  "【贴吧】ON暗示ELK回归BLG",
+                         "source":  "贴吧",
+                         "date":  "2026-11-25",
+                         "time":  "04:46",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=ON%E6%9A%97%E7%A4%BAELK%E5%9B%9E%E5%BD%92BLG\u0026topic_id=28370210",
+                         "likes":  211083,
+                         "comments":  23453
+                     },
+                     {
+                         "id":  "20261125_012",
+                         "title":  "巴基斯坦航天员手指国旗向镜头敬礼",
+                         "summary":  "【微博】巴基斯坦航天员手指国旗向镜头敬礼",
+                         "source":  "微博",
+                         "date":  "2026-11-25",
+                         "time":  "00:24",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://s.weibo.com/weibo?q=%23%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E8%88%AA%E5%A4%A9%E5%91%98%E6%89%8B%E6%8C%87%E5%9B%BD%E6%97%97%E5%90%91%E9%95%9C%E5%A4%B4%E6%95%AC%E7%A4%BC%23",
+                         "likes":  395884,
+                         "comments":  56554
+                     },
+                     {
+                         "id":  "20261125_008",
+                         "title":  "神舟二十四号发射圆满成功",
+                         "summary":  "【抖音】神舟二十四号发射圆满成功",
+                         "source":  "抖音",
+                         "date":  "2026-11-25",
+                         "time":  "16:16",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.douyin.com/hot/2762618",
+                         "likes":  448024,
+                         "comments":  23580
+                     },
+                     {
                          "id":  "20261125_039",
                          "title":  "黎曼猜想证明者说25万页是玩笑",
                          "summary":  "【bilibili 热搜】黎曼猜想证明者说25万页是玩笑",
@@ -2623,5 +2668,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-25T10:03:00+08:00"
+    "updated_at":  "2026-11-25T11:02:40+08:00"
 }

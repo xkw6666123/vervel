@@ -184,6 +184,52 @@
                          "date":  "2026-11-21"
                      },
                      {
+                         "id":  "20261126_028",
+                         "title":  "巴基斯坦航天员抱拳：请不吝赐教",
+                         "summary":  "【百度热搜】巴基斯坦航天员抱拳：请不吝赐教",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-26",
+                         "time":  "08:56",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E5%B7%B4%E5%9F%BA%E6%96%AF%E5%9D%A6%E8%88%AA%E5%A4%A9%E5%91%98%E6%8A%B1%E6%8B%B3%EF%BC%9A%E8%AF%B7%E4%B8%8D%E5%90%9D%E8%B5%90%E6%95%99",
+                         "likes":  294584,
+                         "comments":  42083
+                     },
+                     {
+                         "id":  "20261126_017",
+                         "title":  "业内疯传JKL加入BLG",
+                         "summary":  "【贴吧】业内疯传JKL加入BLG",
+                         "source":  "贴吧",
+                         "date":  "2026-11-26",
+                         "time":  "10:49",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://tieba.baidu.com/hottopic/browse/hottopic?amp%3Btopic_name=%E4%B8%9A%E5%86%85%E7%96%AF%E4%BC%A0JKL%E5%8A%A0%E5%85%A5BLG\u0026topic_id=28370241",
+                         "likes":  350870,
+                         "comments":  38985
+                     },
+                     {
+                         "id":  "20261126_014",
+                         "title":  "“天下第一财神庙”重新开放",
+                         "summary":  "【百度热搜】“天下第一财神庙”重新开放",
+                         "source":  "百度热搜",
+                         "date":  "2026-11-26",
+                         "time":  "04:58",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差"
+                                  ],
+                         "url":  "https://www.baidu.com/s?wd=%E2%80%9C%E5%A4%A9%E4%B8%8B%E7%AC%AC%E4%B8%80%E8%B4%A2%E7%A5%9E%E5%BA%99%E2%80%9D%E9%87%8D%E6%96%B0%E5%BC%80%E6%94%BE",
+                         "likes":  375831,
+                         "comments":  19780
+                     },
+                     {
                          "id":  "20261126_027",
                          "title":  "美股：道指抹去千点跌幅翻红",
                          "summary":  "【今日头条】美股：道指抹去千点跌幅翻红",
@@ -2846,5 +2892,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-26T09:02:29+08:00"
+    "updated_at":  "2026-11-26T10:02:40+08:00"
 }

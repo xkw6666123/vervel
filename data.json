@@ -184,6 +184,22 @@
                          "date":  "2026-11-21"
                      },
                      {
+                         "id":  "20261127_039",
+                         "title":  "JDG官宣GALA离队",
+                         "summary":  "【bilibili 热搜】JDG官宣GALA离队",
+                         "source":  "bilibili 热搜",
+                         "date":  "2026-11-27",
+                         "time":  "06:03",
+                         "tags":  [
+                                      "社会热点",
+                                      "信息差",
+                                      "爆款"
+                                  ],
+                         "url":  "https://search.bilibili.com/all?keyword=JDG%E5%AE%98%E5%AE%A3GALA%E7%A6%BB%E9%98%9F",
+                         "likes":  193032,
+                         "comments":  19303
+                     },
+                     {
                          "id":  "20261127_038",
                          "title":  "A股迎来史诗级暴涨",
                          "summary":  "【bilibili 热搜】A股迎来史诗级暴涨",
@@ -3348,5 +3364,5 @@
                              "chen_style":  "特朗普：热情期待在华盛顿全程高能"
                          }
                      ],
-    "updated_at":  "2026-11-27T18:02:48+08:00"
+    "updated_at":  "2026-11-27T19:02:37+08:00"
 }
